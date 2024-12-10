@@ -60,7 +60,6 @@ export const Entermobilegetapp = () => {
    */
   function togglePopup() {
     if (isMobile) {
-      
       openApp();
       return;
     }
@@ -111,17 +110,17 @@ export const Entermobilegetapp = () => {
   };
 
   const isError = () => {
-    if(mobile.length === 0){
-      return true
+    if (mobile.length === 0) {
+      return true;
     }
-    if(mobile?.length < 9) {
-      return true
+    if (mobile?.length < 9) {
+      return true;
     }
-    if(counter !== 0) {
-      return true
+    if (counter !== 0) {
+      return true;
     }
     return false;
-  }
+  };
 
   return (
     <>
@@ -134,9 +133,9 @@ export const Entermobilegetapp = () => {
 
         <div id='get-app-popup' className={`popup sm:top-[10%]`}>
           <span className='closebutton' onClick={togglePopup}>
-            <img src={'/images/Dismiss.svg'} alt='' />
+            <img src={'/images/Dismiss.svg'} alt='Dismiss' />
           </span>
-          <img src={'/images/popup-vector-31.svg'} alt='' className='verticle_image' />
+          <img src={'/images/popup-vector-31.svg'} alt='popup-vector' className='verticle_image' />
           <div className='inner-card-popup'>
             <p>Get the Black Jet App</p>
             <div className='inner-first-div sm:w-[90%] mobile-field'>
@@ -159,7 +158,6 @@ export const Entermobilegetapp = () => {
                 containerClassName='getapp-inputfield'
               />
 
-             
               <CommonButton
                 error={isError()}
                 // disabled={isError()}

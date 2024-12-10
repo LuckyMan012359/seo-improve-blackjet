@@ -1,6 +1,6 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import CommonButton from 'components/formcomponents/CommonButton';
-import  { useBlackJetContext } from 'context/OnboardingContext';
+import { useBlackJetContext } from 'context/OnboardingContext';
 import { CHANGE_PREORDER_STATUS } from 'constants/actions';
 import useOutsideClick from 'Hook/useOutsideClick';
 import Share from 'components/share/Share';
@@ -12,7 +12,6 @@ import useIsMobile from 'Hook/useIsMobile';
 import Landscape from 'components/phoneonboarding/Landscape';
 import { ROUTE_LIST } from 'routes/routeList';
 
-
 /**
  * Profile component
  *
@@ -23,7 +22,6 @@ import { ROUTE_LIST } from 'routes/routeList';
  * <Profile />
  */
 const Profile = () => {
-
   const [type, setType] = useState('reusable');
 
   const navigate = useNavigate();
@@ -120,8 +118,6 @@ const Profile = () => {
     handleTooltipOpen();
   };
 
-
-
   if (!orientation && isMobile) {
     return <Landscape />;
   }
@@ -131,7 +127,7 @@ const Profile = () => {
       <Entermobilegetapp />
       <div className='mob-profile-wrap'>
         <div className='profile-image'>
-          <img src='/images/generic-user.svg' alt='' />
+          <img src='/images/generic-user.svg' alt='generic-user' />
         </div>
         <div className='create-account-chip'>
           <span onClick={handleFreePreview}>Create a free account</span>
@@ -141,36 +137,50 @@ const Profile = () => {
             <p> Reusable Bookings</p>
             <div className='available-flights'>
               <p>
-                <img className='flight-search-icon' src='/images/flight-icon.svg' alt='' /> 0
+                <img
+                  className='flight-search-icon'
+                  src='/images/flight-icon.svg'
+                  alt='flight-icon'
+                />{' '}
+                0
               </p>{' '}
               <span> of 0 available</span>
             </div>
             <div className='tooltip-text'>
-              <img src='/images/tooltip-icon.svg' onClick={handleReusableClick} alt='' />
+              <img
+                src='/images/tooltip-icon.svg'
+                onClick={handleReusableClick}
+                alt='tooltip-icon'
+              />
             </div>
           </div>
           <div className='booking-pass-card guest-card'>
             <p>Guest Passes</p>
             <div className='available-flights'>
               <p>
-                <img className='flight-search-icon' src='/images/guest-users.svg' alt='' /> 0
+                <img
+                  className='flight-search-icon'
+                  src='/images/guest-users.svg'
+                  alt='guest-users'
+                />{' '}
+                0
               </p>{' '}
               <span>
                 AWARDED EVERY <br /> 3 MONTHS
               </span>
             </div>
             <div className='tooltip-text'>
-              <img src='/images/tooltip-icon.svg' onClick={handleGuestClick} alt='' />
+              <img src='/images/tooltip-icon.svg' onClick={handleGuestClick} alt='tooltip-icon' />
             </div>
           </div>
         </div>
         <div id={'tooltip-item'} className='open-tooltip'>
           <div className='close-tool-tip'>
             {' '}
-            <img src='/images/close-icon.svg' onClick={handleTooltipOpen} alt='' />{' '}
+            <img src='/images/close-icon.svg' onClick={handleTooltipOpen} alt='close-icon' />{' '}
           </div>
           <p className='tooltip-heading'>
-            <img src='/images/tooltip-icon.svg' alt='' />{' '}
+            <img src='/images/tooltip-icon.svg' alt='tooltip-icon' />{' '}
             {type === 'reusable' ? 'Reusable Booking' : 'Guest Passes'}
           </p>
           {type === 'reusable' ? (
@@ -207,7 +217,7 @@ const Profile = () => {
               />
             </div>
             <div className='right-arrow'>
-              <img src='/images/Chevron.svg' alt='' />
+              <img src='/images/Chevron.svg' alt='Chevron' />
             </div>
           </div>
           <div className='become-btn-wrap' role='button' onClick={handleFreePreview}>
@@ -217,7 +227,7 @@ const Profile = () => {
               </span>
             </div>
             <div className='right-arrow'>
-              <img src='/images/Chevron.svg' alt='' />
+              <img src='/images/Chevron.svg' alt='Chevron' />
             </div>
           </div>
         </div>

@@ -35,16 +35,15 @@ const GetContact = () => {
    */
   const handleCloseContactUs = () => {
     // setTimeout(() => {
-      if (window.history.length > 2) {
-        // Check for at least two entries (SPA + initial visit)
-        navigate(-1);
-      } else {
-        navigate('/'); // Redirect to landing page if no previous history
-      }
+    if (window.history.length > 2) {
+      // Check for at least two entries (SPA + initial visit)
+      navigate(-1);
+    } else {
+      navigate('/'); // Redirect to landing page if no previous history
+    }
     // }, 250);
     // handleContactSlide();
   };
-  
 
   return (
     <FramerMotion key={'getcontact'}>
@@ -53,7 +52,7 @@ const GetContact = () => {
         <img
           className='close-btn'
           src='images/close-icon-white.svg'
-          alt=''
+          alt='close-icon-white'
           onClick={handleCloseContactUs}
         />
         <EnquiryForm type={'contact_us'} enquirybg='contact-form'>

@@ -253,7 +253,7 @@ const Header = ({ open = false, setOpen = () => {} }) => {
                 name='book a flight'
                 placeholder='Book a flight'
               />
-              <img className='flight-search-icon' src='/images/flight-icon.svg' alt='' />
+              <img className='flight-search-icon' src='/images/flight-icon.svg' alt='flight-icon' />
             </div>
             <div className='flight-type-select'>
               <span

@@ -424,7 +424,7 @@ const Footer = () => {
               src={
                 location.pathname === '/' ? '/images/home-user.svg' : '/images/home_inactive.svg'
               }
-              alt=''
+              alt='home'
             />{' '}
           </li>
           <li onClick={() => navigate('/booking')}>
@@ -434,7 +434,7 @@ const Footer = () => {
                   ? '/images/booking_active.svg'
                   : '/images/ticket-icon.svg'
               }
-              alt=''
+              alt='booking'
             />{' '}
           </li>
           <li onClick={() => navigate('/profile')}>
@@ -444,7 +444,7 @@ const Footer = () => {
                   ? '/images/profile_active.svg'
                   : '/images/footer-user.svg'
               }
-              alt=''
+              alt='profile'
             />{' '}
           </li>
         </ul>

@@ -298,7 +298,7 @@ const FullScreen = ({
                     loading='lazy'
                     src={mute ? '/images/videoMute.svg' : '/images/Mute.svg'}
                     className='my-auto w-8 aspect-[1.33] cursor-pointer'
-                    alt=''
+                    alt='mute'
                   />
                   {!isFull ? (
                     <img
@@ -306,7 +306,7 @@ const FullScreen = ({
                       loading='lazy'
                       src='/images/fullScreenOpen.svg'
                       className='w-8 aspect-square cursor-pointer'
-                      alt=''
+                      alt='fullScreenOpen'
                     />
                   ) : (
                     <img
@@ -314,7 +314,7 @@ const FullScreen = ({
                       loading='lazy'
                       src='/images/fullScreenClose.svg'
                       className='w-8 aspect-square cursor-pointer'
-                      alt=''
+                      alt='fullScreenClose'
                     />
                   )}
                 </div>

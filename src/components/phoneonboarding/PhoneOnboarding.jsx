@@ -5,12 +5,12 @@ import BasicInfo from 'components/onboarding/BasicInfo';
 import MembershipSelection from 'components/onboarding/MembershipSelection';
 import PaymentMethod from 'components/onboarding/PaymentMethod';
 import PreorderPeriod from 'components/onboarding/PreorderPeriod';
-import { useContext, useEffect,  useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useMediaQuery } from '@mui/material';
 import EmailToPhone from 'components/onboarding/EmailToPhone';
 import OnboardingContext from 'context/OnboardingContext';
 import OtpScreen from './OtpScreen';
-import {  useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Landscape from './Landscape';
 
 import { CURRENT_INDEX, LAST_INDEX } from 'constants/actions';
@@ -31,7 +31,7 @@ const PhoneOnboarding = () => {
   const [device, setDevice] = useState('');
 
   const [showCross, setCross] = useState(false);
- 
+
   const [fromWhereData, setFromWhereData] = useState(null);
   const lastInd = onboardingForms.lastInd;
   const currentIndex = onboardingForms.currentIndex;
@@ -42,7 +42,6 @@ const PhoneOnboarding = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
 
   const goTo = (index) => {
     // if (swiperRef.current) {
@@ -55,7 +54,6 @@ const PhoneOnboarding = () => {
     dispatchOnboardingForms({ type: CURRENT_INDEX, payload: index });
     // }
   };
-  
 
   const handleBack = () => {
     // if (currentIndex === 4) {
@@ -84,8 +82,6 @@ const PhoneOnboarding = () => {
   };
 
   const handleClose = () => {
- 
-
     if (window.history.length > 2) {
       // Check for at least two entries (SPA + initial visit)
       navigate(-1);
@@ -93,8 +89,6 @@ const PhoneOnboarding = () => {
       navigate('/');
     }
     return;
-
- 
   };
 
   const Components = [
@@ -103,7 +97,6 @@ const PhoneOnboarding = () => {
         <PhoneRecognized
           setDevice={setDevice}
           goTo={goTo}
-        
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
           setIsAlready={setIsAlready}
@@ -119,13 +112,11 @@ const PhoneOnboarding = () => {
           currentIndex={currentIndex}
           device={device}
           goTo={goTo}
-         
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
           setIsAlready={setIsAlready}
           onboarded={commonOnboarded}
           fromWhereData={fromWhereData}
-          
         />
       ),
     },
@@ -134,7 +125,6 @@ const PhoneOnboarding = () => {
         <EmailToPhone
           setDevice={setDevice}
           goTo={goTo}
-          
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
           setIsAlready={setIsAlready}
@@ -148,7 +138,6 @@ const PhoneOnboarding = () => {
           currentIndex={currentIndex}
           device={device}
           goTo={goTo}
-         
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
           setIsAlready={setIsAlready}
@@ -161,7 +150,6 @@ const PhoneOnboarding = () => {
       component: (
         <OnboardingEmail
           goTo={goTo}
-          
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
           setIsAlready={setIsAlready}
@@ -175,7 +163,6 @@ const PhoneOnboarding = () => {
         <BasicInfo
           currentIndex={currentIndex}
           goTo={goTo}
-          
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
         />
@@ -185,7 +172,6 @@ const PhoneOnboarding = () => {
       component: (
         <MembershipSelection
           goTo={goTo}
-      
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
           setRegistered={setRegistered}
@@ -197,7 +183,6 @@ const PhoneOnboarding = () => {
         <PaymentMethod
           currentIndex={currentIndex}
           goTo={goTo}
-        
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
         />
@@ -207,7 +192,6 @@ const PhoneOnboarding = () => {
       component: (
         <PreorderPeriod
           goTo={goTo}
-         
           isPreOrder={onboardingForms?.isPreOrder}
           isMobile={isMobile}
           isAlready={isAlready}
@@ -232,7 +216,7 @@ const PhoneOnboarding = () => {
               <img
                 className='close-btn cursor-pointer'
                 src='images/close-icon-white.svg'
-                alt=''
+                alt='close-icon-white'
                 onClick={handleClose}
               />
             </>
@@ -241,7 +225,7 @@ const PhoneOnboarding = () => {
             <img
               className='close-btn cursor-pointer'
               src='images/back.svg'
-              alt=''
+              alt='back'
               onClick={handleBack}
             />
           )}

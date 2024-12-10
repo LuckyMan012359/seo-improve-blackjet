@@ -91,7 +91,7 @@ const Booking = ({ open, setOpen }) => {
           </div>
         </div> */}
         <div className='tour-img-wrap cursor-pointer' role='button' onClick={handleOpenClick}>
-          <img className='tour-img' src={virtualTour} alt='' />
+          <img className='tour-img' src={virtualTour} alt='virtualTour' />
           <span className='tour-click'>
             Tour the plane{' '}
             <svg

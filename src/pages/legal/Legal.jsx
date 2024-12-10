@@ -56,8 +56,8 @@ const Legal = () => {
         console.log(error);
       }
     })();
-    
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [type]);
 
   /**
@@ -89,7 +89,7 @@ const Legal = () => {
       <img
         className='close-btn'
         src='images/close-icon-white.svg'
-        alt=''
+        alt='close-icon-white'
         onClick={handleCloseLegal}
       />
       <h1 className='legal-heading fixed-header-pages'>Legal</h1>

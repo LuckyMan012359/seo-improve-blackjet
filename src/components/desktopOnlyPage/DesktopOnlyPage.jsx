@@ -23,7 +23,12 @@ const DesktopOnlyPage = ({ heading = 'Investors' }) => {
   return (
     <div className='screen-not-available'>
       <div className='top-section'>
-        <img onClick={handleClose} className='close-btn' src='/images/close-icon-white.svg' alt='' />
+        <img
+          onClick={handleClose}
+          className='close-btn'
+          src='/images/close-icon-white.svg'
+          alt='close-icon-white'
+        />
         <h1>{heading}</h1>
         <div></div>
       </div>

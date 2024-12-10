@@ -39,7 +39,7 @@ const IconSection = () => {
       <div className='social-media-wrap'>
         <Link to='/' onClick={goToTop}>
           {' '}
-          <img className='brand-logo' src='/images/img_television.svg' alt='' />
+          <img className='brand-logo' src='/images/img_television.svg' alt='img_television' />
         </Link>
         <div className='social-wrap'>
           <ul>
@@ -49,7 +49,7 @@ const IconSection = () => {
                 rel='noopener noreferrer'
                 href='https://www.facebook.com/joinBlackJet'
               >
-                <img src='/images/img_socialiconfacebook.svg' alt='' />
+                <img src='/images/img_socialiconfacebook.svg' alt='img_socialiconfacebook' />
               </a>
             </li>
             <li>
@@ -58,7 +58,7 @@ const IconSection = () => {
                 rel='noopener noreferrer'
                 href='https://www.linkedin.com/company/joinblackjet'
               >
-                <img src='/images/img_iconlinkedin.svg' alt='' />
+                <img src='/images/img_iconlinkedin.svg' alt='img_iconlinkedin' />
               </a>
             </li>
             <li>
@@ -67,12 +67,12 @@ const IconSection = () => {
                 rel='noopener noreferrer'
                 href='https://www.instagram.com/joinblackjet'
               >
-                <img src='/images/img_socialiconinstagram.svg' alt='' />
+                <img src='/images/img_socialiconinstagram.svg' alt='img_socialiconinstagram' />
               </a>
             </li>
             <li>
               <a target='_blank' rel='noopener noreferrer' href='https://x.com/joinBlackJet'>
-                <img src='/images/img_socialicontwitter.svg' alt='' />
+                <img src='/images/img_socialicontwitter.svg' alt='img_socialicontwitter' />
               </a>
             </li>
           </ul>
@@ -84,14 +84,14 @@ const IconSection = () => {
             {isMobile && (
               <>
                 <p>FAQs </p>
-                <img src='/images/img_arrowright.svg' alt='' />
+                <img src='/images/img_arrowright.svg' alt='img_arrowright' />
               </>
             )}
 
             {!isMobile && isDesktopFooterValidRoute(faqsLocationIds) && (
               <>
                 <p>FAQs </p>
-                <img src='/images/img_arrowright.svg' alt='' />
+                <img src='/images/img_arrowright.svg' alt='img_arrowright' />
               </>
             )}
           </div>

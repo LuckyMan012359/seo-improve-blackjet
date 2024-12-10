@@ -277,7 +277,7 @@ export const AdminChat = ({ chat, setChats }) => {
   return (
     <div className='black-jet-bot' key={chat._id}>
       <img
-        alt=''
+        alt='img_television'
         loading='lazy'
         src='/images/img_television.svg'
         className='my-auto aspect-[1.19] w-[19px] ml-1'
@@ -346,7 +346,7 @@ const RenderImgAdmin = ({ data, signalRef, admin }) => {
             <img
               src={data.mediaUrl}
               onLoad={handleImgLoad}
-              alt=''
+              alt='mediaUrl'
               className='rounded-sm'
               style={{
                 opacity: imgLoading ? '0.2' : '1',
@@ -384,10 +384,9 @@ const RenderPdf = ({ data }) => {
   const pdfName = data.mediaUrl?.split('/')?.pop() || '';
   const breakPdfName = pdfName?.split('.') || [];
 
-
   const fileName = breakPdfName?.at(0) || '';
-  if(!fileName ){
-    return null
+  if (!fileName) {
+    return null;
   }
   return (
     <a href={data.mediaUrl} target='_blank' rel='noopener noreferrer'>
@@ -454,7 +453,7 @@ const ImgPreview = ({ selectedChat, setSelectedChat }) => {
         <div className='flex items-center justify-center'>
           {selectedChat.type === 'image' && (
             <div>
-              <img src={selectedChat.mediaUrl} loading='lazy' alt='' />
+              <img src={selectedChat.mediaUrl} loading='lazy' alt='mediaUrl' />
             </div>
           )}
           {selectedChat.type === 'video' && <RenderVideo data={selectedChat} />}

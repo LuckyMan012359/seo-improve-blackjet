@@ -43,10 +43,10 @@ const PrivateTerminals = () => {
         </div>
       </div>
       <div className='private-terminals-right'>
-        <img src={privateTerminals} alt='' />
+        <img src={privateTerminals} alt='privateTerminals' />
       </div>
     </div>
-  ); 
+  );
 };
 
 export default PrivateTerminals;
