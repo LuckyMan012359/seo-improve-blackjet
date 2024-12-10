@@ -122,16 +122,15 @@ const ChatBox = ({ children }) => {
   // close popup when location change
   useMemo(() => {
     closePopup();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   return (
     <>
       <div
-        className='chat-overlay'
-        style={{
-          display: isMobile && onboardingForms.isChatOpen.open ? 'block' : 'none',
-        }}
+        className={`chat-overlay ${
+          isMobile && onboardingForms.isChatOpen.open ? '!block' : '!hidden'
+        }`}
       ></div>
       <div id='chat-container' className='main-chat-wrapper'>
         <SlidAnimation
@@ -195,7 +194,6 @@ const SiteChat = ({
 
   const sender_type = useGetUserType();
   const sender = useGetUserId();
-  
 
   const [message, setMessage] = useState('');
   const [receiver, setReceiver] = useState(null); // sub admin data
@@ -962,11 +960,9 @@ const SiteChat = ({
 
   return (
     <div
-      style={{
-        overflowY: !subAdminNotAvailable ? 'scroll' : 'initial',
-        flex: 1,
-      }}
-      className='chat-box-resized-wrap'
+      className={`chat-box-resized-wrap !flex-1 ${
+        !subAdminNotAvailable ? '!overflow-y-scroll' : '!overflow-y-visible'
+      }`}
       ref={containerRef}
       id='chat-box-resized-wrap'
       onScroll={handleScroll}
@@ -980,13 +976,7 @@ const SiteChat = ({
         isGuestUser={subAdminNotAvailable}
       />
 
-      <div
-        className='chat-area'
-        onClick={handleCloseHeader}
-        style={{
-          display: subAdminNotAvailable && 'block',
-        }}
-      >
+      <div className={`chat-area ${subAdminNotAvailable && '!block'}`} onClick={handleCloseHeader}>
         {/* Not getting subadmin */}
         {showOfflineScreen() && (
           <NoSubAdmin isSubAdminWithGuest={isSubAdminWithGuest} isGuestMode={isGuestMode} />

@@ -153,7 +153,6 @@ const Header = ({
     onClick: handleOpenModal,
   };
 
-
   return (
     <>
       {!isMobile && (
@@ -196,7 +195,7 @@ const Header = ({
               <ExpandMore onClick={handleClose} className='' />
             )}
 
-            {(!receiver?.subadmin_id) && (
+            {!receiver?.subadmin_id && (
               <div className='chat-offline-container'>
                 <div className='chat-circle'></div>
                 <p className='chat-offline-text'>Offline</p>
@@ -317,12 +316,13 @@ export function CameraComponent({ setImageInfo, handleCloseModal }) {
         ref={videoRef}
         id={'desktop-camera-video'}
         autoPlay
-        style={{
-          display: capturedImage ? 'none' : 'block',
-          transform: 'scaleX(-1)',
-        }}
+        // style={{
+        //   display: capturedImage ? 'none' : 'block',
+        //   transform: 'scaleX(-1)',
+        // }}
+        className={`${capturedImage ? '!hidden' : '!block'} transform scale-x-flip`}
       />
-      <canvas ref={canvasRef} style={{ display: 'none' }} />
+      <canvas ref={canvasRef} className='!hidden' />
       <div className='camera-buttons'>
         {/* <CommonButton onClick={handleCameraPermission} text={'Open Camera'} /> */}
         <CommonButton
@@ -436,9 +436,10 @@ const MobileCamera = ({ handleCloseModal, setImageInfo }) => {
           screenshotFormat='image/jpeg'
           videoConstraints={{ facingMode }}
           mirrored={true}
-          style={{
-            display: capturedImage ? 'none' : 'block',
-          }}
+          // style={{
+          //   display: capturedImage ? 'none' : 'block',
+          // }}
+          className={`${capturedImage ? '!hidden' : '!block'}`}
         />
       </div>
       <div className='camera-buttons'>

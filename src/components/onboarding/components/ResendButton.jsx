@@ -39,10 +39,12 @@ const ResendButton = ({ resendOtp }) => {
         onClick={() => resendOtp(setCountdown)}
         id='ResendCode'
         disabled={countdown > 0}
-        className="text-center !bg-[#333333] disabled:cursor-not-allowed disabled:text-gray-600 text-sm font-['Hauora'] font-bold p-2 rounded-[39px] text-[#f2f2f2]"
-        style={{
-            color: countdown === 0 ? '#F2F2F2' : '#7A7A7A',
-        }}
+        className={`text-center !bg-[#333333] disabled:cursor-not-allowed disabled:text-gray-600 text-sm font-['Hauora'] font-bold p-2 rounded-[39px] text-[#f2f2f2] ${
+          countdown === 0 ? 'text-[#F2F2F2]' : 'text-[#7A7A7A]'
+        }`}
+        // style={{
+        //     color: countdown === 0 ? '#F2F2F2' : '#7A7A7A',
+        // }}
       >
         Resend code {countdown > 0 ? `(${countdown})` : ''}
       </button>

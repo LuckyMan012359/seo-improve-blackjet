@@ -127,10 +127,10 @@ const UserChat = ({
             <img
               src={chatValue ? checkIcon : circleIconDisabled}
               alt='check'
-              className={'edit-user-icon'}
-              style={{
-                pointerEvents: chatValue ? 'auto' : 'none',
-              }}
+              className={`edit-user-icon ${chatValue ? 'auto' : 'hidden'}`}
+              // style={{
+              //   pointerEvents: chatValue ? 'auto' : 'none',
+              // }}
               onClick={(e) => handleUpdateMessage(e, chatValue || chat?.message, chat)}
             />
           )}
@@ -347,10 +347,10 @@ const RenderImgAdmin = ({ data, signalRef, admin }) => {
               src={data.mediaUrl}
               onLoad={handleImgLoad}
               alt='mediaUrl'
-              className='rounded-sm'
-              style={{
-                opacity: imgLoading ? '0.2' : '1',
-              }}
+              className={`rounded-sm ${imgLoading ? 'opacity-[0.2]' : 'opacity-[1]'}`}
+              // style={{
+              //   opacity: imgLoading ? '0.2' : '1',
+              // }}
             />
             {imgLoading && (
               <Skeleton

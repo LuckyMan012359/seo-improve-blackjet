@@ -43,10 +43,7 @@ export const ChatArea = ({ children, size, setSize }) => {
         bottom: isMobile ? false : true,
         left: isMobile ? false : true,
       }}
-      style={{
-        boxSizing: 'border-box',
-      }}
-      className='flex'
+      className='flex !box-border'
     >
       {children}
     </Resizable>

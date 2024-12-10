@@ -100,7 +100,6 @@ const HandAnimationPhone = ({ className = '' }) => {
 
   // const transform = isMobileDevice ? 1 : 0
 
-
   return (
     <div
       ref={handRef}
@@ -108,10 +107,12 @@ const HandAnimationPhone = ({ className = '' }) => {
     >
       <svg
         id='svg-container'
-        className='object-cover w-full h-full sm:w-full transition-all'
+        // className='object-cover w-full h-full sm:w-full transition-all'
+        className={`object-cover w-full h-full sm:w-full transition-transform duration-400 ease-in-out`}
         width='5001'
         height='5000'
-        style={{ transform: `scale(${zoomLevel})`, transition: 'transform 0.4s ease-in-out' }}
+        // style={{ transform: `scale(${zoomLevel})`, transition: 'transform 0.4s ease-in-out' }}
+        style={{ transform: `scale(${zoomLevel})` }}
         viewBox='0 0 5001 5000'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
@@ -120,7 +121,8 @@ const HandAnimationPhone = ({ className = '' }) => {
           <HandPath />
           <mask
             id='mask0_3369_51584'
-            style={{ maskType: 'luminance' }}
+            // style={{ maskType: 'luminance' }}
+            className='mask-luminance'
             maskUnits='userSpaceOnUse'
             x='2352'
             y='1739'
@@ -135,21 +137,21 @@ const HandAnimationPhone = ({ className = '' }) => {
           <g mask='url(#mask0_3369_51584)'>
             <path d='M2890.96 1750.06H2347V2855.13H2890.96V1750.06Z' fill='#141414' />
             {/* <rect x="2366.78" y="1752" width="519.896" height="1125" rx="12" fill="black" /> */}
-           
-              <image
-                style={{
-                  transition: 'all 0.1s ease-in-out',
-                  backgroundColor: '#333',
-                }}
-                x='2352'
-                y='1739'
-                width='535'
-                height='1130'
-                rx='12'
-                href={defaultImg}
-              />
+
+            <image
+              // style={{
+              //   transition: 'all 0.1s ease-in-out',
+              //   backgroundColor: '#333',
+              // }}
+              className='transition-all duration-100 ease-in-out bg-gray-800'
+              x='2352'
+              y='1739'
+              width='535'
+              height='1130'
+              rx='12'
+              href={defaultImg}
+            />
             <Images images={images} ind={ind} />
-           
           </g>
           <path
             d='M2350.83 1816.53L2350.14 2791.66C2350.14 2835.21 2385.24 2870.74 2428.77 2870.74L2809.85 2870.97C2853.16 2870.97 2888.48 2835.67 2888.48 2791.89L2889.39 1816.76C2889.39 1773.21 2854.29 1737.68 2810.76 1737.68H2429.46C2386.15 1737.68 2351.05 1772.98 2350.83 1816.53ZM2808.71 2854.69L2429.23 2854.46C2394.59 2854.46 2366.32 2826.04 2366.32 2791.2L2367.46 1817.68C2367.46 1782.84 2395.73 1754.41 2430.37 1754.41L2809.62 1754.64C2844.27 1754.64 2872.53 1783.07 2872.53 1817.91L2871.62 2791.2C2871.62 2826.27 2843.58 2854.69 2808.71 2854.69Z'
@@ -477,7 +479,8 @@ const HandAnimationPhone = ({ className = '' }) => {
         </defs>
       </svg>
       <div
-        style={{ position: 'absolute', bottom: '0%', left: '50%', zIndex: '10' }}
+        // style={{ position: 'absolute', bottom: '0%', left: '50%', zIndex: '10' }}
+        className='absolute bottom-0 left-[50%] z-10'
         ref={afterRef}
       ></div>
     </div>
@@ -492,11 +495,14 @@ const Images = ({ images, ind }) => {
         return (
           <image
             ref={imgRef}
-            style={{
-              display: ind === index ? 'block' : 'none',
-              transition: 'all 0.1s ease-in-out',
-              backgroundColor: '#333',
-            }}
+            // style={{
+            //   display: ind === index ? 'block' : 'none',
+            //   transition: 'all 0.1s ease-in-out',
+            //   backgroundColor: '#333',
+            // }}
+            className={`${
+              ind === index ? '!block' : '!hidden'
+            } transition-all duration-100 ease-in-out bg-[#444]`}
             x='2352'
             y='1739'
             width='535'

@@ -206,12 +206,7 @@ const CardSection = (props) => {
     >
       {/* <div className="shiny"></div> */}
       <div className='payment-cardp !transition !duration-1000'>
-        <div
-          className='payment-header-wrapper'
-          style={{
-            height: details?.discountPrice ? '194px' : '114px',
-          }}
-        >
+        <div className={`payment-header-wrapper ${details?.discountPrice ? '194px' : '114px'}`}>
           {details?.discountPrice && details?.bannerTag && (
             <div className='exclusive'>
               <p>{details?.bannerTag}</p>
@@ -290,8 +285,12 @@ const CardSection = (props) => {
                   (item) => !isNaN(item) && item !== '' && isFinite(item),
                 );
 
-                const indexPlaceFirst = findSpited?.findIndex((item) => parseInt(item) === parseInt(priceArr[0]));
-                const indexPlaceSecond = findSpited?.findIndex((item) => parseInt(item) === parseInt(priceArr[1]));
+                const indexPlaceFirst = findSpited?.findIndex(
+                  (item) => parseInt(item) === parseInt(priceArr[0]),
+                );
+                const indexPlaceSecond = findSpited?.findIndex(
+                  (item) => parseInt(item) === parseInt(priceArr[1]),
+                );
 
                 const string = findSpited.map((item, index) => {
                   if (item === 'null') return null;
@@ -438,7 +437,7 @@ const CardSection = (props) => {
             <div className='foot-txt'>
               <div
                 className='foot-inner
-               
+
                 '
               >
                 <h1 className='total-txt'>Total </h1>

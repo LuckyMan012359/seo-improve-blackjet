@@ -140,7 +140,9 @@ const FlyFreely = () => {
       <div className='fly-freely relative'>
         <>
           <video
-            className='custom-video object-cover w-full h-full opacity-40'
+            className={`custom-video object-cover w-full h-full opacity-40 ${
+              showVideo ? '!block' : '!hidden'
+            }`}
             autoPlay
             loop
             muted
@@ -152,9 +154,9 @@ const FlyFreely = () => {
             role='img'
             data-inline-media-loop-to='true'
             data-inline-media-basepath={flyFreelyVideo}
-            style={{
-              display: showVideo ? 'block' : 'none',
-            }}
+            // style={{
+            //   display: showVideo ? 'block' : 'none',
+            // }}
           >
             <source
               // src={
@@ -168,8 +170,8 @@ const FlyFreely = () => {
         </>
 
         <img
-          style={{ display: showVideo ? 'none' : 'block' }}
-          className='object-cover w-full h-full opacity-40'
+          // style={{ display: showVideo ? 'none' : 'block' }}
+          className={`object-cover w-full h-full opacity-40 ${showVideo ? '!hidden' : '!block'}`}
           src={screenShotJet}
           alt='thumb'
         />

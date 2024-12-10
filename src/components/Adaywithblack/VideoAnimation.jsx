@@ -74,7 +74,6 @@ const VideoAnimation = () => {
     };
   }, []);
 
-
   useEffect(() => {
     const handleScroll = (event) => {
       // const deltaY = event.deltaY;
@@ -210,8 +209,6 @@ const VideoAnimation = () => {
     }
   }, [zoom]);
 
-
-
   useEffect(() => {
     if (playerRef.current) {
       playerRef.current.muted = mute;
@@ -269,17 +266,14 @@ const VideoAnimation = () => {
     }
   };
 
-
   useMemo(() => {
     if (inViewPort) {
       handlePlay();
     } else {
       handlePause();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inViewPort]);
-
-
 
   return (
     <>
@@ -303,16 +297,17 @@ const VideoAnimation = () => {
             <div className='video-overlay'></div>
             <img
               // ref={playerRef}
-              className='object-cover h-full w-full custom-video'
+              className={`object-cover h-full w-full custom-video ${
+                showFallback ? 'block' : 'hidden'
+              }`}
               alt='Thumbnail'
               src={thumbnail}
-              style={{
-                display: showFallback ? 'block' : 'none',
-              }}
             />
             <video
               ref={playerRef}
-              className='object-cover h-full w-full custom-video'
+              className={`object-cover h-full w-full custom-video ${
+                showFallback ? 'hidden' : ' block'
+              }`}
               width='100%'
               height='100%'
               muted
@@ -323,9 +318,6 @@ const VideoAnimation = () => {
               webkit-playsinline
               playsInline
               poster={thumbnail}
-              style={{
-                display: showFallback ? 'none' : ' block',
-              }}
             >
               <source src={aDayWithBlackJetVideo} type='video/mp4' />
               Your browser does not support the video tag.

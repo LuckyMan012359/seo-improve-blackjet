@@ -43,7 +43,10 @@ const CommonLayout = ({ open, setOpen, ...props }) => {
 
   return (
     <>
-      <div style={{ display: isShowHeaderFooter() ? 'block' : 'none' }}>
+      <div
+        // style={{ display: isShowHeaderFooter() ? 'block' : 'none' }}
+        className={`${isShowHeaderFooter() ? '!block' : '!hidden'}`}
+      >
         {<Header open={open} setOpen={setOpen} />}
       </div>
       <div className={`${isMobile && 'min-h-screen bg-transparent'}`}>

@@ -170,10 +170,10 @@ const Header = ({ open = false, setOpen = () => {} }) => {
 
   return (
     <div
-      className='relative'
-      style={{
-        border: !isMobile && '1px solid transparent',
-      }}
+      className={`relative ${!isMobile && 'border-[1px] border-solid border-transparent'}`}
+      // style={{
+      //   border: !isMobile && '1px solid transparent',
+      // }}
     >
       <header
         ref={headerRef}
@@ -185,8 +185,16 @@ const Header = ({ open = false, setOpen = () => {} }) => {
           <>
             <div className=' horizontal'>
               <div
-                style={{ width: `${URLMap[location.pathname] || 20}%` }}
-                className=' h-[0px] border-2 small-w z-40 absolute border-solid border-[#fffdfd] top-[50px] left-[68px]'
+                // style={{ width: `${URLMap[location.pathname] || 20}%` }}
+                className={`${
+                  URLMap[location.pathname] === 10
+                    ? 'w-[10%]'
+                    : URLMap[location.pathname] === 20
+                    ? 'w-[20%]'
+                    : URLMap[location.pathname] === 30
+                    ? 'w-[30%]'
+                    : 'w-[20%]'
+                } h-0 border-2 z-40 absolute border-solid border-[#fffdfd] top-[50px] left-[68px]`}
               ></div>
             </div>
           </>

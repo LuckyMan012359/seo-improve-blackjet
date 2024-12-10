@@ -1,4 +1,4 @@
-import  { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {
   apiAddEmail,
@@ -44,7 +44,7 @@ const OnboardingEmail = ({
   goTo,
   isMobile,
   setIsAlready,
- 
+
   setFromWhereData,
   setDevice,
 }) => {
@@ -291,11 +291,11 @@ const OnboardingEmail = ({
     setOpenDialog(false);
   };
 
-/**
- * Send OTP to user's email for email registration
- * @param {object} payload - an object containing checkRegType, email and randomString
- * @returns {Promise<void>}
- */
+  /**
+   * Send OTP to user's email for email registration
+   * @param {object} payload - an object containing checkRegType, email and randomString
+   * @returns {Promise<void>}
+   */
   async function handleSendOtpEmailRegister() {
     const payload = { checkRegType, email, randomString: onboardingForms?.loginData?.randomString };
     try {
@@ -435,13 +435,14 @@ const OnboardingEmail = ({
               <CommonButton
                 onClick={() => handleOpenDialogClose()}
                 text={isMobileV2 ? 'Dont’ use' : 'Use different email'}
-                style={{ width: '70%' }}
+                // style={{ width: '70%' }}
+                className='!w-[70%]'
               />
               <CommonButton
                 onClick={() => handleSendOtpEmailRegister()}
-                style={{ width: '30%' }}
+                // style={{ width: '30%' }}
                 pressedClass='pressed-arrow'
-                className='dark-btn'
+                className='dark-btn !w-[30%]'
                 text={isMobileV2 ? 'Use' : 'Use this email'}
                 type=''
               />

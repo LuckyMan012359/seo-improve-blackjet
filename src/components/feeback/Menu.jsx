@@ -28,8 +28,9 @@ export const ListWithIcon = ({ open, data, isInput = true }) => {
         multiple={data.multiple}
         // onChange={data.onChange}
         onChange={(e) => data.onChange(e)}
-        style={{ display: 'none' }}
+        // style={{ display: 'none' }}
         ref={fileInputRef}
+        className='!hidden'
       />
       <p>{data.title}</p>
       <img src={data.icon} alt={data.title} />
