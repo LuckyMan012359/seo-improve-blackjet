@@ -36,7 +36,6 @@ import PwaAppLayout from 'layouts/PwaAppLayout';
 import EmailVerificationPass from 'pages/emailVerification/EmailVerificationPass';
 import EmailVerificationFail from 'pages/emailVerification/EmailVerificationFail';
 
-
 const Virtualview = Loadable(lazy(() => import('components/Virtualview')));
 const Booking = Loadable(lazy(() => import('pages/Booking/Booking')));
 const MapAnimation = Loadable(lazy(() => import('components/Svgs')));
@@ -77,7 +76,6 @@ const ProjectRoutes = () => {
           <Route path='*' element={<NotFound />} />
         </Route>
         <Route element={<OnboardingLayout />}>
-          {/* <Route path='/membership' element={<Membership />} /> */}
           <Route path={ROUTE_LIST.EMAIL_ADDRESS} element={<OnboardingEmail />} />
           <Route path={ROUTE_LIST.COMPENDIUM} element={<BasicInfo />} />
           <Route path={ROUTE_LIST.GRATIAS_TIBI_AGO} element={<PreorderPeriod />} />
