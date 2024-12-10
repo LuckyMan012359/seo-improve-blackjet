@@ -11,7 +11,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && mocha './build-test/**/*.mjs' --recursive --require @babel/register",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-sitemap": "node scripts/generateSitemap.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
