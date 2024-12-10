@@ -1,2 +1,3 @@
 User-agent: *
 allow: /
+Sitemap: https://seo-improve-blackjet-testing.vercel.app/sitemap.xml
