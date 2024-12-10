@@ -63,3 +63,5 @@ const sitemapPath = path.join(__dirname, '../public/sitemap.xml');
 fs.writeFileSync(sitemapPath, sitemapContent);
 
 console.log('Sitemap generated:', sitemapPath);
+// Log sitemap content for debugging
+console.log('Generated Sitemap Content:\n', sitemapContent);
