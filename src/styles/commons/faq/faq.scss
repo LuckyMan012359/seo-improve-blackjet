@@ -1,0 +1,599 @@
+.faq-main-wrapper {
+  background-color: $grey-808 ;
+
+  .mob-page-footer {
+    position: relative;
+    top: -10px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    background-color: $grey-808 !important;
+    z-index: 9999;
+    overflow: auto;
+    position: relative;
+  }
+
+  .faq-heading {
+    color: $element-accent;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-500;
+    font-size: $font-64;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 50px;
+    margin-bottom: 48px;
+    padding-top: 90px;
+
+    @media only screen and (max-width: $desktop-1368) {}
+
+    @media only screen and (max-width: $desktop-1100) {
+      font-size: $font-42;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-20;
+      margin-bottom: 10px;
+      padding: 15px 0 5px 0;
+      margin-top: 0;
+    }
+  }
+
+  .mobile-hide {
+    @media only screen and (max-width: $mobile-699) {
+      display: none;
+    }
+  }
+
+  .faq-tabs-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @media only screen and (max-width: $mobile-699) {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      width: 100%;
+      display: block;
+      padding: 0 25px;
+    }
+  }
+
+  .faq-card-header {
+    color: $element-accent;
+    text-align: center;
+    /* Headings/H4 SmB Std */
+    font-family: $font-Hauora-600;
+    font-size: $font-20;
+    font-style: normal;
+    line-height: normal;
+
+    @media only screen and (max-width: $desktop-1100) {
+      font-size: $font-16;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: $font-14;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-12;
+      font-family: $font-Hauora-400;
+    }
+  }
+
+  .faq-card {
+    display: flex;
+    width: 152px;
+    height: 184px;
+    padding: 20px 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: $grey-707;
+    font-size: $font-20;
+    cursor: pointer;
+
+    @media only screen and (max-width: $desktop-1100) {
+      padding: 8px 4px;
+      border-radius: 8px;
+      width: 120px;
+      height: 130px;
+      gap: 12px;
+    }
+
+    @media only screen and (max-width: $tablet-991) {
+      width: 113px;
+    }
+
+    @media only screen and (max-width: 895px) {
+      width: 103px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 94px;
+      height: 113px;
+      padding: 8px 4px;
+    }
+
+    @media only screen and (max-width: $mobile-744) {
+      display: inline-block;
+      width: 90px;
+      height: 90px;
+      padding: 10px 5px;
+      white-space: break-spaces;
+      overflow: hidden;
+
+      img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+      }
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      margin-right: 5px;
+      background: $grey-707;
+    }
+  }
+
+  #FAQCategoriesRoot {
+    gap: 12px;
+    padding: 0 155px;
+
+    @media only screen and (max-width: $desktop-1368) {
+      padding: 0 115px;
+    }
+
+    @media only screen and (max-width: $desktop-1268) {
+      padding: 0 106px;
+    }
+
+    @media only screen and (max-width: $desktop-1200) {
+      padding: 0 75px;
+    }
+
+    @media only screen and (max-width: $desktop-1100) {
+      padding: 0 22px;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+      padding: 0 32px;
+      justify-content: space-between;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      padding: 4px 16px;
+      height: auto;
+      position: relative;
+      left: 0;
+      right: 0;
+      top: 10px;
+      // background: $OPACITY-MB-Header-Footer;
+      // backdrop-filter: blur(25px);
+      z-index: 99;
+    }
+  }
+
+  .bottom-trademark {
+    @media screen and (max-width: $mobile-699) {
+      color: $text-field;
+      text-align: center;
+      font-family: "Hauora-400";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.faq-form {
+  display: flex;
+  padding: 48px 250px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  background: var(--GREYS-707, #242424);
+
+  @media only screen and (max-width: $desktop-1440) {
+    padding: 48px 200px;
+  }
+
+  @media only screen and (max-width: $desktop-1200) {
+    padding: 48px 150px;
+  }
+
+  @media only screen and (max-width: $tablet-1024) {
+    padding: 48px 100px;
+  }
+
+  @media only screen and (max-width: $tablet-767) {
+    padding: 48px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    padding: 48px 16px;
+
+    .faq-form {
+      .col-md-6 {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $mobile-340) {
+    padding: 48px 26px;
+  }
+}
+
+.card-grid-section {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, auto));
+  margin-top: 48px;
+  justify-content: center;
+  margin-bottom: 50px;
+  background-color: $grey-808;
+  padding: 0 0 20px 0;
+
+  @media only screen and (max-width: $tablet-1049) {
+    padding: 0 40px 20px 40px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    // justify-content: inherit;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    grid-template-columns: repeat(1, minmax(0, auto));
+    padding: 0 16px;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  &.faq-card-wapper {
+    @media only screen and (max-width: $mobile-699) {
+      display: block;
+      // height: calc(100vh - 180px);
+      height: auto;
+      // overflow-y: auto;
+      background: $grey-808;
+      backdrop-filter: blur(25px);
+      z-index: 2;
+      position: relative;
+      // padding-top: 100px;
+      padding-bottom: 200px;
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.faq-heading.faqm.fixed-header-pages {
+  padding-top: 0 !important;
+
+  @media only screen and (max-width: $mobile-699) {
+    padding-top: 15px !important;
+  }
+
+  .mob-faq-heading {
+    display: none;
+
+    @media only screen and (max-width: $mobile-699) {
+      display: block !important;
+    }
+  }
+}
+
+.faq-card-it {
+  width: 368px;
+  height: 376px;
+  padding: 16px 12px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: $grey-707;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.5s ease-in-out;
+  gap: 12px;
+
+  &.mobile-faq-container {
+    @media only screen and (max-width: $mobile-699) {
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+
+  }
+
+  @media only screen and (max-width: $desktop-1368) {
+    width: 344px;
+  }
+
+  @media only screen and (max-width: $desktop-1100) {
+    width: 300px;
+  }
+
+  @media only screen and (max-width: $tablet-1049) {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    height: 320px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+
+  .divider {
+    width: 100%;
+    border: 1px solid $element-30-Shade;
+    margin: 10px 0px;
+  }
+}
+
+.ques-txt {
+  color: $element-accent;
+  font-variant-numeric: lining-nums proportional-nums ordinal;
+  font-family: $font-Hauora-700;
+  font-size: $font-16;
+  font-style: normal;
+  line-height: normal;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media only screen and (max-width: $desktop-1100) {
+    font-size: $font-16;
+  }
+
+  .faq-svg {
+    width: 100%;
+  }
+
+
+}
+
+.ans-txt {
+  color: $text-secondry;
+  font-variant-numeric: lining-nums proportional-nums ordinal;
+  /* Body/T1 Rg Std */
+  font-family: $font-Hauora-400;
+  font-size: $font-14;
+  font-style: normal;
+  line-height: normal;
+
+  @media screen and (max-width: $tablet-1049) {
+    font-size: $font-14;
+  }
+
+  @extend .initial-html-render-content;
+}
+
+.load-btn {
+  display: flex;
+  height: 40px;
+  padding: 8px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 0.5px solid $text-secondry;
+  min-width: 132px;
+  color: $text-secondry;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums ordinal;
+  /* Body/T2 Rg Std */
+  font-family: $font-Hauora-400;
+  border-radius: 4px;
+  border: 0.5px solid $text-secondry;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.contact-form {
+  margin-top: 100px;
+  padding: 48px 200px;
+  padding-top: 0;
+
+  @media only screen and (max-width: $tablet-1049) {
+    padding: 48px 100px;
+  }
+
+  @media only screen and (max-width: $tablet-1024) {
+    padding: 48px 50px;
+
+    .contact-form-card {
+      .col-md-6 {
+        width: 50%;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    padding: 10px 16px;
+    margin-top: 50px;
+
+    .contact-form-card {
+      .col-md-6 {
+        width: 50%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $mobile-360) {
+    padding: 42px 16px;
+  }
+
+  .contact-heading {
+    color: $element-accent;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-500;
+    font-size: $font-64;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 48px;
+
+    @media only screen and (max-width: $tablet-1049) {
+      font-size: $font-42;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-20;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.faq-img {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 65px;
+    height: 65px;
+
+    @media only screen and (max-width: $desktop-1100) {
+      width: 46px;
+      height: 46px;
+    }
+
+    @media only screen and (max-width: $mobile-744) {
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
+.faqm {
+  .fixed-header-pages {
+    margin: 0;
+    padding: 0;
+
+  }
+
+}
+
+.accordion-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ques-f {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.accordion-item.active {
+  background: $grey-707;
+}
+
+// .ans-txt {
+//   display: none;
+// }
+
+.accordion-item.active .ans-txt {
+  display: block;
+}
+
+.down-arrow-icon {
+  display: none;
+}
+
+.accordion-item.collapsed .down-arrow-icon {
+  display: inline-block;
+}
+
+/* You can adjust the styling for the down arrow icon as needed */
+.faq-form {
+  .col-md-6 {
+    width: 100% !important;
+
+    @media only screen and (max-width: $mobile-744) {
+      padding-right: 0;
+    }
+  }
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.ans-txt {
+  display: none;
+}
+
+.accordion-item.active .ans-txt {
+  display: block;
+}
+
+.arrow-icon {
+  display: none;
+
+  @media only screen and (max-width: $mobile-699) {
+    display: block !important;
+  }
+}
+
+.arrow-arrow-icon {
+  display: none;
+
+  @media only screen and (max-width: $mobile-699) {
+    display: block !important;
+  }
+}
+
+.faq-svg {
+  width: 97% !important;
+}
+
+.enquiry-heading {
+  @media only screen and (max-width: $tablet-767) {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: $mobile-699) {
+  .fixed-header-pages {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: $OPACITY-MB-Header-Footer;
+    backdrop-filter: blur(25px);
+    z-index: 99;
+    padding: 15px 16px;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+  }
+}

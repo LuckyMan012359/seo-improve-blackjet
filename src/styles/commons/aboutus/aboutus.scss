@@ -1,0 +1,893 @@
+.about-main-div {
+  @media only screen and (max-width: $mobile-699) {
+    .common-scroll-mob {
+      position: relative;
+      height: calc(100vh - 0px) !important;
+      padding-top: 10px;
+    }
+  }
+
+  .about-us-wrapper {
+    // background-image: url(../../../../public/images/about-us-bg.svg);
+    background-image: url(../../../../public/images/about-us-banner-1.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: $grey-808;
+    backdrop-filter: contrast(1);
+
+    .image-section {
+
+      // background: $grey-808;
+      .upper-img {
+        display: flex;
+        justify-content: space-between;
+        padding: 137px 203px 67px 203px;
+
+        @media only screen and (max-width: $desktop-1440) {
+          padding: 224px 144px 117px 144px;
+        }
+
+        @media only screen and (max-width: $tablet-1049) {
+          gap: 182px;
+          padding-top: 160px;
+        }
+
+        @media only screen and (max-width: $tablet-991) {
+          padding: 224px 70px 117px 70px;
+        }
+
+        @media only screen and (max-width: $mobile-744) {
+          padding: 224px 45px 117px 45px;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          padding: 70px 45px 117px 45px;
+          gap: 100px;
+        }
+
+        @media only screen and (max-width: 490px) {
+          gap: 39px;
+          justify-content: center;
+        }
+
+        @media only screen and (max-width: 320px) {
+          gap: 8px;
+          justify-content: center;
+        }
+
+        img {
+          width: 214px;
+          height: 214px;
+          flex-shrink: 0;
+          border-radius: 4px;
+
+          @media only screen and (max-width: 588px) {
+            width: 160px;
+            height: 160px;
+          }
+
+          @media only screen and (max-width: $mobile-360) {
+            width: 140px;
+            height: 140px;
+          }
+        }
+      }
+
+      .lower-img {
+        display: flex;
+        justify-content: center;
+        gap: 475px;
+        padding: 102px 475px 138px 475px;
+
+        @media only screen and (max-width: $desktop-1440) {
+          gap: 336px;
+          padding: 102px 336px 138px 336px;
+        }
+
+        @media only screen and (max-width: $tablet-1049) {
+          gap: 182px;
+        }
+
+        @media only screen and (max-width: $tablet-1024) {
+          gap: 182px;
+        }
+
+        @media only screen and (max-width: $tablet-991) {
+          gap: 152px;
+          padding: 102px 301px 138px 301px;
+        }
+
+        @media only screen and (max-width: 850px) {
+          gap: 122px;
+          padding: 102px 250px 138px 250px;
+        }
+
+        @media only screen and (max-width: $mobile-744) {
+          padding: 82px 104px 224px 104px;
+          gap: 104px;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          gap: 39px;
+          padding: 82px 60px 140px 60px;
+        }
+
+        @media only screen and (max-width: 390px) {
+          gap: 17px;
+        }
+
+        @media only screen and (max-width: 320px) {
+          gap: 8px;
+        }
+
+        img {
+          width: 215px;
+          height: 215px;
+          border-radius: 4px;
+
+          @media only screen and (max-width: 588px) {
+            width: 160px;
+            height: 160px;
+          }
+
+          @media only screen and (max-width: $mobile-360) {
+            width: 140px;
+            height: 140px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-heading {
+    color: $element-accent;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-600;
+    font-size: $font-64;
+    font-style: normal;
+    line-height: normal;
+
+    @media only screen and (max-width: $mobile-744) {
+      font-size: $font-42;
+    }
+  }
+
+  .empower {
+    background-color: $grey-707;
+    text-align: center;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $desktop-1440) {
+      padding: 64px 0px;
+    }
+
+    h2 {
+      font-size: $font-42;
+      color: $element-accent;
+      font-family: $font-Hauora-500;
+
+      @media only screen and (max-width: $mobile-744) {
+        font-size: $font-32;
+      }
+
+      @media only screen and (max-width: 588px) {
+        font-size: $font-24;
+      }
+
+      @media only screen and (max-width: 390px) {
+        width: 327px;
+      }
+    }
+  }
+
+  .found-in-sydney {
+    padding: 96px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $grey-808;
+
+    @media only screen and (max-width: $mobile-699) {
+      flex-direction: column-reverse;
+      padding: 80px 0px 0px 0px;
+      align-items: initial;
+    }
+
+    .found-txt {
+      width: 540px;
+      margin-left: 258px;
+      margin-right: 258px;
+
+      @media only screen and (max-width: $desktop-1700) {
+        margin-left: 230px;
+        margin-right: 230px;
+      }
+
+      @media only screen and (max-width: $desktop-1600) {
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+
+      @media only screen and (max-width: 1440px) {
+        margin-left: 96px;
+        margin-right: 96px;
+      }
+
+      @media only screen and (max-width: 1140px) {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+
+      @media only screen and (max-width: 1080px) {
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+
+      @media only screen and (max-width: $tablet-768) {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      @media only screen and (max-width: $mobile-744) {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 290px;
+      }
+
+      @media only screen and (max-width: $mobile-699) {
+        margin: 48px 16px 80px 5px;
+        width: auto;
+        padding: 0px 16px;
+      }
+
+      h3 {
+        font-size: $font-45;
+        font-family: $font-Hauora-600;
+        color: $element-accent;
+        margin-bottom: 24px;
+
+        @media only screen and (max-width: $desktop-2060) {
+          font-size: $font-36;
+        }
+
+        @media only screen and (max-width: $desktop-1920) {
+          font-size: $font-32;
+        }
+
+        @media only screen and (max-width: $mobile-414) {
+          font-size: $font-28;
+        }
+      }
+
+      p {
+        font-size: $font-20;
+        font-family: $font-Hauora-400;
+        color: $text-secondry;
+
+        @media only screen and (max-width: $desktop-2060) {
+          font-size: $font-18;
+        }
+
+        @media only screen and (max-width: $desktop-1920) {
+          font-size: $font-16;
+        }
+
+        @media only screen and (max-width: $mobile-744) {
+          font-size: $font-14;
+        }
+
+        @media only screen and (max-width: $mobile-414) {
+          font-size: $font-14;
+        }
+      }
+
+      .found-p {
+        margin: 15px 0px;
+
+        @media only screen and (max-width: $mobile-744) {
+          margin: 9px 0px;
+        }
+      }
+    }
+
+    .found-img {
+      overflow: hidden;
+      width: 60%;
+
+      @media only screen and (max-width: $mobile-699) {
+        width: 100%;
+      }
+
+      img {
+        position: relative;
+        height: 700px;
+        width: 200%;
+        max-width: inherit;
+
+        @media only screen and (max-width: $desktop-1440) {
+          width: 240%;
+          transform: scale(1.1);
+          left: -40px;
+        }
+
+        @media only screen and (max-width: 1080px) {
+          width: 420%;
+          height: 700px;
+          left: 60px;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          width: 215%;
+          height: auto;
+          left: -90px;
+
+        }
+      }
+    }
+  }
+
+  .mission {
+    background-color: $grey-707;
+
+    @media only screen and (max-width: $mobile-699) {
+      padding: 0 !important;
+    }
+
+    .found-txt {
+      width: 540px;
+      margin: 0px 258px 0px 258px !important;
+
+      @media only screen and (max-width: $desktop-1700) {
+        margin: 0px 230px 0px 230px !important;
+      }
+
+      @media only screen and (max-width: $desktop-1600) {
+        margin: 0px 200px 0px 20 0px !important;
+      }
+
+      @media only screen and (max-width: $desktop-1440) {
+        margin: 0px 96px 0px 96px !important;
+      }
+
+      @media only screen and (max-width: 1140px) {
+        margin: 0px 100px 0px 100px !important;
+      }
+
+      @media only screen and (max-width: 1140px) {
+        margin: 0px 80px 0px 80px !important;
+      }
+
+      @media only screen and (max-width: $tablet-768) {
+        margin: 0px 40px 0px 40px !important;
+      }
+
+      @media only screen and (max-width: $mobile-744) {
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+        width: 290px;
+      }
+
+      @media only screen and (max-width: $mobile-699) {
+        margin: 72px 16px 48px 5px !important;
+        width: auto;
+      }
+
+      h1 {
+        @media only screen and (max-width: $mobile-414) {
+          font-size: $font-24;
+        }
+      }
+    }
+
+    .found-img {
+      img {
+        position: relative;
+        left: 0;
+        height: 620px;
+        width: 70%;
+
+        @media only screen and (max-width: 2560px) {
+          height: 576px;
+          left: -220px;
+          transform: none;
+          width: 134%;
+        }
+
+        @media only screen and (max-width: $desktop-1440) {
+          height: 576px;
+          left: -260px;
+          transform: none;
+        }
+
+        @media only screen and (max-width: 1080px) {
+          left: -138px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          height: 700px;
+          left: -360px;
+          transform: scale(3.5);
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          width: 74%;
+          height: 470px;
+          left: -90px;
+        }
+      }
+    }
+  }
+
+  .value-wrap {
+    padding: 64px 32px;
+    background: $grey-808;
+
+    @media only screen and (max-width: $mobile-699) {
+      padding: 64px 24px;
+    }
+
+    h1 {
+      padding-bottom: 48px;
+      font-family: $font-Hauora-600;
+      font-size: $font-36;
+      color: $element-accent;
+      text-align: center;
+
+      @media only screen and (max-width: $mobile-699) {
+        font-size: $font-32;
+        padding-bottom: 36px;
+      }
+
+      @media only screen and (max-width: $mobile-414) {
+        font-size: $font-24;
+      }
+    }
+
+    .value-card-wrap {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      @media only screen and (max-width: 1230px) {
+        gap: 15px;
+      }
+
+      @media only screen and (max-width: 744px) {
+        gap: 8px;
+      }
+
+      @media only screen and (max-width: $mobile-699) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .value-card {
+        width: 381.33px;
+        height: 444px;
+        display: flex;
+        padding: 24px 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        // flex: 1 0 0;
+        // align-self: stretch;
+        background-color: $grey-707;
+        text-align: center;
+        border-radius: 6px;
+
+        @media only screen and (max-width: 1230px) {
+          width: 360.33px;
+        }
+
+        @media only screen and (max-width: 1140px) {
+          width: 340.33px;
+        }
+
+        @media only screen and (max-width: 1080px) {
+          width: 320px;
+        }
+
+        @media only screen and (max-width: 1020px) {
+          width: 306px;
+          height: 413px;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          width: 100%;
+          margin-bottom: 15px;
+          height: 349px;
+        }
+
+        img {
+          width: 221px;
+          // height: 207px;
+
+          @media only screen and (max-width: 1020px) {
+            width: 172px;
+            height: 116px;
+          }
+        }
+
+        .safety-img {
+          width: 332px;
+          height: 188px;
+
+          @media only screen and (max-width: 1020px) {
+            width: 204px;
+            height: 116px;
+          }
+        }
+
+        .tech-img {
+          width: 229px;
+          height: 188px;
+
+          @media only screen and (max-width: 1020px) {
+            width: 136px;
+            height: 127px;
+          }
+        }
+
+        h4 {
+          color: $element-accent;
+          font-size: $font-20;
+          font-family: $font-Hauora-700;
+
+          @media only screen and (max-width: 744px) {
+            font-size: $font-18;
+          }
+        }
+
+        p {
+          font-size: $font-14;
+          font-family: $font-Hauora-400;
+          color: $text-field;
+
+          @media only screen and (max-width: 1020px) {
+            font-size: $font-12;
+          }
+        }
+      }
+    }
+  }
+}
+
+.head-div {
+  display: flex;
+  justify-content: center;
+
+  .headquater-wrap {
+    text-align: center;
+    margin-top: 20px;
+    width: 1183px;
+    height: 353px;
+    align-self: stretch;
+    background-color: $grey-707;
+    border-radius: 6px;
+    padding: 32px 0px;
+    text-align: center;
+
+    @media only screen and (max-width: 1230px) {
+      margin-top: 15px;
+      width: 1108px;
+    }
+
+    @media only screen and (max-width: 1140px) {
+      width: 1055px;
+    }
+
+    @media only screen and (max-width: 1080px) {
+      width: 1000px;
+    }
+
+    @media only screen and (max-width: 1020px) {
+      width: 960px;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      width: 100%;
+      height: 395px;
+      padding: 16px;
+    }
+
+    h3 {
+      font-size: $font-36;
+      color: $element-accent;
+      font-family: $font-Hauora-600;
+
+      @media only screen and (max-width: 744px) {
+        font-size: $font-28;
+      }
+    }
+
+    p {
+      font-size: $font-14;
+      font-family: $font-Hauora-400;
+      color: $text-field;
+      margin-top: 16px;
+      text-align: center;
+
+      @media only screen and (max-width: 744px) {
+        font-size: $font-12;
+      }
+
+      @media only screen and (max-width: $mobile-699) {
+        font-size: $font-12;
+
+        br {
+          display: none;
+        }
+
+        span {
+          display: inline-block;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+
+  .airport-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 77px;
+    margin-top: 32px;
+
+    @media only screen and (max-width: $mobile-414) {
+      gap: 0;
+    }
+
+    .airport-div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .air-img {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      h3 {
+        color: $text-secondry;
+        font-size: $font-20;
+        font-family: $font-Hauora-600;
+
+        @media only screen and (max-width: 744px) {
+          font-size: $font-18;
+        }
+      }
+    }
+
+    .airport-subhead {
+      font-size: $font-16;
+      font-family: $font-Hauora-400;
+      color: $text-field;
+      margin-top: 24px;
+    }
+  }
+
+  .airport-inner {
+    @media only screen and (max-width: $mobile-414) {
+      width: 150px;
+    }
+  }
+}
+
+.meet-main-wrap {
+  padding: 64px 32px;
+  text-align: center;
+  background: $grey-808;
+
+  @media only screen and (max-width: $mobile-360) {
+    padding: 64px 23px;
+  }
+
+  .meet-heading {
+    font-size: $font-36;
+    font-family: $font-Hauora-600;
+    color: $element-accent;
+
+    @media only screen and (max-width: 744px) {
+      font-size: $font-32;
+      margin-bottom: 36px;
+    }
+  }
+
+  .meet-card-wrap {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+    @media only screen and (max-width: 744px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, auto));
+      gap: 16px;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, auto));
+      gap: 16px;
+    }
+
+    .meet-card {
+      text-align: left;
+      width: 274px;
+
+      .meet-title {
+        font-family: $font-Hauora-600;
+        color: $element-accent;
+        font-size: $font-20;
+        margin-top: 4px;
+      }
+
+      .meet-subtitlr {
+        font-family: $font-Hauora-500;
+        color: $text-secondry;
+        font-size: $font-18;
+      }
+
+      .meet-p {
+        font-family: $font-Hauora-500;
+        color: $text-field;
+        font-size: $font-16;
+
+        @media only screen and (max-width: 744px) {
+          font-size: $font-14;
+        }
+      }
+    }
+
+    .meet-card-1 {
+      margin-top: 36px;
+
+      @media only screen and (max-width: 744px) {
+        margin-top: 0;
+      }
+    }
+
+    .meet-card-2 {
+      margin-top: 255px;
+
+      @media only screen and (max-width: 744px) {
+        margin-top: 30px;
+      }
+    }
+
+    .meet-card-3 {
+      margin-top: 444px;
+
+      @media only screen and (max-width: 744px) {
+        margin-top: 30px;
+      }
+    }
+
+    .meet-card-4 {
+      margin-top: 664px;
+
+      @media only screen and (max-width: 744px) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.join-wrapper {
+  background-color: $grey-707;
+  text-align: center;
+  padding: 64px 32px;
+
+
+  .join-heading {
+    font-size: $font-36;
+    font-family: $font-Hauora-600;
+    color: $element-accent;
+
+    @media only screen and (max-width: 744px) {
+      font-size: $font-32;
+    }
+  }
+
+  .join-p {
+    font-size: $font-16;
+    font-family: $font-Hauora-400;
+    color: $text-field;
+    padding: 24px 0px;
+
+    @media only screen and (max-width: 744px) {
+      font-size: $font-14;
+    }
+  }
+
+  .join-btn {
+    display: flex;
+    width: 300px;
+    height: 52px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    color: $grey-808;
+    font-size: $font-14;
+    background-color: $element-accent;
+    font-family: $font-Hauora-700;
+    border-radius: 4px;
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.about-mob-page-footer {
+  background-color: $grey-808;
+  text-align: center;
+  color: $text-field;
+  font-family: $font-Hauora-300;
+  font-size: 12px;
+  padding: 88px 0px 120px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+
+
+  .footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+
+
+    .footer-title-text {
+      font-family: $font-Hauora-400;
+      font-weight: 400;
+    }
+
+    .footer-title-abn,
+    .footer-address {
+      font-family: $font-Hauora-200;
+      font-weight: 200;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+      .footer-title-abn {
+
+        font-family: $font-Hauora-300;
+        font-weight: 300;
+      }
+    }
+
+
+
+    @media only screen and (max-width: $mobile-699) {
+      gap: 1rem;
+      flex-direction: column;
+
+      .footer-address {
+        font-size: 9px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet-1049) {
+    font-size: 10px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    padding: 72px 16px 104px 16px;
+    gap: 1rem;
+    font-family: $font-Hauora-200;
+    font-weight: 200;
+  }
+}

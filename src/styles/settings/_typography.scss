@@ -1,0 +1,62 @@
+// 
+// TYPOGRAPHY ---------
+//
+// Font-Family
+$font-Hauora: 'Hauora', Arial;
+$font-Hauora-200 : 'Hauora-200', Arial;
+$font-Hauora-300 : 'Hauora-300', Arial;
+$font-Hauora-400 : 'Hauora-400', Arial;
+$font-Hauora-500 : 'Hauora-500', Arial;
+$font-Hauora-600 : 'Hauora-600', Arial;
+$font-Hauora-700 : 'Hauora-700', Arial;
+$font-Hauora-800 : 'Hauora-800', Arial;
+// $font-Hauora: Arial;
+// $font-Hauora-200 : Arial;
+// $font-Hauora-300 : Arial;
+// $font-Hauora-400 : Arial;
+// $font-Hauora-500 : Arial;
+// $font-Hauora-600 : Arial;
+// $font-Hauora-700 : Arial;
+// $font-Hauora-800 : Arial;
+
+// Font Sizes
+$font-9 : 9px;
+$font-10 : 10px;
+$font-12 : 12px;
+$font-13 : 13px;
+$font-14 : 14px;
+$font-16 : 16px;
+$font-18 : 18px;
+$font-20 : 20px;
+$font-22 : 22px;
+$font-24 : 24px;
+$font-26 : 26px;
+$font-28 : 28px;
+$font-30 : 30px;
+$font-32 : 32px;
+$font-36 : 36px;
+$font-42 : 42px;
+$font-45 : 45px;
+$font-54 : 54px;
+$font-64 : 64px;
+$font-36 : 36px;
+$font-96 : 96px;
+$font-100 : 100px;
+$font-116 : 116px;
+$font-145 : 145px;
+
+
+// Radius Sizes
+$radius-8 : 8px;
+$radius-4 : 4px;
+
+// Font Colors
+
+$font-white : #FFFFFF;
+$font-gray : #BFBFBF;
+                                                               
+
+@media (#{$mobile}) {
+  $font-lg : 20px;
+}
+

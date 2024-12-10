@@ -1,0 +1,233 @@
+.media-main-wrapper {
+  .main-wrap {
+    padding: 78px 140px;
+
+    @media screen and (max-width: $tablet-1049) {
+      padding: 48px 50px;
+    }
+  }
+
+  .main-heading-media {
+    color: var(--ELEMENTS-Accent, #fff);
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-500;
+    font-size: 64px;
+    font-style: normal;
+    line-height: normal;
+    height: 67px;
+
+    @media only screen and (max-width: $tablet-1049) {
+      font-size: $font-42;
+    }
+  }
+
+  .media-para {
+    color: var(--ELEMENTS-Light-line, #b3b3b3);
+    font-family: $font-Hauora-500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    margin: 44px 0px;
+  }
+
+  .get-press {
+    display: flex;
+    width: 358px;
+    height: 52px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--ELEMENTS-Accent, #fff);
+    background: var(--ELEMENTS-Accent, #fff);
+    color: var(--GREYS-808, #141414);
+    text-align: center;
+
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+
+    font-family: $font-Hauora-700;
+    font-size: $font-14;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .media-card-wrap {
+    display: grid;
+    gap: 79px;
+    grid-template-columns: repeat(3, minmax(0, auto));
+    margin-bottom: 50px;
+
+    @media only screen and (max-width: $tablet-1049) {
+      display: block;
+      grid-template-columns: repeat(1, minmax(0, auto));
+      gap: 0px;
+    }
+  }
+
+  .check-see {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 44px;
+  }
+
+  .check-heading {
+    color: var(--ELEMENTS-Accent, #fff);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-600;
+    font-size: $font-36;
+    font-style: normal;
+    line-height: normal;
+    height: 49px;
+
+    @media only screen and (max-width: $tablet-1049) {
+      font-size: $font-28;
+    }
+  }
+
+  .see-btn {
+    display: flex;
+    width: 132px;
+    height: 40px;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 0.5px solid var(--TEXTS-Secondary, #bfbfbf);
+    color: var(--TEXTS-Secondary, #bfbfbf);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-400;
+    font-size: $font-14;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .contact-form-card {
+
+    .col-md-6.mb-8.pl-0,
+    .col-md-6.mb-8.px-0 {
+      width: 50%;
+    }
+  }
+}
+
+.media-desktop {
+  display: block;
+
+  @media screen and (max-width: $mobile-699) {
+    display: none;
+  }
+}
+
+.media-new-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 335px;
+  align-items: stretch;
+
+  @media only screen and (max-width: $tablet-1049) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .card-heading-media {
+    color: var(--ELEMENTS-Accent, #fff);
+    font-family: $font-Hauora-600;
+    font-size: $font-20;
+    font-style: normal;
+    margin: 18px 0px;
+    line-height: normal;
+  }
+
+  .profile-img-txt {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img {
+      width: 44px;
+      height: 44px;
+      border-radius: 44px;
+      background: lightgray 50% / cover no-repeat,
+        var(--ELEMENTS-87-Accent, #dedede);
+    }
+
+    .user-name {
+      color: var(--ELEMENTS-Accent, #fff);
+      font-variant-numeric: lining-nums proportional-nums ordinal;
+      font-family: $font-Hauora-500;
+      font-size: 12px;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    .user-date {
+      color: rgba(255, 255, 255, 0.6);
+      font-variant-numeric: lining-nums proportional-nums ordinal;
+      font-family: $font-Hauora-500;
+      font-size: 10px;
+      font-style: normal;
+      line-height: normal;
+    }
+  }
+
+  .read-btn {
+    display: flex;
+    height: 40px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--ELEMENTS-Accent, #fff);
+    color: var(--ELEMENTS-Accent, #fff);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-700;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 18px;
+  }
+}
+
+.main-headin-qury {
+  color: var(--ELEMENTS-Accent, #fff);
+  font-variant-numeric: lining-nums proportional-nums ordinal;
+  /* Headings/H1 Md Std */
+  font-family: $font-Hauora-500;
+  font-size: $font-42;
+  font-style: normal;
+  line-height: normal;
+}
+
+.submit-btn {
+  display: flex;
+  width: 358px;
+  height: 52px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--ELEMENTS-Accent, #fff);
+  background: var(--ELEMENTS-Accent, #fff);
+  border-radius: 4px;
+  border: 1px solid var(--ELEMENTS-Accent, #fff);
+  background: var(--ELEMENTS-Accent, #fff);
+  color: var(--GREYS-808, #141414);
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums ordinal;
+  font-family: $font-Hauora-700;
+  font-size: $font-14;
+  font-style: normal;
+  line-height: normal;
+  margin-top: 25px;
+}

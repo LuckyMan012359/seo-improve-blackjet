@@ -1,0 +1,423 @@
+.a-day-with-black-container {}
+
+.adaywithblackjet {
+  width: 100%;
+  height: 400vh;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  overflow: hidden;
+  background-color: $grey-707;
+
+  #unmute {
+    display: none;
+
+    // @media screen and (max-width: $tablet-1049) {
+    //   transform: scale(0.8);
+    // }
+    @media screen and (max-width: $mobile-699) {
+      display: block;
+    }
+  }
+
+  #unmute-desktop {
+    display: block;
+
+    // @media screen and (max-width: $tablet-1049) {
+    //   transform: scale(0.8);
+    // }
+    @media screen and (max-width: $mobile-699) {
+      display: none;
+    }
+  }
+
+
+  #pause {
+    @media screen and (max-width: $tablet-1049) {
+      transform: scale(0.6);
+      top: 0px;
+      right: 0px;
+    }
+
+    @media screen and (max-width: $mobile-699) {
+      transform: scale(0.45);
+      top: -10px;
+      right: -10px;
+    }
+  }
+
+  .playing {
+    .rotated {
+      transform: rotate(-90deg) translateX(-100%);
+    }
+
+    &.play-desktop {
+      display: flex;
+
+      @media screen and (max-width: $mobile-699) {
+        display: none;
+      }
+    }
+
+    &.play-mobile {
+      display: none;
+
+      @media screen and (max-width: $mobile-699) {
+        display: flex;
+      }
+    }
+  }
+
+  .divider {
+    position: absolute;
+    top: 33.33%;
+    z-index: 10;
+
+
+    // @media screen and (max-width: 1050px) {
+    //     top: 50%;
+    // }
+  }
+
+  &.dynamic-z-index {
+    z-index: 999;
+  }
+
+  .heading {
+    position: relative;
+    font-family: $font-Hauora-600;
+    font-size: $font-64;
+    color: $font-white;
+    padding-top: 100vh;
+
+
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-42;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+      font-size: $font-36;
+      transform: translateY(-8rem);
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-32;
+    }
+
+    @media only screen and (max-width: $mobile-360) {
+      font-size: $font-24;
+    }
+  }
+
+  .afterheading {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: calc((-100px*var(--zoom)));
+    transform: scale(calc(1/var(--zoom)));
+
+    @media only screen and (min-width: $mobile-360) {
+      top: calc((-100px*var(--zoom)));
+    }
+
+    @media only screen and (min-width: $mobile-699) {
+      top: calc((-100px*var(--zoom)));
+    }
+
+    @media only screen and (min-width: $tablet-1049) {
+      top: calc((-100px*var(--zoom)));
+    }
+
+    @media only screen and (min-width: $desktop-1799) {
+      top: calc((-100px*var(--zoom)) - 50px);
+    }
+  }
+
+  .headingshow {
+    text-align: center;
+    width: 100%;
+    font-family: $font-Hauora-600;
+    font-size: $font-64;
+    color: $font-white;
+    // top: calc(-100px*var(--zoom));
+
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-42;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+      font-size: $font-36;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-32;
+    }
+
+    @media only screen and (max-width: $mobile-360) {
+      font-size: $font-24;
+    }
+  }
+
+
+  .subheadingshow {
+    font-size: $font-32;
+    color: $font-white;
+    padding-top: 10px;
+    text-align: center;
+    font-family: $font-Hauora-500;
+
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-20;
+      top: 80px;
+    }
+
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-18;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-16;
+      top: 70px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .day-subheading {
+    font-size: $font-32;
+    color: $font-white;
+    padding-top: 10px;
+    text-align: center;
+    font-family: $font-Hauora-500;
+    transition: all 0.3s ease-out;
+    transform: translateY(100vh);
+
+    // $desktop-1100
+
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-20;
+      top: 80px;
+    }
+
+
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-18;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+      transform: translateY(calc(-8rem + 100vh));
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-16;
+      top: 70px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .top-video {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+
+    @media screen and (max-width: $tablet-1049) {
+      height: 130vh;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (max-width: $mobile-699) {
+      height: 100vh;
+    }
+
+    .video-wrapper {
+      width: 60vw;
+      height: 33.75vw;
+      margin: auto;
+      // aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+
+      video::-webkit-media-controls {
+        display: none !important;
+        opacity: 0 !important;
+      }
+
+      .custom-video::-webkit-media-controls-start-playback-button {
+        display: none;
+        -webkit-appearance: none;
+      }
+
+      .custom-video::-webkit-media-controls {
+        display: none !important;
+      }
+
+      /* iOS Specific targeting */
+      video::-webkit-media-controls {
+        display: none !important;
+      }
+
+      video::-webkit-media-controls-enclosure {
+        display: none !important;
+      }
+
+      video::-webkit-media-controls-panel {
+        display: none !important;
+        opacity: 0 !important;
+        -webkit-appearance: none !important;
+      }
+
+      video::-webkit-media-controls-play-button {
+        display: none !important;
+      }
+
+      video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+      }
+
+      video::-webkit-media-controls-play-button {
+        display: none !important;
+      }
+
+      video::-webkit-media-controls-panel {
+        display: none !important;
+        opacity: 1 !important;
+      }
+
+      video::-webkit-media-controls-play-button {
+        display: none !important;
+        appearance: none !important;
+        -webkit-appearance: none !important;
+      }
+
+      video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        appearance: none !important;
+        -webkit-appearance: none !important;
+      }
+
+      video::-webkit-media-controls-overlay-play-button {
+        display: none !important;
+        appearance: none !important;
+        -webkit-appearance: none !important;
+      }
+
+      video::-webkit-media-controls-container {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        -webkit-appearance: none !important;
+      }
+
+      &.videoborder {
+        border: 3px solid $grey-909;
+      }
+
+      .video-overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $overlay-darken-photo-20;
+        z-index: 9999;
+      }
+
+
+      @media screen and (max-width: 1050px) {
+        min-width: 650px;
+        min-height: 365px;
+      }
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+        height: auto;
+        min-width: auto;
+        min-height: auto;
+      }
+    }
+
+    video {
+      z-index: 0;
+    }
+  }
+
+  .position-down {
+    position: static;
+  }
+
+  .position-fixed {
+    position: fixed;
+    // .video-wrapper{
+    //     width: 100vw !important;
+    //     height: 100vh !important;
+    // }
+  }
+
+  .onTop {
+    z-index: 100;
+  }
+
+  .video-parent {
+    video {
+      aspect-ratio: 16/9 !important;
+    }
+  }
+
+  #watch {
+    position: absolute;
+  }
+
+  .watch-the-film {
+    bottom: -25px;
+
+    .play-arrow {
+      color: $element-accent;
+    }
+  }
+}
+
+.show-sub-heading {
+  animation: appearAnimation 300ms;
+  transition: all 0.3s ease-in;
+  opacity: 1;
+  // transform: translateY(-8rem);
+}
+
+.hide-sub-heading {
+  animation: disappearAnimation 300ms;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+
+}
+
+@keyframes appearAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes disappearAnimation {
+  0% {
+    opacity: 1 !important;
+  }
+
+  100% {
+    opacity: 0 !important;
+  }
+}

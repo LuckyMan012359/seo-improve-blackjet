@@ -1,0 +1,63 @@
+image: node:18.19.1
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Install Dependencies
+          caches:
+            - node
+          script:
+            - echo "Installing project dependencies..."
+            - npm install
+
+      # - step:
+      #     name: Run Unit Tests
+      #     script:
+      #       - echo "Running unit tests..."
+      #       - npm test
+
+      - step:
+          name: Deploy to Testing Server
+          deployment: Test
+          trigger: manual
+          script:
+            - pipe: atlassian/ssh-run:0.2.6
+              variables:
+                SSH_USER: "$ARM_USER"
+                SERVER: "$ARM_URL"
+                COMMAND: |
+                  cd /var/www/blackjet_reactwebsite
+                  git pull origin master
+                  npm install
+                  NODE_OPTIONS=--max-old-space-size=4096 npm run build
+
+    production:
+      - step:
+          name: Install Dependencies
+          caches:
+            - node
+          script:
+            - echo "Installing project dependencies..."
+            - npm install
+
+      # - step:
+      #     name: Run Unit Tests
+      #     script:
+      #       - echo "Running unit tests..."
+      #       - npm test
+
+      - step:
+          name: Deploy to Production Server
+          deployment: Production
+          trigger: manual
+          script:
+            - pipe: atlassian/ssh-run:0.2.6
+              variables:
+                SSH_USER: "$ARM_USER"
+                SERVER: "$ARM_URL"
+                COMMAND: |
+                  cd /var/www/blackjet_reactwebsite
+                  git pull origin production
+                  npm install
+                  NODE_OPTIONS=--max-old-space-size=4096 npm run build

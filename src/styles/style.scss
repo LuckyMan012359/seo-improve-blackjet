@@ -1,0 +1,67 @@
+// Common SCSS Start Here
+@import './commons/header.scss';
+@import './commons/footer.scss';
+@import './common.scss';
+@import './tailwind.scss';
+// Common SCSS End Here
+
+// Home screen SCSS Start Here
+@import './home-screens/flyfreely.scss';
+@import './home-screens/flyprivate.scss';
+@import './home-screens/Whymembercards.scss';
+@import './home-screens/TourSection.scss';
+@import './home-screens/launchingfall.scss';
+
+// Home screen SCSS Start Here
+
+// Veerendra Added Screens
+
+@import './home-screens/phone-in-hand.scss';
+@import './home-screens/unlimited-flights.scss';   
+@import './home-screens/private-terminals.scss'; 
+@import './home-screens/StillUnsure.scss';
+@import './home-screens/socialMedia.scss';
+@import './chat/chat.scss';
+
+
+// animation
+@import './home-screens/videoanimation.scss';
+@import './home-screens/tour.scss';
+@import './home-screens/mapanimation.scss';
+
+// onboarding screen SCSS Start Here
+
+@import './commons/onboarding-screens/login.scss';
+@import './commons/onboarding-screens/otp.scss';
+@import './commons/onboarding-screens/onboarding-email.scss';
+@import './commons/onboarding-screens/basic-info.scss';
+@import './commons/onboarding-screens/membership-plan.scss';
+@import './commons/onboarding-screens/payment.scss';
+@import './commons/onboarding-screens/congrats.scss';
+@import './phoneonboarding/phoneonboarding.scss';
+@import './commons/bookings/bookings.scss';
+@import './commons/profile/profile.scss';
+
+
+// other screen SCSS Start Here
+
+@import './commons/media/media.scss';
+// @import './commons/investor/investor.scss';
+@import './commons/faq/faq.scss';
+@import './commons/legal/legal.scss';
+@import './commons/careers/career.scss';
+@import './commons/aboutus/aboutus.scss';
+@import './contact-us/contactUs.scss';
+@import './commons/editor.scss';
+@import './commons/button.scss';
+@import './commons/modals/modal.scss';
+@import './commons/mobile-only-screen.scss';
+
+//Email verification
+@import './emailVerification/emailVerificationPass.scss';
+@import './emailVerification/emailVerificationFail.scss';
+
+@import './commons/not-found/notFound.scss';
+
+// Shared Flight
+@import './sharedFlight/sharedFlight.scss';

@@ -1,0 +1,330 @@
+// @media only screen and (max-width: $tablet-1049) {
+//     .map-animation-wrap{
+//         position: relative;
+//         top: -1px;
+//     }
+// }
+
+.animate {
+    transition: all ease-in-out 0.5s;
+    // shape-rendering:crispEdges;
+
+    // svg{
+    //     shape-rendering:crispEdges;
+    // }
+    .white-line {
+        opacity: 0;
+        animation: appearAnimation 300ms ease-in-out 0.1s 1 normal forwards;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+
+    .infoTile {
+        opacity: 0;
+        animation: appearAnimation 300ms ease-in-out 1.5s 1 normal forwards;
+    }
+
+
+
+    .cicle-blink-1 {
+        opacity: 0;
+        animation: blinkAnimation 0.33s ease-in-out 0.5s 55 alternate-reverse,
+            blinkAnimation 1s ease-in-out 17.5s infinite alternate-reverse,
+            redToGreenAnimation 1.5s ease-in-out 17.5s 1 normal forwards;
+    }
+
+    .connecter-1 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 7.5s 1 normal forwards;
+    }
+
+    .data-grid-21 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 7.5s 1 normal forwards;
+        overflow: hidden;
+    }
+
+    .connecter-2 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 9s 1 normal forwards;
+    }
+
+    .data-grid-22 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 9s 1 normal forwards;
+    }
+
+    .cicle-blink-2 {
+        opacity: 0;
+        animation: blinkAnimation 0.33s ease-in-out 10.5s 32 alternate-reverse,
+            blinkAnimation 1s ease-in-out 21s infinite alternate-reverse,
+            redToGreenAnimation 1.5s ease-in-out 21s 1 normal forwards;
+    }
+
+    .connecter-3 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 12s 1 normal forwards;
+    }
+
+    .data-grid-11 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 12s 1 normal forwards;
+    }
+
+    .connecter-4 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 13.5s 1 normal forwards;
+    }
+
+    .data-grid-12 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 13.5s 1 normal forwards;
+    }
+
+    .airlineui-1 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 7.5s 1 normal forwards, hideAnimation 2s ease-in-out 17s 1 normal forwards;
+    }
+
+    .airlineui-2 {
+        opacity: 0;
+        animation: appearAnimation 2s ease-in-out 17s 1 normal forwards;
+    }
+
+    .data-grid-2 {
+        .highlighter2 {
+            transform: translateX(100%);
+            opacity: 1;
+            animation: highlighterAnimation 6s ease-in-out 15.5s 1 normal forwards;
+        }
+
+        .highlighter3 {
+            transform: translateX(100%);
+            opacity: 1;
+            animation: highlighterAnimation 7s ease-in-out 15s 1 normal forwards;
+        }
+
+        // Not working media Query for mobile
+        @media screen and (max-width: $mobile-699) {
+            .highlighter2 {
+                animation: highlighterAnimation 4s ease-in-out 15.5s 1 normal forwards;
+            }
+
+            .highlighter3 {
+                animation: highlighterAnimation 5s ease-in-out 15s 1 normal forwards;
+            }
+        }
+    }
+
+
+
+
+    .done-container-bg2 {
+        opacity: 0;
+        animation: blurAppearAnimation 600ms ease-in-out 18s 1 normal forwards;
+    }
+
+    .airlineui-3 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 12s 1 normal forwards, hideAnimation 2s ease-in-out 20.5s 1 normal forwards;
+    }
+
+    .airlineui-4 {
+        opacity: 0;
+        animation: appearAnimation 2s ease-in-out 20.5s 1 normal forwards;
+    }
+
+    .data-grid-1 {
+        .highlighter2 {
+            transform: translateX(100%);
+            opacity: 1;
+            animation: highlighterAnimation 6s ease-in-out 19s 1 normal forwards;
+        }
+
+        .highlighter3 {
+            transform: translateX(100%);
+            opacity: 1;
+            animation: highlighterAnimation 7s ease-in-out 18.5s 1 normal forwards;
+        }
+
+        // Not working media Query for mobile
+        @media screen and (max-width: $mobile-699) {
+            .highlighter2 {
+                animation: highlighterAnimation 4s ease-in-out 19s 1 normal forwards;
+            }
+
+            .highlighter3 {
+                animation: highlighterAnimation 5s ease-in-out 18.5s 1 normal forwards;
+            }
+        }
+    }
+
+
+    .done-container-bg {
+        opacity: 0;
+        animation: blurAppearAnimation 600ms ease-in-out 21.5s 1 normal forwards;
+
+        @keyframes success-tick {
+            from {
+                stroke-dashoffset: 16px;
+                opacity: 1;
+            }
+
+            100% {
+                stroke-dashoffset: 31px;
+                opacity: 1
+            }
+        }
+
+        @keyframes drawTick {
+            to {
+                stroke-dashoffset: 0;
+                /* Draw the entire path */
+            }
+        }
+
+        path {
+            stroke-dasharray: 200;
+            /* Length of the path */
+            stroke-dashoffset: 200;
+            /* Initially hide the path */
+            animation: drawTick 2s ease 21.5s forwards;
+            // animation: success-tick 450ms ease 21.5s forwards;
+        }
+    }
+
+    .text-data-1 {
+        opacity: 1;
+        animation: hideAnimation 500ms ease-in-out 25.5s 1 normal forwards;
+    }
+
+    .text-data-2 {
+        opacity: 0;
+        animation: appearAnimation 500ms ease-in-out 25.5s 1 normal forwards;
+    }
+
+    .infoTileTop {
+        transform: translateY(-100%);
+        animation: mapDescription 3s ease-in-out 27s 1 normal forwards;
+    }
+
+    .infoTileTopBG {
+        opacity: 0.25 !important;
+    }
+
+    .infoTileRight {
+        transform: translateX(-100%);
+        animation: mapDescriptionMobile 3s ease-in-out 27s 1 normal forwards;
+    }
+
+
+    @keyframes appearAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes blinkAnimation {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.4;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes hideAnimation {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes highlighterAnimation {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-200%);
+            opacity: 0;
+        }
+    }
+
+    @keyframes blurAppearAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0.2;
+        }
+
+        60% {
+            opacity: 0.5;
+        }
+
+        80% {
+            opacity: 0.8;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes redToGreenAnimation {
+        0% {
+            fill: #FF0000;
+        }
+
+        100% {
+            fill: #00FF00;
+        }
+    }
+
+    @keyframes mapDescription {
+        0% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+
+        40% {
+            opacity: 1;
+            transform: translateY(-80%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    @keyframes mapDescriptionMobile {
+        0% {
+            opacity: 1;
+            transform: translateX(-100%);
+        }
+
+        40% {
+            opacity: 1;
+            transform: translateX(-80%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+}

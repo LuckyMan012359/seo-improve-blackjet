@@ -1,0 +1,262 @@
+.contact-form {
+  margin-top: 50px;
+  padding: 48px 200px;
+  padding-top: 0;
+  background-color: $grey-808;
+
+  @media only screen and (max-width: $tablet-1049) {
+    padding: 128px 48px;
+  }
+}
+
+.enquiry-form-wrap {
+  position: relative;
+  padding-top: 120px;
+
+  .form-response-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .form-response-text {
+      text-align: center;
+      padding: 16px;
+      color: $color-white;
+      font-size: $font-24;
+      margin: 3rem 0;
+    }
+  }
+
+  @media only screen and (max-width: $tablet-1049) {
+    padding-top: 80px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    padding: 0px 16px 15px 16px;
+    margin-top: 0px;
+    height: calc(100vh - 25px);
+    overflow-y: auto;
+
+    .contact-heading.fixed-header-pages {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .enquiry-heading {
+    position: relative;
+    font-size: $font-42;
+    font-family: $font-Hauora-500;
+    color: $element-accent;
+    margin-bottom: 48px;
+    text-align: left;
+    width: 100%;
+
+    @media only screen and (max-width: $tablet-767) {
+      font-size: 28px;
+    }
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .contact-form-card {
+    margin: 0;
+
+    @media only screen and (max-width: $mobile-699) {
+      .col-md-6 {
+        width: 50%;
+      }
+    }
+
+    @media only screen and (max-width: $mobile-340) {
+      .col-md-6 {
+        margin-bottom: 15px;
+      }
+    }
+
+    .common-label {
+      font-family: $font-Hauora-600;
+      margin-bottom: 4px;
+    }
+  }
+
+  .agree-txt-wrap {
+    margin-bottom: 25px;
+  }
+
+  .common-btn {
+    width: 358px;
+
+    @media only screen and (max-width: $mobile-699) {
+      width: 100%;
+    }
+  }
+}
+
+.text-editor-wrap {
+  margin-top: 5px;
+  margin-bottom: 5px !important;
+
+  .editor-card {
+    .tox.tox-tinymce {
+      border-color: $grey-606 !important;
+
+      .tox-editor-container {
+        div {
+          background-color: $grey-606 !important;
+        }
+
+        .tox-editor-header {
+          background-color: $grey-606 !important;
+        }
+
+        .tox-menubar {
+          background-color: $grey-606 !important;
+        }
+
+        .tox-sidebar-wrap {
+          background-color: $grey-606 !important;
+        }
+      }
+    }
+  }
+}
+
+.tox-tinymce {
+  min-height: 300px;
+
+  div {
+    background-color: $grey-606 !important;
+  }
+
+  .tox-swatch {
+    background-color: initial !important;
+  }
+
+  .tox-mbtn--active {
+    background-color: $grey-808 !important;
+  }
+
+  .tox-split-button {
+    border-color: $grey-808 !important;
+    box-shadow: none !important;
+
+    &:hover {
+      border-color: $grey-808 !important;
+    }
+  }
+
+  .tox-tbtn {
+    &:hover {
+      background-color: $grey-808 !important;
+      border-color: $grey-808 !important;
+    }
+  }
+
+  .tox-tbtn--enabled {
+    background-color: $grey-808 !important;
+    border-color: $grey-808 !important;
+  }
+
+  .tox-edit-area__iframe {
+    background-color: transparent !important;
+  }
+
+  .tox-tinymce {
+    border: none !important;
+  }
+
+  .tox-toolbar__primary {
+    background-image: none !important;
+  }
+}
+
+.tox-tinymce-aux {
+  background-color: $grey-606 !important;
+
+  div:not(.tox-swatch) {
+    background-color: $grey-606 !important;
+  }
+
+  //   .tox-swatch{
+  //     background-color: inherit !important;
+  //   }
+  .tox-collection__item {
+    &:hover {
+      background-color: $grey-808 !important;
+      cursor: pointer !important;
+      * {
+        background-color: $grey-808 !important;
+      }
+
+    }
+  }
+}
+
+.tox .tox-editor-header {
+  z-index: 0 !important;
+}
+
+#tiny_content_body {
+  background-color: $grey-606 !important;
+
+  p {
+    background-color: $grey-606 !important;
+  }
+}
+
+.tox-tinymce {
+  border: none !important;
+}
+
+.tox .tox-collection__item-checkmark svg,
+.tox .tox-collection__item-icon svg,
+.tox .tox-tbtn svg,
+.tox-dialog__header,
+.tox-icon,
+.tox-form__group .tox-label {
+  fill: $element-accent !important;
+  color: $element-accent !important;
+}
+
+.tox .tox-tbtn {
+  background-color: $grey-606 !important;
+
+}
+
+.tox-textfield {
+  background-color: $grey-606 !important;
+  border: 1px solid $text-field !important;
+  color: $text-secondry !important;
+
+  &::placeholder {
+    color: $text-field !important;
+  }
+}
+
+.tox-dialog {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: $mobile-699) {
+  .contact-us-form-wrap {
+    height: calc(100vh - 0px);
+    padding-top: 60px;
+    padding-bottom: 20px;
+    height: auto;
+  }
+
+  #contact-mobile {
+    .bottom-trademark-contact {
+      margin-top: 5px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.email-screen {
+  .subheading-text {
+    font-family: $font-Hauora-400;
+    font-size: 16px;
+    color: $text-secondry;
+    font-style: normal;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    margin-bottom: 16px;
+    appearance: none;
+  }
+
+  .label-txt {
+    font-size: 20px;
+    margin-bottom: 0px;
+
+  }
+
+  input:valid::-webkit-calendar-picker-indicator {
+    display: none;
+    opacity: 0;
+  }
+
+  input:invalid::-webkit-calendar-picker-indicator {
+    display: none;
+    opacity: 0;
+  }
+
+}

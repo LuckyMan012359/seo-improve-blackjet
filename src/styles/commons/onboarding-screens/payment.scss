@@ -1,0 +1,503 @@
+.payment-main-section {
+  display: flex;
+  margin-top: 52px;
+  justify-content: center;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $mobile-699) {
+    overflow-y: auto;
+    height: calc(100vh - 50px);
+    padding-bottom: 50px;
+    margin-top: 0;
+    padding-top: 52px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // -webkit-overflow-scrolling: touch;
+  }
+
+  .common-label {
+    margin-bottom: 4px;
+  }
+
+  .payment-wrap {
+    height: 864px;
+
+    @media only screen and (max-width: $tablet-1049) {
+      height: fit-content;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      height: auto;
+      width: 100%;
+    }
+
+    .one-time {
+      font-family: $font-Hauora-400;
+      font-size: $font-18;
+    }
+  }
+
+  .waived-txt {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    gap: 2px;
+
+    .waived-txt-strike {
+      color: $text-primary;
+      font-size: $font-18;
+      margin: 0 0.5rem;
+    }
+
+    p {
+      color: $text-secondry;
+      font-size: $font-14;
+    }
+  }
+
+  .foot-txt {
+    display: flex;
+    justify-content: space-between;
+
+    .total-txt {
+      color: #ffffff;
+      font-size: 20px;
+      font-family: $font-Hauora-600;
+    }
+
+    .gst-txt {
+      font-variant-numeric: lining-nums proportional-nums ordinal;
+      /* Body/T3 eL Bsl */
+      font-family: $font-Hauora;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: normal;
+      color: #bfbfbf;
+    }
+  }
+
+  .label-txt {
+    font-size: $font-28;
+    color: #f2f2f2;
+    font-family: $font-Hauora-600;
+    display: none;
+  }
+
+  .activate-txt {
+    font-size: 14px;
+    font-weight: $font-Hauora-200;
+
+  }
+
+  .credit-card {
+    position: relative;
+    border: 1px solid $element-30-Shade;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 52px;
+    align-items: center;
+    padding: 8px 16px 8px 12px;
+    border-radius: 4px;
+
+    @media only screen and (max-width: $mobile-699) {
+      .payment-radio {
+        position: absolute;
+        right: 10px;
+      }
+    }
+
+  }
+  .payment-radio-text {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid $text-primary;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .radio-circle {
+      min-width: 6px;
+      min-height: 6px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $text-primary;
+    }
+  }
+
+  .card-holder {
+    border: 1px solid $element-30-Shade;
+    width: 100%;
+    padding: 16px 8px;
+    align-items: center;
+    border-radius: 4px;
+
+    @media only screen and (max-width: $mobile-699) {
+      padding: 15px 12px;
+    }
+
+    .holder-label {
+      font-size: 14px;
+      font-family: $font-Hauora-700;
+      color: $text-primary;
+      margin-bottom: 4px;
+    }
+  }
+
+  // .common-input {
+  //   display: flex;
+  //   height: 58px;
+  //   padding: 13px 10px;
+  //   align-items: center;
+  //   gap: 53px;
+  //   align-self: stretch;
+  //   border-radius: 5px;
+  //   background: $grey-606;
+  //   font-family: $font-Hauora-500;
+  //   font-size: 14px;
+  //   color: $text-secondry;
+  //   appearance: none;
+  //   border: none;
+  //   width: 100%;
+  //   border: 1px solid $grey-606;
+
+  //   &:hover {
+  //     appearance: none;
+  //   }
+
+  //   &:focus {
+  //     border: 1px solid $grey-505;
+  //   }
+  // }
+
+  .expiry-input-div {
+    height: 110px;
+
+    @media only screen and (max-width: $mobile-699) {
+      height: auto;
+      width: 100%;
+
+      .col-md-6.pl-0,
+      .col-md-6.p-0 {
+        width: 50% !important;
+      }
+    }
+  }
+
+  .credit-txt {
+    color: $text-primary;
+    font-family: $font-Hauora-500;
+    font-size: 14px;
+  }
+
+  .main-input-div {
+    height: 91px;
+    margin-bottom: 16px;
+
+    @media only screen and (max-width: $mobile-699) {
+      height: auto;
+    }
+  }
+
+
+  .card-section-wrapper {
+    .payment-card {
+      .payment-cardp {
+        height: 870px;
+
+        @media only screen and (max-width: $tablet-1049) {
+          height: auto;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          height: auto;
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    .payment-card-new {
+      .payment-cardp {
+        height: 870px;
+
+        @media only screen and (max-width: $mobile-699) {
+          height: auto;
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.agree-txt-wrap {
+  margin-top: 30px;
+
+  @media only screen and (max-width: $mobile-340) {
+    margin-bottom: 25px;
+  }
+}
+
+.billing-wrapper {
+  .billing-txt {
+    color: var(--TEXTS-Primary, #f2f2f2);
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    /* Headings/H4 Md Std */
+    font-family: $font-Hauora-500;
+    font-size: 24px;
+    font-style: normal;
+    margin: 24px 0px 12px 0px;
+    line-height: normal;
+  }
+
+  .billing-inner {
+    border-radius: 4px;
+    border: 1px solid var(--ELEMENTS-30-Shade, #4D4D4D);
+    display: flex;
+    padding: 16px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+
+    @media only screen and (max-width: $mobile-699) {
+      padding: 15px 12px;
+    }
+  }
+
+  .holder-label {
+    font-size: 14px;
+    font-family: $font-Hauora-700;
+    color: #f2f2f2;
+    margin-bottom: 4px;
+  }
+
+  .billing-main {
+    height: 91px;
+    margin-bottom: 16px;
+
+    @media only screen and (max-width: $mobile-699) {
+      height: auto;
+
+      .col-md-6.pl-0,
+      .col-md-6.p-0 {
+        width: 50%;
+      }
+    }
+
+  }
+
+  .bussiness-txt {
+    font-size: $font-20;
+    font-family: $font-Hauora-600;
+    color: #f2f2f2;
+  }
+}
+
+.holder-label {
+  font-size: 14px;
+  font-family: $font-Hauora-700;
+  color: $text-primary;
+  margin-bottom: 4px;
+}
+
+.bussiness-m {
+  margin-bottom: 16px;
+
+  .optional-label {
+    color: $text-secondry;
+    font-size: $font-20;
+    font-family: $font-Hauora-200 !important;
+    margin-left: 5px;
+  }
+}
+
+.payment-inner {
+  display: flex;
+  margin-top: 10px;
+
+  @media only screen and (max-width: $tablet-1049) {
+    margin-top: 20px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    display: block;
+    width: 100%;
+
+    .card-section-wrapper {
+      margin-bottom: 60px;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 100%;
+      display: block;
+
+      @media only screen and (max-width: $mobile-699) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .payment-form-wrap {
+    @media only screen and (max-width: $mobile-699) {
+      padding: 0 0px;
+    }
+
+    .common-btn {
+      @media only screen and (max-width: $desktop-1280) {
+        width: 100%;
+      }
+
+      @media only screen and (max-width: $mobile-699) {
+        width: 100%;
+      }
+    }
+
+    .form-buttons {
+      gap: 12px;
+
+      .common-btn {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .unlimited-plan-text {
+    h1 {
+      color: $element-accent;
+      font-family: $font-Hauora-600;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  .payment-price-show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+
+    .total-price {
+      color: $text-primary;
+      font-family: $font-Hauora-600;
+      ;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-right: .2rem;
+    }
+
+    .gst {
+      color: #4F4F4F;
+      font-family: $font-Hauora-200;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: normal;
+    }
+
+    .price-borer {
+      width: 2rem;
+      height: 1px;
+      background: #303030;
+      margin: 0.25rem 0;
+    }
+
+    .price {
+      color: $text-primary;
+      font-family: $font-Hauora-700;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+}
+
+.content-row {
+  display: flex;
+  width: 100%;
+}
+
+.credit-card-wrapp {
+  @media only screen and (max-width: $mobile-699) {
+    width: auto;
+  }
+}
+
+.credit-card-images {
+  @media only screen and (max-width: $tablet-1049) {
+    position: relative;
+    right: 40px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    margin-right: 35px;
+    right: 0;
+  }
+
+  img {
+    width: 33.10px;
+    height: 23px;
+  }
+}
+
+.payment-price-header {
+  margin-bottom: 1.5rem;
+}
+
+.payment-price-footer-wrapper {
+  background: $grey-707;
+  // width: 699px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  width: 100vw;
+
+  .payment-price-footer {
+    color: $text-secondary;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    
+
+    .unlimited-plan-text {
+      p {
+        color: $text-primary;
+        font-family: $font-Hauora-600;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .payment-price-footer-text-initiation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: $text-primary;
+        font-family: $font-Hauora-400;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}

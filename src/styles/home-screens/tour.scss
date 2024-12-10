@@ -1,0 +1,120 @@
+.airplane-panorama {
+    position: relative;
+
+    .virtual-viw-orientation-icon {
+        position: absolute;
+        top: 3.5rem;
+        right: 1.5rem;
+        z-index: 20;
+        cursor: pointer;
+    }
+
+    .virtual-view-not-page {
+        top: 1.75rem;
+    }
+
+    .close-img-icon {
+        @media screen and (max-width: $mobile-699) {
+            top: 16px;
+            left: 16px;
+        }
+    }
+
+    .close-img-icon-mobile {
+        top: 2rem;
+        width: 24px;
+        height: 24px;
+    }
+
+    .pnlm-hotspot-base.pnlm-sprite {
+        background-image: url('../../assets/images/hotspot-icon.svg');
+        width: 52.19px;
+        height: 55.99px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center !important;
+
+        &:hover {
+            background-color: transparent !important;
+        }
+    }
+
+    .options {
+        position: absolute;
+        top: 40%;
+        left: 24px;
+        gap: 24px;
+        width: 122px;
+        z-index: 20;
+        height: fit-content;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        color: $element-accent;
+        font-family: $font-Hauora-500;
+        padding: 20px;
+        background-color: $--overlay-darken-pihoto-10;
+
+        @media screen and (max-width: $desktop-1799) {
+            width: 97px;
+            // height: 136px;
+            padding: 12px;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: $tablet-1049) {
+            width: 73px;
+            // height: 104px;
+            border-radius: 6px;
+            padding: 8px;
+            gap: 16px;
+
+        }
+
+        @media screen and (max-width: $mobile-699) {
+            display: none;
+
+        }
+
+        // background-color: rgba(0, 0, 0, 0.1);
+
+        li {
+            font-size: $font-18;
+            font-weight: 500;
+            margin: 0%;
+            line-height: normal;
+
+            @media screen and (max-width: $desktop-1799) {
+                font-size: $font-18;
+            }
+
+            @media screen and (max-width: $tablet-1049) {
+                font-size: $font-14;
+            }
+        }
+    }
+
+    .hotspot-actions {
+        position: absolute;
+        bottom: 5%;
+        left: 0%;
+        right: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+
+        .prev {
+            transform: rotateZ('-90deg');
+            cursor: pointer;
+        }
+
+        .next {
+            transform: rotateZ(180deg);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// BREAKPOINTS ---------
+
+:root {
+  --mobile: 700px;
+}
+
+// 1. < 700px for mobile (MB)
+// 2. 700 — 1049 for tablet (TB)
+// 3. 1050 — 1799 for desktop (DKTP)
+// 4. ≥ 1800 for extra large desktop (XL DKTP)
+
+// Breakpoints
+$mobile-320: 320px;
+$mobile-340: 340px;
+$mobile-360: 360px;
+$mobile-390: 390px;
+$mobile-414: 414px;
+$mobile-440: 440px;
+$mobile-540: 540px; 
+$mobile-640: 640px;
+$mobile-699: 699px;
+$mobile: 700px;
+$mobile-744: 744px;
+$tablet-767: 767px;
+$tablet-768: 768px;
+$tablet-991: 991px;
+$tablet-900: 900px;
+$tablet-1024: 1024px;
+$tablet-1049: 1049px;
+$desktop-1100: 1100px;
+$desktop-1150: 1150px;
+$desktop-1200: 1200px;
+$desktop-1268: 1268px;
+$desktop-1280: 1280px;
+$desktop-1368: 1368px;
+$desktop-1440: 1440px;
+$desktop-1600: 1600px;
+$desktop-1700: 1700px;
+$desktop-1799: 1799px;
+$desktop-1800: 1800px;
+$desktop-1920: 1920px;
+$desktop-2060: 2060px;
+$desktop-2160: 2160px;
+$desktop-2260: 2260px;
+$desktop-2360: 2360px;
+$desktop-2460: 2460px;
+$desktop-2560: 2560px;

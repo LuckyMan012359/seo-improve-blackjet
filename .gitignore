@@ -1,0 +1,33 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Project files
+/.vscode
+.history
+
+# Build outputs
+/build
+/coverage
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production
+.env.production.local
+
+# System files
+.DS_Store
+Thumbs.db  # Windows equivalent of .DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE specific files
+.idea/               # JetBrains IDEs (e.g., WebStorm, PhpStorm)
+.vscode/

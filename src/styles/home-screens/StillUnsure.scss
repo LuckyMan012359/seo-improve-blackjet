@@ -1,0 +1,191 @@
+.still-unsure-wrap {
+  padding: 108px 405px;
+  background-color: $color-gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $desktop-2360) {
+    padding: 108px 305px;
+  }
+
+  @media only screen and (max-width: $desktop-2060) {
+    padding: 108px 200px;
+  }
+
+  @media only screen and (max-width: $desktop-1800) {
+    padding: 108px 151.33px;
+  }
+
+  @media only screen and (max-width: $desktop-1799) {
+    padding: 72px 292.66px;
+  }
+
+  @media only screen and (max-width: $desktop-1600) {
+    padding: 72px 252.66px;
+  }
+
+  @media only screen and (max-width: $desktop-1440) {
+    padding: 72px 173px;
+  }
+
+  @media only screen and (max-width: $desktop-1368) {
+    padding: 72px 105px;
+  }
+
+  @media only screen and (max-width: $desktop-1100) {
+    padding: 72px 43px;
+  }
+
+  @media only screen and (max-width: $tablet-1049) {
+    padding: 48px 169px;
+  }
+
+  @media only screen and (max-width: $tablet-991) {
+    padding: 48px 80px;
+  }
+
+  @media only screen and (max-width: $tablet-767) {
+    padding: 48px 40px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 32px 104px 32px;
+  }
+
+  @media only screen and (max-width: $mobile-390) {
+    padding: 64px 16px 104px 16px;
+  }
+
+  h2 {
+    font-size: $font-36;
+    font-family: $font-Hauora-500;
+    color: $color-white-1;
+
+    p {
+      display: inline-block;
+      color: $text-secondry;
+    }
+
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-24;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+      font-size: $font-20;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      text-align: center;
+      font-size: $font-16;
+      margin-bottom: 30px;
+    }
+
+    span {
+      font-family: $font-Hauora-700;
+      display: inline-block;
+      margin-right: 5px;
+      font-size: $font-42;
+
+      @media only screen and (max-width: $desktop-1799) {
+        font-size: $font-32;
+      }
+
+      @media only screen and (max-width: $desktop-1368) {
+        font-size: $font-28;
+      }
+
+      @media only screen and (max-width: $tablet-1049) {
+        font-size: $font-24;
+        display: block;
+      }
+
+      @media only screen and (max-width: $mobile-699) {
+        text-align: center;
+        font-size: $font-18;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  a {
+    @media only screen and (max-width: $mobile-699) {
+      width: 100%;
+    }
+  }
+
+  .common-btn {
+    @media only screen and (max-width: $desktop-1799) {
+      width: 300px;
+      height: 52px;
+    }
+
+    @media only screen and (max-width: $tablet-767) {
+      width: 200px;
+      height: 52px;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      width: 100%;
+      height: 51px;
+      font-size: $font-14;
+    }
+
+    @media only screen and (max-width: $mobile-390) {
+      width: 100%;
+      color: $color-white;
+    }
+  }
+}
+
+.with-blackjet-txt {
+  position: relative;
+  font-family: $font-Hauora-600;
+  font-size: $font-64;
+  color: $font-white;
+
+  @media only screen and (max-width: $desktop-1799) {
+    font-size: $font-42;
+  }
+
+  @media only screen and (max-width: $tablet-1049) {
+    font-size: $font-36;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    font-size: $font-32;
+  }
+
+  @media only screen and (max-width: $mobile-360) {
+    font-size: $font-24;
+  }
+}
+
+.day-subheading {
+  font-size: $font-32;
+  color: $font-white;
+  // position: absolute;
+  top: 100px;
+  text-align: center;
+  font-family: $font-Hauora-500;
+
+  @media only screen and (max-width: $desktop-1799) {
+    font-size: $font-20;
+    top: 80px;
+  }
+
+  @media only screen and (max-width: $desktop-1799) {
+    font-size: $font-18;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    font-size: $font-16;
+    top: 70px;
+    width: 400px;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,39 @@
+.otp-screen {
+    .otp-section {
+        border-radius: 4px;
+        // background: var(--OPACITY-Web-Cards, rgba(20, 20, 20, 0.25));
+        // backdrop-filter: blur(17.5px);
+        width: 498px;
+        height: auto;
+        padding: 24px;
+
+        @media only screen and (max-width: $mobile-699) {
+            padding: 80px 0px 0px 0px;
+            margin-top: 0px;
+            width: 100%;
+        }
+
+        @media only screen and (max-width: $mobile-540) {
+            width: 100%;
+        }
+    }
+
+    .otp-label {
+        font-size: $font-16;
+        font-family: $font-Hauora-500 ;
+        margin-bottom: 8px;
+        color: $element-accent;
+        font-weight: normal;
+    }
+
+    .resend-code {
+        font-size: 14px;
+        font-family: $font-Hauora-700;
+        color: #F2F2F2;
+        padding: 9px 16px;
+        text-align: center;
+        background-color: #333333;
+        border-radius: 39px;
+
+    }
+}

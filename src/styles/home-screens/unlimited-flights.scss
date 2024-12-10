@@ -1,0 +1,298 @@
+.unlimited-flights-wrap {
+    position: relative;
+    background-color: $grey-707;
+    padding: 108px 398px;
+
+    @media only screen and (max-width: $desktop-2060) {
+        padding: 108px 280px;
+    }
+
+    @media only screen and (max-width: $desktop-1920) {
+        padding: 108px 200px;
+    }
+
+    @media only screen and (max-width: $desktop-1800) {
+        padding: 108px 144px;
+    }
+
+    @media only screen and (max-width: $desktop-1799) {
+        padding: 108px 297.33px;
+    }
+
+    @media only screen and (max-width: $desktop-1600) {
+        padding: 108px 190px;
+    }
+
+    @media only screen and (max-width: $desktop-1440) {
+        padding: 72px 184.33px;
+    }
+
+    @media only screen and (max-width: $desktop-1368) {
+        padding: 72px 112.33px;
+    }
+
+    @media only screen and (max-width: $desktop-1200) {
+        padding: 72px 94.33px;
+    }
+
+    @media only screen and (max-width: $desktop-1100) {
+        padding: 72px 54.33px;
+    }
+
+    @media only screen and (max-width: $tablet-991) {
+        padding: 48px 54.33px;
+    }
+
+    @media only screen and (max-width: $mobile-640) {
+        padding: 38px 20px;
+    }
+
+    .unlimited-flights-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: $tablet-1049) {
+            flex-direction: column;
+        }
+
+        .unlimited-flights {
+            h2 {
+                position: relative;
+                font-family: $font-Hauora-600;
+                font-size: $font-42;
+                color: $color-white-1;
+                padding-bottom: 12px;
+
+                &::after {
+                    position: absolute;
+                    content: " ";
+                    bottom: 0px;
+                    left: 10px;
+                    right: 10px;
+                    height: 1px;
+                    width: auto;
+                    background-color: $color-gray-1;
+                }
+
+                span {
+                    color: $color-white-2;
+                }
+
+                @media only screen and (max-width: $desktop-1799) {
+                    font-size: $font-28;
+                }
+
+                @media only screen and (max-width: $mobile-699) {
+                    font-size: $font-24;
+                    text-align: center;
+                    border: 0;
+                    margin-bottom: 35px;
+
+                    &::after {
+                        position: absolute;
+                        content: " ";
+                        bottom: -15px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        height: 1px;
+                        width: 75px;
+                        background-color: #333;
+                    }
+                }
+            }
+
+        }
+
+        .online-price-text {
+            margin-top: 5px;
+            text-align: center;
+
+            p.only-members {
+                position: relative;
+                top: -10px;
+                font-size: $font-24;
+                font-family: $font-Hauora-500;
+                color: $color-white-2;
+                display: inline-block;
+                margin-right: 10px;
+
+                @media only screen and (max-width: $desktop-1799) {
+                    font-size: $font-16;
+                }
+
+                @media only screen and (max-width: $mobile-360) {
+                    font-size: $font-14;
+                }
+
+                .white-text {
+                    color: $color-white;
+                    margin: 0 5px;
+                    display: inline-block;
+                    font-family: $font-Hauora-800;
+                }
+            }
+
+            .discount-price-wrap {
+                display: inline-block;
+
+                @media only screen and (max-width: $mobile-390) {
+                    margin-bottom: 15px;
+                }
+
+                .cut-price {
+                    position: relative;
+                    padding: 0 5px;
+                    display: inline-block;
+
+
+
+                    .month {
+                        font-size: $font-24;
+                        font-weight: 300;
+                        color: $text-primary;
+                        font-family: $font-Hauora
+                    }
+
+                    .latest-price-without-discount {
+                        font-size: $font-42;
+                        font-weight: 500;
+                        @media only screen and (max-width: $desktop-1799) {
+                            font-size: $font-32;
+                        }
+                        @media only screen and (max-width: $tablet-1049) {
+                            font-size: $font-24;
+                        }
+                        @media only screen and (max-width: $mobile-699) {
+                            font-size: $font-24;
+                        }
+                        .month {
+                            font-size: $font-24;
+                            font-weight: 300;
+                            color: $text-primary;
+                            font-family: $font-Hauora;
+                            @media only screen and (max-width: $desktop-1799) {
+                                font-size: $font-20;
+                            }
+                            @media only screen and (max-width: $tablet-1049) {
+                                font-size: $font-16;
+                            }
+                        }
+                    }
+
+                    @media only screen and (max-width: $desktop-1799) {
+                        top: -2px;
+                    }
+
+                    p {
+                        position: relative;
+                        color: $color-white-1;
+                        font-size: $font-45;
+                        font-family: $font-Hauora-500;
+
+                        @media only screen and (max-width: $desktop-1799) {
+                            font-size: $font-36;
+                        }
+
+                        @media only screen and (max-width: $mobile-390) {
+                            font-size: $font-28;
+                        }
+
+                        .cut-price-img {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            top: 16px;
+                            width: 115px;
+
+                            @media only screen and (max-width: $desktop-1799) {
+                                top: 12px;
+                            }
+
+                            @media only screen and (max-width: $mobile-390) {
+                                top: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .original-price {
+                    position: relative;
+                    top: 5px;
+                    display: inline-block;
+                    padding: 0 5px;
+
+                    p {
+                        position: relative;
+                        top: -8px;
+
+                        span {
+                            color: $color-white-2;
+                            font-weight: 400;
+                            font-size: $font-24;
+                            font-family: $font-Hauora-400;
+
+                            @media only screen and (max-width: $desktop-1799) {
+                                font-size: $font-20;
+                            }
+
+                            @media only screen and (max-width: $mobile-390) {
+                                font-size: $font-16;
+                            }
+                        }
+
+                        .qnty-tag {
+                            font-size: $font-14;
+                            display: inline-block;
+                            margin-left: 5px;
+
+                            @media only screen and (max-width: $mobile-699) {
+                                font-size: $font-12;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .common-btn {
+            @media only screen and (max-width: $desktop-1799) {
+                width: 358px;
+                height: 52px;
+            }
+
+            @media only screen and (max-width: $tablet-1049) {
+                margin-top: 50px;
+            }
+
+            @media only screen and (max-width: $tablet-991) {
+                margin-top: 30px;
+            }
+
+            @media only screen and (max-width: $mobile-390) {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+body {
+    .mobile-none {
+        display: inline-block !important;
+    }
+
+    .mobile-block {
+        display: none !important;
+    }
+
+    @media only screen and (max-width: $mobile-390) {
+        .mobile-none {
+            display: none !important;
+        }
+
+        .mobile-block {
+            display: block !important;
+        }
+    }
+}

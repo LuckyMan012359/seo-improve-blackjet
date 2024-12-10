@@ -1,0 +1,44 @@
+@import'../settings/breakpoints';
+@import '../settings/colors';
+@import '../settings/typography';
+
+.horizontal {
+  position: relative;
+  width: 100vw;
+
+  @media only screen and (max-width: 1220px) {
+    width: 95vw;
+  }
+
+  @media screen and (max-width: $mobile-699) {
+    width: 100vw;
+  }
+
+
+  .small-w {
+    left: 6% !important;
+
+    @media screen and (max-width: $mobile-699) {
+      left: 17px !important;
+    }
+  }
+}
+
+#profile-links {
+  z-index: 99;
+  transform: translate(-47px, 7px);
+
+  @media screen and (max-width: $mobile-699) {
+    display: none;
+  }
+
+  @media screen and (max-width: $tablet-767) {
+    transform: translate(-32px, 8px);
+  }
+}
+
+.desktop-menu {
+  @media screen and (min-width: $mobile-699) {
+    display: none;
+  }
+}

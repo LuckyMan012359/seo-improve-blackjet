@@ -1,0 +1,534 @@
+.why-member-main {
+  padding: 126px 444px;
+  background-color: $grey-808;
+  position: relative;
+  z-index: 2;
+  // background-color: #242424;
+  @media only screen and (max-width: 2520px) {
+    padding: 84px 424px;
+  }
+  @media only screen and (max-width: 2480px) {
+    padding: 84px 407px;
+  }
+  @media only screen and (max-width: 2450px) {
+    padding: 84px 390px;
+  }
+  @media only screen and (max-width: 2430px) {
+    padding: 84px 390px;
+  }
+  @media only screen and (max-width: 2400px) {
+    padding: 84px 366px;
+  }
+  @media only screen and (max-width: 2380px) {
+    padding: 84px 358px;
+  }
+  @media only screen and (max-width: 2350px) {
+    padding: 84px 338px;
+  }
+  @media only screen and (max-width: 2330px) {
+    padding: 84px 333px;
+  }
+  @media only screen and (max-width: 2310px) {
+    padding: 84px 323px;
+  }
+  @media only screen and (max-width: 2300px) {
+    padding: 84px 318px;
+  }
+  @media only screen and (max-width: 2380px) {
+    padding: 84px 308px;
+  }
+  @media only screen and (max-width: 2360px) {
+    padding: 84px 297px;
+  }
+  @media only screen and (max-width: 2250px) {
+    padding: 84px 291px;
+  }
+  @media only screen and (max-width: 2230px) {
+    padding: 84px 282px;
+  }
+  @media only screen and (max-width: 2220px) {
+    padding: 84px 270px;
+  }
+  @media only screen and (max-width: 2180px) {
+    padding: 84px 254px;
+  }
+  @media only screen and (max-width: 2160px) {
+    padding: 84px 244px;
+  }
+  
+  @media only screen and (max-width: 2150px) {
+    padding: 84px 230px;
+  }
+  @media only screen and (max-width: 2130px) {
+    padding: 84px 238px;
+  }
+  @media only screen and (max-width: 2120px) {
+    padding: 84px 223px;
+  }
+  @media only screen and (max-width: 2100px) {
+    padding: 84px 213px;
+  }
+  @media only screen and (max-width: 2100px) {
+    padding: 84px 213px;
+  }
+  @media only screen and (max-width: 2070px) {
+    padding: 84px 200px;
+  }
+  @media only screen and (max-width: 2040px) {
+    padding: 84px 183px;
+  }
+  @media only screen and (max-width: 2020px) {
+    padding: 84px 173px;
+  }
+  @media only screen and (max-width: 2000px) {
+    padding: 84px 163px;
+  }
+  @media only screen and (max-width: 1980px) {
+    padding: 84px 156px;
+  }
+  @media only screen and (max-width: 1970px) {
+    padding: 84px 153px;
+  }
+  @media only screen and (max-width: 1950px) {
+    padding: 84px 139px;
+  }
+  @media only screen and (max-width: 1920px) {
+    padding: 84px 123px;
+  }
+  @media only screen and (max-width: 1880px) {
+    padding: 84px 103px;
+  }
+  @media only screen and (max-width: 1850px) {
+    padding: 84px 88px;
+  }
+  @media only screen and (max-width: 1820px) {
+    padding: 84px 78px;
+  }
+  @media only screen and (max-width: 1800px) {
+    padding: 84px 70px;
+  }
+  @media only screen and (max-width: $desktop-1799) {
+    padding: 84px 333px;
+  }
+  @media only screen and (max-width: 1780px) {
+    padding: 84px 323px;
+  }
+  @media only screen and (max-width: 1760px) {
+    padding: 84px 314px;
+  }
+  @media only screen and (max-width: 1750px) {
+    padding: 84px 310px;
+  }
+  @media only screen and (max-width: 1730px) {
+    padding: 84px 298px;
+  }
+  @media only screen and (max-width: $desktop-1700) {
+    padding: 84px 284px;
+  }
+  @media only screen and (max-width: 1680px) {
+    padding: 84px 274px;
+  }
+  @media only screen and (max-width: 1660px) {
+    padding: 84px 264px;
+  }
+  @media only screen and (max-width: 1640px) {
+    padding: 84px 254px;
+  }
+  @media only screen and (max-width: 1625px) {
+    padding: 84px 245px;
+  }
+  @media only screen and (max-width: $desktop-1600) {
+    padding: 84px 234px;
+  }
+  @media only screen and (max-width: 1580px) {
+    padding: 84px 224px;
+  }
+
+  @media only screen and (max-width: 1568px) {
+    padding: 84px 217px;
+  }
+  @media only screen and (max-width: 1550px) {
+    padding: 84px 209px;
+  }
+  @media only screen and (max-width: 1530px) {
+    padding: 84px 198px;
+  }
+  @media only screen and (max-width: 1500px) {
+    padding: 84px 183px;
+  }
+  @media only screen and (max-width: 1480px) {
+    padding: 84px 173px;
+  }
+  @media only screen and (max-width: 1468px) {
+    padding: 84px 168px;
+  }
+  @media only screen and (max-width: $desktop-1440) {
+    padding: 84px 155px;
+  }
+  @media only screen and (max-width: 1420px) {
+    padding: 84px 144px;
+  }
+  @media only screen and (max-width: 1400px) {
+    padding: 84px 134px;
+  }
+  @media only screen and (max-width: 1380px) {
+    padding: 84px 123px;
+  }
+  @media only screen and (max-width: $desktop-1368) {
+    padding: 84px 121px;
+  }
+  @media only screen and (max-width: 1350px) {
+    padding: 84px 109px;
+  }
+  @media only screen and (max-width: 1330px) {
+    padding: 84px 99px;
+  }
+  @media only screen and (max-width: 1310px) {
+    padding: 84px 89px;
+  }
+  @media only screen and (max-width: 1300px) {
+    padding: 84px 84px;
+  }
+  @media only screen and (max-width: 1280px) {
+    padding: 84px 74px;
+  }
+  @media only screen and (max-width: 1268px) {
+    padding: 84px 67px;
+  }
+  @media only screen and (max-width: 1250px) {
+    padding: 84px 63px;
+  }
+  @media only screen and (max-width: 1230px) {
+    padding: 84px 49px;
+  }
+  @media only screen and (max-width: 1210px) {
+    padding: 84px 39px;
+  }
+  @media only screen and (max-width: 1200px) {
+    padding: 84px 33px;
+  }
+  @media only screen and (max-width: 1199px) {
+    padding: 84px 176px;
+  }
+  @media only screen and (max-width: 1190px) {
+    padding: 84px 171px;
+  }
+  @media only screen and (max-width: 1170px) {
+    padding: 84px 161px;
+  }
+  @media only screen and (max-width: 1150px) {
+    padding: 84px 152px;
+  }
+  @media only screen and (max-width: 1140px) {
+    padding: 84px 148px;
+  }
+  @media only screen and (max-width: 1130px) {
+    padding: 84px 141px;
+  }
+  @media only screen and (max-width: 1100px) {
+    padding: 84px 127px;
+  }
+  @media only screen and (max-width: 1080px) {
+    padding: 84px 117px;
+  }
+  @media only screen and (max-width: 1070px) {
+    padding: 84px 112px;
+  }
+  @media only screen and (max-width: 1060px) {
+    padding: 84px 110px;
+  }
+  @media only screen and (max-width: 1050px) {
+    padding: 84px 103px;
+  }
+  @media only screen and (max-width: $tablet-1049) {
+    padding: 84px 64px;
+  }
+  @media only screen and (max-width: 1035px) {
+    padding: 84px 54px;
+  }
+  @media only screen and (max-width: 1020px) {
+    padding: 84px 48px;
+  }
+  @media only screen and (max-width: 1010px) {
+    padding: 84px 45px;
+  }
+  @media only screen and (max-width: 1000px) {
+    padding: 84px 40px;
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 72px 34px;
+  }
+  @media only screen and (max-width: 980px) {
+    padding: 72px 28px;
+  }
+  @media only screen and (max-width: 970px) {
+    padding: 72px 23px;
+  }
+ 
+  @media only screen and (max-width: 950px) {
+    padding: 48px 13px;
+  }
+  @media only screen and (max-width: 949px) {
+    padding: 48px 130px;
+  }
+  @media only screen and (max-width: 940px) {
+    padding: 48px 125px;
+  }
+  @media only screen and (max-width: 930px) {
+    padding: 48px 120px;
+  }
+  @media only screen and (max-width: 920px) {
+    padding: 48px 115px;
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 48px 105px;
+  }
+  @media only screen and (max-width: 880px) {
+    padding: 48px 96px;
+  }
+  @media only screen and (max-width: 870px) {
+    padding: 48px 90px;
+  }
+  @media only screen and (max-width: 850px) {
+    padding: 48px 80px;
+  }
+  @media only screen and (max-width: 830px) {
+    padding: 48px 70px;
+  }
+  @media only screen and (max-width: 800px) {
+    padding: 48px 55px;
+  }
+  @media only screen and (max-width: 780px) {
+    padding: 48px 45px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 48px 39px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 48px 38px;
+  }
+  @media only screen and (max-width: 750px) {
+    padding: 48px 30px;
+  }
+  @media only screen and (max-width: 730px) {
+    padding: 48px 20px;
+  }
+  @media only screen and (max-width: 710px) {
+    padding: 48px 8px;
+  }
+
+  h1 {
+    font-family: $font-Hauora-600;
+    font-size: $font-64;
+    color: #f2f2f2;
+    text-align: center;
+    margin-bottom: 56px;
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-42;
+      margin-bottom: 36px;
+    }
+    @media only screen and (max-width: $desktop-1799) {
+      font-size: $font-32;
+      margin-bottom: 24px;
+    }
+  }
+  .home-card-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(4, minmax(0, auto));
+    @media only screen and (max-width: $desktop-1799) {
+      gap: 12px;
+    }
+    @media only screen and (max-width: 1199px) {
+      grid-template-columns: repeat(3, minmax(0, auto));
+    }
+    @media only screen and (max-width: $tablet-1049) {
+      grid-template-columns: repeat(4, minmax(0, auto));
+    }
+    @media only screen and (max-width: 949px) {
+      grid-template-columns: repeat(3, minmax(0, auto));
+    }
+    @media only screen and (max-width: 699px) {
+     display: flex;
+     overflow-x: auto;
+     max-width: 699px;
+    }
+  }
+
+  .homeCard {
+    position: relative;
+    display: flex;
+    height: 400px;
+    max-height: 400px;
+    width: 400px;
+    max-width: 400px;
+    flex: 1 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    border-radius: 4px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(36 36 36 / var(--tw-bg-opacity));
+    padding: 24px;
+    min-width: 200px !important;
+    overflow: hidden!important;
+    @media only screen and (max-width: $desktop-1799) {
+      width: 274px;
+      height: 338px;
+      padding: 16px;
+      gap: 8px;
+    }
+    
+    @media only screen and (max-width: $tablet-1049) {
+      width: 222px;
+      height: 324px;
+      padding: 12px;
+      gap: 6px;
+    }
+    @media only screen and (max-width: 699px) {
+      width: 188px;
+      height: 256px;
+      padding-top: 10px!important;
+      gap: 3px;
+     }
+    .homeCardHeader {
+      font-size: $font-28;
+      color: #ffffff;
+      margin: 0px 0px;
+      text-align: left;
+      font-family: $font-Hauora-600;
+      line-height: normal;
+      span{
+        color: $font-gray;
+      }
+      @media only screen and (max-width: $desktop-1799) {
+        font-size: $font-20;
+      }
+      @media only screen and (max-width: $mobile-699) {
+        font-size: $font-16;
+       
+       }
+    }
+    .homeCardDesc {
+      font-size: $font-20;
+      color: #bfbfbf;
+      width: 352px;
+     font-family: $font-Hauora-500;
+      @media only screen and (max-width: $desktop-1799) {
+        font-size: $font-16;
+        width: 254px;
+      }
+      @media only screen and (max-width: $tablet-1049) {
+        width: 198px;
+        font-size: $font-14;
+      }
+      @media only screen and (max-width: $mobile-699) {
+        width: 181px;
+      }
+    }
+    img {
+      width: 72px;
+      height: 70px;
+      @media only screen and (max-width: $desktop-1799) {
+        width: 51px;
+        height: 51px;
+      }
+      @media only screen and (max-width: $mobile-390) {
+        width: 36px;
+        height: 36px;
+      }
+     
+    }
+  }
+  .home-last-div {
+    min-width: 824px !important;
+    @media only screen and (max-width: $desktop-1799) {
+      min-width: 560px !important;
+    }
+    @media only screen and (max-width: $tablet-1049) {
+      min-width: 456px !important;
+    }
+    @media only screen and (max-width: $mobile-699) {
+      min-width: 304px !important;
+    }
+    .homeCardDesc {
+      width: 776px;
+      @media only screen and (max-width: $desktop-1799) {
+        width: 528px;
+      }
+      @media only screen and (max-width: $tablet-1049) {
+        width: 446px;
+      }
+      @media only screen and (max-width: $mobile-699) {
+        width: 272px;
+      }
+    }
+  }
+  .home-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    @media only screen and (max-width: $mobile-699) {
+      gap: 3px;
+    }
+  }
+}
+
+.homeCard.commit{
+  @media only screen and (max-width: $mobile-699) {
+    min-width: 196px!important;
+    .homeCardDesc{
+      @media only screen and (max-width: $mobile-699) {
+        width: 164px;
+      }
+    }
+  }
+}
+
+
+.homeCard.stress{
+  @media only screen and (max-width: $mobile-699) {
+    min-width: 246px!important;
+    .homeCardDesc{
+      @media only screen and (max-width: $mobile-699) {
+        width: 214px;
+      }
+    }
+  }
+  
+}  
+.homeCard.guest{
+  @media only screen and (max-width: $mobile-699) {
+    min-width: 262px!important;
+  }
+  .homeCardDesc{
+    @media only screen and (max-width: $mobile-699) {
+      width: 243px;
+    }
+  }
+}
+
+.homeCard.private-jet{
+  @media only screen and (max-width: $mobile-699) {
+    min-width: 250px!important;
+  }
+  .homeCardDesc{
+    @media only screen and (max-width: $mobile-699) {
+      width: 218px;
+    }
+  }
+}
+
+.homeCard.health{
+  @media only screen and (max-width: $mobile-699) {
+    min-width: 240px!important;
+  }
+  .homeCardDesc{
+    @media only screen and (max-width: $mobile-699) {
+      width: 208px;
+    }
+  }
+}
+

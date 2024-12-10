@@ -1,0 +1,218 @@
+.congrats-screen {
+  height: 100vh !important;
+  padding-top: 75px !important;
+
+  @media only screen and (max-width: $mobile-699) {
+    padding-top: 75px;
+    overflow: auto;
+    height: calc(100vh - 0px) !important;
+    padding-bottom: 250px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .plus-icon {
+    margin-left: 2px;
+  }
+
+  .main-heading {
+    font-family: $font-Hauora-600;
+    font-size: $font-36;
+    color: $text-primary;
+    margin-top: 0px;
+    text-align: center;
+
+    @media only screen and (max-width: $mobile-699) {
+      font-size: $font-28;
+      padding: 0 16px;
+    }
+  }
+
+  .small-heading {
+    color: $text-primary;
+    height: 31px;
+    font-family: $font-Hauora-500;
+    font-size: $font-20;
+    margin-top: 16px;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    margin-bottom: 5px;
+
+    @media only screen and (max-width: $mobile-699) {
+      padding: 0 16px;
+      font-family: "Hauora-500";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .congo-inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .congrats-wrap {
+      width: 498px;
+      border-radius: 4px;
+      background: $opacity-web-cards ;
+      height: 580px;
+      backdrop-filter: blur(17.5px);
+      padding: 24px;
+
+      @media only screen and (max-width: 699px) {
+        width: 100%;
+        height: auto;
+        backdrop-filter: blur(0px);
+        padding: 24px 16px;
+        // margin-top: 30px;
+      }
+
+      .heading-16 {
+        color: $text-primary;
+        font-family: $font-Hauora-500;
+
+      }
+
+      .holder-label {
+        margin-bottom: 0;
+      }
+    }
+
+    .dollar-txt {
+      font-size: $font-16;
+      color: #f2f2f2;
+      font-family: $font-Hauora-500;
+      text-align: center;
+      width: 100%;
+    }
+
+    .bottom-txt {
+      font-size: $font-18;
+      color: #ffffff;
+      font-family: $font-Hauora-500;
+      text-align: center;
+      width: 100%;
+
+    }
+  }
+
+  .finish-btn {
+    display: flex;
+    width: 358px;
+    height: 51px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    border: 1px solid $element-accent;
+    background: $element-accent;
+    color: #141414;
+    font-family: $font-Hauora-700;
+    font-size: $font-14;
+
+    @media only screen and (max-width: $mobile-699) {
+      width: 100%;
+    }
+  }
+
+  .finish-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    padding-bottom: 100px;
+    gap: 40px;
+
+    @media only screen and (max-width: $mobile-699) {
+      margin-top: 50px;
+      gap: 0px;
+    }
+  }
+
+  .click-resend {
+    font-family: $font-Hauora-400;
+    font-size: $font-16;
+    color: $element-45-Shade;
+    text-align: center;
+
+    &.active {
+      color: $text-secondry;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  .create-select {
+    width: 100%;
+    height: min-content;
+
+    // padding: 10px !important;
+    // border-radius: px;
+    input {
+      // padding: 10px !important;
+      // margin-left: 20px;
+      color: #fff !important;
+    }
+  }
+
+  .range-slider-wrap {
+    margin-top: 4px;
+  }
+}
+
+.select-industries {
+  background-color: $grey-606;
+  border-radius: 4px;
+  display: flex;
+  padding: 11px 0;
+  align-items: flex-start;
+  gap: 16px;
+  z-index: 9999;
+  .css-d7l1ni-option {
+    background-color: $grey-909 !important;
+  }
+
+  &:hover {
+    .css-d7l1ni-option {
+      background-color: $grey-808 !important;
+    }
+  }
+
+  .css-1nmdiq5-menu {
+    background-color: $grey-909;
+    color: $element-accent;
+  }
+
+  // * {
+  //   position: relative;
+  //   z-index: 9999;
+  // }
+
+  // #react-select-2-listbox {
+  //   display: flex;
+  //   padding: 16px;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: flex-start;
+  //   border-radius: 4px;
+  //   background-color: $grey-909;
+  //   z-index: 99;
+  //   position: relative;
+
+  //   div {
+  //     color: $element-accent;
+  //     font-size: $font-14;
+  //     font-family: $font-Hauora-500;
+  //     line-height: 22px;
+  //     padding: 14px 0;
+  //     cursor: pointer;
+
+  //     &:hover {
+  //       background-color: $grey-909 !important;
+  //       font-size: $font-14 !important;
+  //     }
+  //   }
+  // }
+}

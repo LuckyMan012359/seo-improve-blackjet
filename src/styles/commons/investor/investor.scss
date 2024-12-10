@@ -1,0 +1,128 @@
+.investor-main-wrap {
+
+  // .investor-inner{
+  //     padding: 58px 208px;
+  // }
+  .onboardbg {
+    @media screen and (max-width: $tablet-1049) {
+      padding: 34px 0px;
+    }
+  }
+
+  display: block;
+
+  @media screen and (max-width: $mobile-699) {
+    display: none;
+  }
+
+  .small-img {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .investor-heading {
+    color: var(--ELEMENTS-Accent, #fff);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    /* Headings/D4 Md Std */
+    font-family: $font-Hauora-500;
+    font-size: $font-64;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 59px;
+
+    @media screen and (max-width: $tablet-1049) {
+      font-size: $font-42;
+    }
+
+  }
+
+  .investor-form {
+    padding: 50px 207px;
+
+    @media screen and (max-width: $tablet-1049) {
+      padding: 34px 50px;
+
+      .col-md-6.mb-8.px-0,
+      .col-md-6.mb-8.pl-0 {
+        width: 50%;
+      }
+
+    }
+  }
+
+  .image-grid {
+    display: flex;
+    width: 100%;
+
+    height: 75vh !important;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .investor-para {
+    color: var(--ELEMENTS-Accent, #fff);
+    text-align: center;
+    padding: 120px;
+    font-family: $font-Hauora-500;
+    font-size: $font-16;
+    font-style: normal;
+    line-height: normal;
+
+    @media screen and (max-width: $tablet-1049) {
+      padding: 100px 0px;
+    }
+  }
+
+  .large-img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+  }
+
+  .main-headin-qury {
+    color: var(--ELEMENTS-Accent, #fff);
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    /* Headings/H1 Md Std */
+    font-family: $font-Hauora-500;
+    font-size: $font-42;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 48px;
+  }
+
+  .view-btn {
+    display: flex;
+    height: 51px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid var(--ELEMENTS-Accent, #fff);
+    background: var(--ELEMENTS-Accent, #fff);
+    color: var(--GREYS-808, #141414);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    /* Buttons/Button Txt */
+    font-family: $font-Hauora-700;
+    font-size: $font-14;
+    font-style: normal;
+    line-height: normal;
+    margin-top: 27px;
+  }
+
+  .rele-txt {
+    color: var(--ELEMENTS-Accent, #fff);
+
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    font-family: $font-Hauora-400;
+    font-size: $font-16;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+}

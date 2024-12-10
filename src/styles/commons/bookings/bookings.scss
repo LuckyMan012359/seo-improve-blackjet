@@ -1,0 +1,279 @@
+.mob-booking-wrap {
+    position: relative;
+    margin-top: 0px;
+    padding: 45px 50px 50px 50px;
+    max-width: 699px;
+    margin: 0 auto;
+    background-color: $grey-808;
+
+    @media only screen and (max-width:$mobile-699) {
+        padding: 155px 16px 250px 16px;
+    }
+
+    .common-form-wrap {
+        .form-group {
+            margin-bottom: 0px;
+        }
+    }
+
+    .tour-img-wrap {
+        margin-bottom: 16px;
+
+        .tour-img {
+            width: 100%;
+            height: auto;
+        }
+
+        span {
+            color: $element-accent;
+            font-family: $font-Hauora-700;
+            font-size: $font-14;
+
+            svg {
+                display: inline-block;
+                position: relative;
+                top: -1px;
+            }
+        }
+    }
+
+    .tour-cards-scroll {
+        position: relative;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        width: 100%;
+        display: block;
+
+        .homeCard {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 14px;
+            // height: 176px;
+            height: 186px;
+            min-width: 160px !important;
+            max-width: 100%;
+            padding: 16px 10px;
+            overflow: hidden;
+
+            &:nth-child(1) {
+                width: 220px;
+            }
+
+            &:nth-child(2) {
+                width: 160px;
+            }
+
+            &:nth-child(3) {
+                width: 256px;
+            }
+
+            &:nth-child(4) {
+                width: 250px;
+            }
+
+            &:nth-child(5) {
+                width: 190px;
+            }
+
+            &:nth-child(6) {
+                width: 248px;
+            }
+
+            &:nth-child(7) {
+                width: 160px;
+            }
+
+            &:nth-child(8) {
+                width: 224px;
+            }
+
+            &:nth-child(9) {
+                width: 178px;
+            }
+
+            &:nth-child(10) {
+                width: 168px;
+            }
+
+            &:nth-child(11) {
+                width: 160px;
+            }
+
+            &::after,
+            &::before {
+                display: none;
+            }
+
+            .home-inner {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                img {
+                    height: 36px;
+                    width: 36px;
+                }
+
+                .homeCardHeader {
+                    font-size: $font-14;
+                    font-family: $font-Hauora-700;
+                    color: $element-accent;
+                    margin-left: 8px;
+                    width: 100%;
+                    white-space: break-spaces;
+
+                    span {
+                        color: $text-secondry;
+                    }
+                }
+            }
+
+            .homeCardDesc {
+                display: block;
+                white-space: normal;
+                font-size: $font-12;
+                font-family: $font-Hauora-400;
+                color: $text-secondry;
+                margin-top: 6px;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+
+.mobile-heading {
+    font-size: $font-24;
+    color: $element-accent;
+    font-family: $font-Hauora-600;
+    text-align: center;
+
+}
+
+.common-form-wrap {
+
+    .form-group {
+        position: relative;
+        margin-bottom: 15px;
+
+        .common-input {
+            padding-left: 55px;
+            width: 100%;
+        }
+
+        .flight-search-icon {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+    }
+
+    .flight-type-select {
+        margin: 6px 0;
+
+        span {
+            display: inline-block;
+            min-width: 154.66px;
+            height: 30px;
+            padding: 4px 8px;
+            border: 1px solid $element-accent;
+            border-radius: 42px;
+            color: $element-accent;
+            font-size: $font-14;
+            margin-right: 8px;
+            text-align: center;
+            font-family: $font-Hauora-400;
+
+            @media only screen and (max-width:$mobile-360) {
+                min-width: 144.66px;
+            }
+
+            &.active {
+                color: $grey-808;
+                background-color: $element-accent;
+                font-family: $font-Hauora-700;
+            }
+        }
+    }
+
+    .common-btn {
+        width: 100%;
+
+        img {
+            margin-right: 16px;
+        }
+    }
+
+}
+
+.fixed-sub-header {
+    width: 100%;
+    padding: 0 16px;
+
+    .form-group {
+        margin-bottom: 0 !important;
+
+        .common-input {
+            &:focus {
+                border: 0;
+            }
+        }
+    }
+}
+
+#virtual-view-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(200%);
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+
+    &.slide-in {
+        transform: translateY(0%);
+
+        @media only screen and (max-width:$mobile-699) {
+            z-index: 9999;
+        }
+    }
+
+
+}
+
+
+.booking-modal {
+    .MuiDialog-root.MuiModal-root {
+        .MuiPaper-root.MuiPaper-elevation {
+            background-color: transparent;
+            margin: 0;
+            max-width: 100%;
+            box-shadow: none;
+            width: 100%;
+
+            .cta-onboarding.booking-popup-wrap {
+                margin: 0 auto;
+
+                @media only screen and (max-width:389px) {
+                    width: 100%;
+                }
+
+                .flex.buttons {
+                    button {
+                        font-size: $font-14;
+                        color: $grey-808;
+                        font-family: $font-Hauora-700;
+                    }
+
+                    .close-cta {
+                        color: $element-accent;
+                    }
+                }
+            }
+        }
+    }
+}

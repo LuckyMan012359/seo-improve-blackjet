@@ -1,0 +1,93 @@
+.basic-info {
+    @media only screen and (max-width: $mobile-699) {
+        padding-top: 0px !important;
+    }
+
+    .basic-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        // @media only screen and (max-width: 1440px) {
+        //     gap: 10px;
+        //   }
+    }
+
+    .onboardbg {
+        @media only screen and (max-width: $mobile-699) {
+            padding-top: 0px !important;
+
+            .login-section-wrap.info-section-wrap {
+                height: calc(100vh - 0px);
+                padding-top: 80px !important;
+            }
+        }
+    }
+
+    .login-section {
+        height: auto;
+        margin-bottom: 200px;
+        // @media only screen and (max-width: 1440px) {
+        //     padding: 15px 24px;
+        //   }
+    }
+
+    .main-heading {
+        color: $font-white;
+        font-size: $font-20;
+        font-family: $font-Hauora-600;
+        margin-bottom: 24px;
+        // @media only screen and (max-width: 1440px) {
+        //     margin-bottom: 8px;
+        //   }
+    }
+
+    select {
+        border: none;
+    }
+
+    .basic-label-txt {
+        font-size: 14px;
+        font-family: $font-Hauora-600;
+        color: #F2F2F2;
+    }
+
+}
+
+.agree-txt-wrap {
+    position: relative;
+    top: 3px;
+    margin-top: 0;
+    font-size: $font-14;
+    font-family: $font-Hauora-500;
+    color: $text-secondry;
+
+    .option-text {
+        font-family: inherit;
+        cursor: pointer;
+
+        span {
+            font-size: $font-14;
+            font-family: $font-Hauora-400;
+            color: $text-secondry;
+            display: inline-block;
+            margin: 0 5px;
+
+            @media only screen and (max-width: $mobile-699) {
+                font-size: $font-14;
+            }
+        }
+    }
+
+    .error-txt {
+        p {
+            color: $color-red;
+        }
+
+    }
+}
+
+// PWA Screens SCSS Start Here
+
+
+
+// PWA Screens SCSS End Here

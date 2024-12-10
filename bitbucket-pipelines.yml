@@ -1,0 +1,44 @@
+image: node:18.19.1
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Deploy React WebSite into Test EC2
+          deployment: Test
+          size: 2x 
+          caches:
+            - node
+          script: 
+            - npm install
+            - npm run build
+            
+            - apt-get update && apt-get install -y awscli
+            - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+            - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+            - aws configure set region $AWS_DEFAULT_REGION
+
+            - tar -cvzf code.tar.gz -C ./build .
+            - aws s3 cp code.tar.gz s3://"$S3_BUCKET"/blackjet_reactwebsite/code.tar.gz
+            - aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=$EC2_INSTANCE_ID" --parameters '{"commands":["cd /var/www/blackjet_reactwebsite", "sudo rm -rf {,.[!.],..?}*", "sudo aws s3 cp s3://'"$S3_BUCKET"'/blackjet_reactwebsite/code.tar.gz .", "sudo tar -xvzf code.tar.gz", "sudo rm -rf code.tar.gz", "aws s3 rm s3://'"$S3_BUCKET"'/blackjet_reactwebsite/code.tar.gz"]}'
+
+    production:
+      - step:
+          name: Deploy React WebSite into Prod EC2
+          deployment: Production
+          trigger: manual
+          size: 2x 
+          caches:
+            - node
+          script: 
+            - npm install
+            - npm run build
+            
+            - apt-get update && apt-get install -y awscli
+            - aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
+            - aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+            - aws configure set region $AWS_DEFAULT_REGION
+
+            - tar -cvzf code.tar.gz -C ./build .
+            - aws s3 cp code.tar.gz s3://"$S3_BUCKET"/blackjet_reactwebsite/code.tar.gz
+            - aws ssm send-command --document-name "AWS-RunShellScript" --targets "Key=instanceids,Values=$EC2_INSTANCE_ID" --parameters '{"commands":["cd /var/www/blackjet_reactwebsite", "sudo rm -rf {,.[!.],..?}*", "sudo aws s3 cp s3://'"$S3_BUCKET"'/blackjet_reactwebsite/code.tar.gz .", "sudo tar -xvzf code.tar.gz", "sudo rm -rf code.tar.gz", "aws s3 rm s3://'"$S3_BUCKET"'/blackjet_reactwebsite/code.tar.gz"]}'

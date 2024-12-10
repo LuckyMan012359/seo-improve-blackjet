@@ -1,0 +1,205 @@
+.popup-container {
+  position: relative;
+}
+
+.popup {
+  position: fixed;
+  top: 130px;
+  z-index: 100 !important;
+  right: -360px;
+  width: 354px;
+  height: 207px;
+  border-radius: 12px 0px 0px 12px;
+  border-top: 1px solid #4D4D4D;
+  border-bottom: 1px solid #4D4D4D;
+  border-left: 1px solid #4D4D4D;
+  background: transparent;
+  background-color: rgba(20, 20, 20, 0.25) !important;
+  display: inline-flex;
+  padding: 16px 20px 16px 8px;
+  align-items: center;
+  gap: 16px;
+  backdrop-filter: blur(17.5px);
+}
+
+.popup.visible-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+.popup.visible-out {
+  width: 300px;
+  animation: slideOut 0.3s ease-in forwards;
+}
+
+.closebutton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.closebutton img {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 14.5px;
+  height: 14.5px;
+}
+
+.inner-card-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--spacingm, 16px);
+  align-self: stretch;
+
+}
+
+.inner-card-popup p {
+  color: #141414;
+  text-align: center;
+  font-family: Hauora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24.5px;
+  text-align: start;
+  width: 341px;
+}
+
+.inner-first-div {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+
+}
+
+.inner-first-div label {
+  color: var(--grey-707, #242424);
+  font-family: Hauora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+
+}
+
+
+#mybutton {
+  width: 71px;
+  height: 23px;
+  padding: 2px 8px;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  right: -25px;
+  top: 179px;
+  border-radius: 12px 12px 0px 0px;
+  border-top: 0.5px solid var(--element-header-line, #4D4D4D);
+  border-right: 0.5px solid var(--element-header-line, #4D4D4D);
+  border-left: 0.5px solid var(--element-header-line, #4D4D4D);
+  background: rgba(20, 20, 20, 0.25);
+  z-index: 999991;
+  cursor: pointer;
+  border-radius: 12px 12px 0px 0px;
+  backdrop-filter: blur(5px);
+
+  
+}
+@media screen and (max-width:699px) {
+  #mybutton {
+    top: auto;
+    bottom: 115px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  #mybutton {
+    width: 75px;
+  }
+}
+
+
+
+.input-country-code {
+  width: fit-content !important;
+  padding-right: 10px;
+  /* border-right: 1px solid #7A7A7A; */
+}
+
+
+.inner-first-div .input-wrapper input {
+  background: none !important;
+  width: 100%;
+  height: 26px;
+}
+
+
+.inner-first-div input::placeholder {
+  color: #949494;
+  font-weight: 500;
+}
+
+.inner-first-div button {
+  display: flex;
+  width: 200px;
+  height: 51px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: Hauora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 16px;
+  line-height: normal;
+  position: relative;
+  height: 40px;
+  color: #141414 !important;
+}
+
+input ::placeholder {
+  color: #7A7A7A;
+  font-family: Hauora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.verticle_image {
+  /* stroke-width: 4px;
+  stroke: #141414; */
+  height: 68px;
+  width: auto;
+}
+
+@keyframes slideIn {
+  to {
+    right: 0;
+    width: 352px;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    right: 0;
+    width: 352px;
+  }
+
+  to {
+    right: -300px;
+    width: 300px;
+    /* display: none; */
+  }
+}

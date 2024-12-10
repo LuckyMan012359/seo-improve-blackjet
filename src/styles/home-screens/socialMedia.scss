@@ -1,0 +1,238 @@
+.social-media-wrap {
+    position: relative;
+    padding: 108px 162px 126px 162px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $grey-909;
+
+    @media only screen and (max-width: $desktop-1799) {
+        padding: 72px 108px 84px 108px;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+        padding: 48px 48px 56px 48px;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+        padding: 32px 32px 115px 32px;
+        // margin-bottom: 100px;
+        background-color: $grey-909;
+
+        &::after {
+            position: absolute;
+            content: " ";
+            top: 85px;
+            left: 32px;
+            right: 32px;
+            height: 1px;
+            width: auto;
+            background-color: $color-gray;
+        }
+    }
+
+    @media only screen and (max-width: $mobile-390) {
+        a {
+            img {
+                width: 46px;
+            }
+        }
+
+    }
+
+    .social-wrap {
+        position: relative;
+
+        @media only screen and (max-width: $mobile-699) {
+            top: 65px;
+            position: relative;
+            left: 10px;
+
+            &::after {
+                position: absolute;
+                content: " ";
+                bottom: -14px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 1px;
+                width: 65px;
+                background-color: $color-gray;
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 199px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+
+            @media only screen and (max-width: $mobile-699) {
+                width: 178px;
+            }
+
+            li {
+                display: inline-block;
+
+                img {
+                    @media only screen and (max-width: $mobile-699) {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-link-wrap {
+        position: relative;
+        min-width: 70px;
+        cursor: pointer;
+
+        @media only screen and (max-width: $mobile-699) {
+            top: 5px;
+        }
+
+        p {
+            display: inline-block;
+            font-size: $font-32;
+            font-family: $font-Hauora-700;
+            color: $color-white-1;
+
+            @media only screen and (max-width: $desktop-1799) {
+                font-size: $font-28;
+            }
+
+            @media only screen and (max-width: $tablet-1049) {
+                font-size: $font-20;
+            }
+
+        }
+
+        img {
+            position: relative;
+            top: -5px;
+            display: inline-block;
+            margin-left: 10px;
+            width: 12px;
+            height: 20px;
+
+            @media only screen and (max-width: $desktop-1799) {
+                width: 10px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.popup-container {
+
+    .popup {
+        padding: 16px 20px 16px 8px;
+        background-color: $color-gray-1;
+        font-weight: 300;
+
+        @media only screen and (max-width: $mobile-699) {
+            display: none;
+        }
+
+        .verticle_image {
+            // filter: invert(1);
+            // stroke-width: 4px;
+            height: 68px;
+            // width: 1px;
+            // opacity: 0.3;
+        }
+
+        .inner-card-popup {
+            p {
+                color: $color-white;
+                font-family: $font-Hauora-500;
+                font-weight: 100;
+            }
+
+            .inner-first-div {
+                .sent-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                label {
+                    font-size: $font-14;
+                    color: $color-white-1;
+                    font-family: $font-Hauora-700;
+                    margin-bottom: 0;
+                }
+
+                .tick-area {
+                    margin-left: 6px;
+                    border-radius: 50%;
+                    width: 16px;
+                    height: 16px;
+                    border: 1.8px solid #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .input-wrapper {
+                position: relative;
+
+                .input-country-code {
+                    position: absolute;
+                    left: 10px;
+                    top: 18px;
+                    font-family: $font-Hauora;
+                    font-weight: normal;
+                    font-size: $font-14;
+                    color: $color-white;
+                    font-family: $font-Hauora-500;
+                    opacity: 1;
+                    z-index: 2;
+                }
+
+                input {
+                    font-size: $font-14;
+                    color: $color-white;
+                    font-family: $font-Hauora-500;
+                    height: 58px !important;
+                    border-radius: 5px !important;
+                    opacity: 0.85;
+                    border: 1px solid #616161;
+                    width: 276px;
+                    padding: 10px;
+                    padding-left: 60px;
+
+                    // background-color: #333 !important;
+                    &:focus {
+                        border: 1px solid #616161 !important;
+                    }
+                }
+            }
+
+            button {
+                background-color: $color-white;
+                color: #9C9C9C;
+                font-size: $font-14;
+                font-family: $font-Hauora-700;
+
+            }
+        }
+    }
+
+    .mobile-field {
+        button:not(.get-app-button) {
+            height: 100%;
+            margin-top: 0%;
+            max-width: 110px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            .divider-wrap {
+                margin: 0%;
+            }
+        }
+    }
+}

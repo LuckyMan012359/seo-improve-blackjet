@@ -1,0 +1,1055 @@
+html {
+  &.show-chat {
+    @media only screen and (max-width: $mobile-699) {
+      overflow: hidden !important;
+    }
+  }
+}
+
+body {
+  max-width: 2560px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent overlay */
+  z-index: 999;
+  /* Ensure it's above other content */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-wrap {
+  max-width: 2560px;
+  margin: 0 auto;
+  backdrop-filter: blur(25px);
+  background-color: $OPACITY-Web-Header;
+
+  @media only screen and (max-width: $mobile-699) {
+    background-color: $color-black-1;
+  }
+
+  .slide-out {
+    transform: translateY(-100%);
+  }
+
+  .slide-out {
+    transform: translateY(0%);
+  }
+
+  .common-btn {
+    width: 300px;
+    height: 40px;
+  }
+
+  @media only screen and (max-width: $tablet-767) {
+    padding: 0 32px;
+  }
+
+  @media only screen and (max-width: $mobile-699) {
+    max-width: 2560px;
+    margin: 0 auto;
+    z-index: 99;
+    padding: 0 0px;
+
+    .common-btn {
+      display: none;
+    }
+
+    .become-member-btn {
+      .common-btn {
+        display: block;
+      }
+    }
+
+    .toggle-container {
+      width: 35px;
+      padding: 6px;
+    }
+  }
+
+  @media only screen and (max-width: $mobile-414) {
+    padding: 0 0px;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 15px;
+
+    .common-input {
+      padding-left: 55px;
+      width: 100%;
+    }
+
+    .flight-search-icon {
+      position: absolute;
+      left: 15px;
+      top: 15px;
+    }
+  }
+
+  .flight-type-select {
+    margin: 6px 0;
+
+    span {
+      display: inline-block;
+      min-width: 154.66px;
+      height: 30px;
+      padding: 4px 8px;
+      border: 1px solid $element-accent;
+      border-radius: 42px;
+      color: $element-accent;
+      font-size: $font-14;
+      margin-right: 8px;
+      text-align: center;
+      font-family: $font-Hauora-400;
+
+      @media only screen and (max-width: $mobile-360) {
+        min-width: 144.66px;
+      }
+
+      &.active {
+        color: $grey-808;
+        background-color: $element-accent;
+        font-family: $font-Hauora-700;
+      }
+    }
+  }
+}
+
+.common-btn {
+  display: flex;
+  width: 544px;
+  height: 51px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: $color-white;
+  color: $color-black-1;
+  border-radius: $radius-4;
+  font-family: $font-Hauora-700;
+  font-size: $font-14;
+  border: 1px solid transparent;
+  outline: none;
+
+  &.disable-btn {
+    color: #9c9c9c !important;
+  }
+
+  &.pressed-btn {
+    background-color: $element-pressed-button !important;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.common-btn.dark-btn {
+  color: $color-white-1;
+  border: 1px solid $color-white-1;
+  background-color: transparent;
+}
+
+.common-label {
+  font-size: 14px;
+  font-family: $font-Hauora-700;
+  color: $text-primary;
+
+  @media only screen and (max-width: $mobile-699) {
+    font-family: $font-Hauora-600;
+  }
+
+  .optional-label {
+    color: $text-secondry;
+    font-size: $font-14;
+    font-family: $font-Hauora-200 !important;
+    margin-left: 5px;
+  }
+}
+
+.common-input {
+  display: flex;
+  height: 58px !important;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 53px;
+  align-self: stretch;
+  border-radius: 5px;
+  font-family: $font-Hauora-500;
+  font-size: $font-14;
+  color: $element-accent;
+  appearance: none;
+  width: 100%;
+  background: $grey-606;
+  border: 1px solid $grey-606;
+  outline: 0;
+  color: $text-secondry;
+
+  &:-moz-placeholder {
+    color: $text-field !important;
+    font-size: $font-14;
+    font-family: $font-Hauora-500;
+  }
+
+  &:hover {
+    appearance: none !important;
+  }
+
+  &:focus {
+    border: 1px solid $grey-505;
+    outline: 0;
+  }
+
+  &.focused-input {
+    color: $element-accent;
+  }
+
+  &.noborder {
+    border: none;
+  }
+
+  &:disabled {
+    opacity: 1;
+    background: $grey-606 !important;
+    color: $text-secondry !important;
+  }
+}
+
+.focus-input {
+  border: 1px solid $grey-505;
+  border-radius: 8px;
+
+  input {
+    &:focus {
+      border: none !important;
+    }
+  }
+}
+
+.common-select {
+  display: flex;
+  height: 58px !important;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 53px;
+  align-self: stretch;
+  border-radius: 5px;
+  font-family: $font-Hauora-500;
+  font-size: $font-14;
+  color: $element-accent;
+  appearance: none;
+  width: 100%;
+  background: $grey-606;
+  border: 1px solid $grey-606;
+  outline: 0;
+  color: $text-secondry;
+
+  @media only screen and (max-width: $mobile-699) {
+    height: 52px !important;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    height: 58px !important;
+    padding: 13px 16px;
+    border: 0;
+  }
+
+  .MuiSelect-select.MuiSelect-outlined {
+    color: $text-field;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: $font-14;
+    font-family: $font-Hauora-500;
+  }
+
+  .MuiSvgIcon-fontSizeMedium.MuiSelect-icon {
+    appearance: none;
+    background-image: url(../../public/images/down-arrow.svg);
+    background-position: calc(100% - 4px) calc(1em + -26px), calc(100% - 24px) calc(1em + 2px),
+      100% 0;
+    background-size: 15px 30px, 24px 5px, 2.5em 2.5em;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+
+    path {
+      display: none;
+    }
+  }
+
+  &.value-selected {
+    >div {
+      color: $text-secondry !important;
+    }
+  }
+}
+.common-selectV2 {
+  display: flex;
+  height: 58px !important;
+  padding: 13px 16px;
+  align-items: center;
+  gap: 53px;
+  align-self: stretch;
+  border-radius: 5px;
+  font-family: $font-Hauora-500;
+  font-size: $font-14;
+  color: $element-accent;
+  appearance: none;
+  width: 100%;
+  background: $grey-606;
+  border: 1px solid $grey-606;
+  outline: 0;
+  color: $text-secondry;
+
+  @media only screen and (max-width: $mobile-699) {
+    height: 52px !important;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    height: 58px !important;
+    padding: 13px 16px;
+    border: 0;
+  }
+
+  .MuiSelect-select.MuiSelect-outlined {
+    color: $text-field;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: $font-14;
+    font-family: $font-Hauora-500;
+  }
+
+ 
+
+  &.value-selected {
+    >div {
+      color: $text-secondry !important;
+    }
+  }
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  background-color: $grey-909;
+
+  .MuiList-root.MuiList-padding.MuiMenu-list {
+    position: relative;
+    z-index: 9999;
+    background-color: $grey-909;
+    border-radius: 4px;
+    display: flex;
+    padding: 16px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    gap: 10px;
+
+    .MuiButtonBase-root.MuiMenuItem-root {
+      color: $element-accent;
+      font-size: $font-14;
+      font-family: $font-Hauora-500;
+      -webkit-transition: all 400ms linear;
+      transition: all 400ms linear;
+
+      &:hover {
+        background-color: #f2f2f208;
+      }
+
+      &.Mui-disabled {
+        display: none !important;
+      }
+
+      &.Mui-selected {
+        display: block;
+        width: 100%;
+        background-color: #f2f2f208;
+      }
+    }
+  }
+}
+
+.header-btn {
+  font-family: $font-Hauora-700;
+}
+
+.get_app {
+  color: #ffffff;
+  text-align: center;
+  font-size: $font-14;
+  font-family: $font-Hauora-500;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.heading-32 {
+  font-size: $font-32;
+  font-family: $font-Hauora-600;
+  color: $element-accent;
+}
+
+.heading-20 {
+  font-size: $font-20;
+  font-family: $font-Hauora-600;
+  color: $element-accent;
+}
+
+.heading-24 {
+  font-size: $font-24;
+  font-family: $font-Hauora-600;
+  color: $element-accent;
+}
+
+.heading-16 {
+  font-size: $font-16;
+  font-family: $font-Hauora-600;
+  color: $color-white;
+}
+
+.heading-14 {
+  font-size: $font-14;
+  font-family: $font-Hauora-400;
+  color: $color-white-2;
+}
+
+.common-card {
+  background-color: $opacity-web-cards;
+  padding: 24px;
+  min-height: 200px;
+  backdrop-filter: blur(17.5px);
+  border-radius: 4px;
+}
+
+.form-group {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 22px;
+
+  label {
+    font-size: $font-14;
+    font-family: $font-Hauora-700;
+    color: $color-white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+  }
+
+  .form-control {
+    background-color: #333;
+    height: 52px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    font-size: $font-14;
+    font-family: $font-Hauora-600;
+    color: $color-white;
+    border: 1px solid #333;
+
+    &:focus {
+      border: 1px solid #616161 !important;
+    }
+
+    &::placeholder {
+      color: $color-gray-3 !important;
+    }
+  }
+}
+
+.custom-checkbox {
+  display: block;
+
+  input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+
+  label {
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      -webkit-appearance: none;
+      background-color: $text-primary;
+      border: 2px solid $text-primary;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      top: -1px;
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  }
+
+  input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid $grey-808;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &.checkbox-error {
+    label::before {
+      border: 2px solid red;
+    }
+  }
+}
+
+.remove-arrow {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.done-tick {
+  width: 17px;
+  height: 16px;
+
+  border: 1px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .bg-white-overlay {
+    position: absolute;
+    background-color: $color-white;
+    top: 0;
+    left: 10%;
+    bottom: 0;
+    right: 0;
+    animation: rightWidthIncrease 2s ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
+  }
+}
+
+@keyframes rightWidthIncrease {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes svgAnimation {
+  from {
+    stroke-dashoffset: 1000;
+  }
+
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+.getapp-inputfield {
+  input {
+    background-color: $opacity-field-bkgd-25;
+
+    &:focus {
+      background-color: $opacity-field-bkgd-25 !important;
+    }
+  }
+
+  button {
+    background-color: $opacity-field-bkgd-25 !important;
+  }
+
+  .common-input {
+    border: none;
+  }
+}
+
+.tick-container {
+  width: 17px;
+  background-color: transparent;
+
+  .svg-success {
+    display: inline-block;
+    vertical-align: top;
+    height: 16px;
+    width: 17px;
+    opacity: 1;
+    overflow: visible;
+
+    @keyframes success-tick {
+      0% {
+        stroke-dashoffset: 16px;
+        opacity: 1;
+      }
+
+      100% {
+        stroke-dashoffset: 31px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes success-circle-outline {
+      0% {
+        stroke-dashoffset: 72px;
+        opacity: 1;
+      }
+
+      100% {
+        stroke-dashoffset: 0px;
+        opacity: 1;
+      }
+    }
+
+    .success-tick {
+      fill: none;
+      stroke-width: 2px;
+      stroke: $grey-808;
+      stroke-dasharray: 15px, 15px;
+      stroke-dashoffset: -14px;
+      opacity: 0;
+      stroke-width: 3;
+      animation: success-tick 450ms ease 1400ms forwards;
+    }
+
+    .success-circle-outline {
+      fill: none;
+      stroke-width: 2.5px;
+      stroke: $grey-808;
+      stroke-dasharray: 72px, 72px;
+      stroke-dashoffset: 72px;
+      opacity: 0;
+      stroke-width: 4;
+      animation: success-circle-outline 300ms ease-in-out 800ms forwards;
+    }
+
+    .success-circle-fill {
+      fill: $element-accent;
+      stroke: none;
+      opacity: 1;
+    }
+  }
+}
+
+#mobile-faq,
+#legal-mobile,
+#contact-mobile,
+#about-mobile {
+  .close-btn {
+    display: none;
+
+    @media screen and (max-width: $mobile-699) {
+      display: block;
+      position: absolute;
+      padding: 16px;
+      top: 0px;
+      left: 0px;
+      z-index: 99999;
+    }
+  }
+
+  @media screen and (max-width: $mobile-699) {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $grey-808;
+    overflow: auto;
+
+    &.slide-in {
+      transform: translateY(0%);
+    }
+
+    .sticky-tab {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .bottom-trademark-contact {
+      color: $text-field;
+      text-align: center;
+      font-family: 'Hauora-400';
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      display: block;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 9px;
+      background-color: $grey-808;
+    }
+  }
+}
+
+
+
+
+.common-scroll-mob {
+  @media screen and (max-width: $mobile-699) {
+    overflow-y: auto;
+    height: calc(100vh - 50px);
+    padding-top: 100px;
+    background-color: $grey-808;
+  }
+}
+
+.safari-bottom-safe-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-bottom);
+  background-color: #1414144d;
+  z-index: 9999;
+}
+
+.safari-top-safe-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top);
+  background-color: #1414144d;
+  z-index: 9999;
+}
+
+.mob-page-footer {
+  display: none;
+
+  @media screen and (max-width: $mobile-699) {
+    display: block;
+    margin-top: 64px;
+
+    p {
+      color: $text-field;
+      font-size: $font-12;
+      font-family: $font-Hauora-400;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-699) {
+  #legal-mobile .sticky-tab {
+    position: fixed !important;
+  }
+}
+
+.react-hot-tost-style {
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(7.5px);
+  color: $element-accent;
+}
+
+.showMessageIcon {
+  border: 1px solid $element-accent;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $element-accent;
+  min-width: 20px;
+  min-height: 20px;
+  margin-left: 4px;
+}
+
+.go3958317564 {
+  width: 100%;
+}
+
+.css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root {
+  z-index: 99999 !important;
+}
+
+.css-1sucic7 {
+  z-index: 99999 !important;
+}
+
+.strick-text {
+  width: max-content;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -0.1em;
+    right: -0.1em;
+    top: 0.35em;
+    bottom: 0.35em;
+    background: -webkit-linear-gradient(to left bottom,
+        transparent 45.5%,
+        $color-strikeout 47.5%,
+        $color-strikeout 50.5%,
+        transparent 51.5%);
+    background: linear-gradient(to left bottom,
+        transparent 45.5%,
+        $color-strikeout 47.5%,
+        $color-strikeout 50.5%,
+        transparent 51.5%);
+    pointer-events: none;
+  }
+}
+
+.MuiAutocomplete-listbox {
+  color: $element-accent !important;
+
+  .Mui-focused {
+    background-color: #f2f2f208 !important;
+  }
+
+  li {
+    &:hover {
+      background-color: #f2f2f208 !important;
+    }
+  }
+}
+
+.MuiAutocomplete-noOptions,
+.css-6wwd73-MuiAutocomplete-noOptions {
+  color: $element-accent !important;
+  background-color: #f2f2f208 !important;
+}
+
+.dialog-modal-container {
+  .MuiPaper-root {
+    background-color: rgba(36, 36, 36, 0.3) !important;
+    box-shadow: 0px 0px 0px 999px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(37.5px);
+  }
+
+  .dialog-main {
+    color: $text-secondry;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .dialog-text-highlight {
+      color: $element-accent;
+      font-family: $font-Hauora-500;
+      font-size: $font-16;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .dialog-text-description {
+      font-size: $font-14;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.dialog-action-btn {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+
+  .common-btn {
+    width: 100%;
+  }
+}
+
+.accent-text {
+  color: $element-accent !important;
+}
+
+.secondary-text {
+  color: $text-secondry !important;
+}
+
+/* Target the play button element within the video */
+video::-webkit-media-controls-play-button {
+  display: none;
+}
+
+.css-11xg3hu-MuiAutocomplete-root .MuiOutlinedInput-root {
+  padding: 0px !important;
+}
+
+
+.payment-method-text {
+  color: $text-primary;
+
+  .latest-price-with-discount {
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums stacked-fractions ordinal;
+    font-family: $font-Hauora-500;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .discount-price-wrapper {
+    margin-left: .5rem;
+
+    .discount-price {
+      color: $text-secondary;
+      font-weight: 400;
+      font-size: $font-16;
+      font-family: $font-Hauora-400;
+      font-style: normal;
+      line-height: normal;
+    }
+
+    .month-discount {
+      color: $text-secondary;
+      font-weight: 300;
+      font-size: $font-12;
+    }
+  }
+
+  .latest-price-without-discount {
+    font-size: $font-42;
+    font-weight: 500;
+
+    @media only screen and (max-width: $desktop-1440) {
+      font-size: $font-32;
+    }
+
+    @media only screen and (max-width: $mobile-744) {
+      font-size: $font-24;
+    }
+
+    .month {
+
+      font-size: $font-24;
+      font-weight: 300;
+      color: $text-primary;
+      font-family: $font-Hauora;
+
+      @media only screen and (max-width: $desktop-1440) {
+        font-size: $font-20;
+      }
+
+      @media only screen and (max-width: $mobile-744) {
+        font-size: $font-16;
+      }
+    }
+  }
+}
+
+.payment-initiation-fee {
+  .discount-initiation-fee-strike {
+    color: $text-primary;
+    font-family: $font-Hauora-500;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .discount-initiation-fee-text {
+    color: $text-secondary;
+    font-family: $font-Hauora-400;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.pre-order-simmer-effect {
+  div {
+    width: 50%;
+    text-wrap: nowrap;
+    text-align: center;
+    color: transparent;
+
+    background: -webkit-gradient(linear, left top, right top, from($grey-808), to($grey-808), color-stop(0.4, #975DBB), color-stop(0.6, #7D7EC0));
+    background: -moz-gradient(linear, left top, right top, from($grey-808), to($grey-808), color-stop(0.4, #975DBB), color-stop(0.6, #7D7EC0));
+    background: gradient(linear, left top, right top, from($grey-808), to($grey-808), color-stop(0.4, #975DBB), color-stop(0.6, #7D7EC0));
+
+
+    -webkit-background-size: 3rem 100%;
+    -moz-background-size: 3rem 100%;
+    background-size: 3rem 100%;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    animation-name: shimmer;
+
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    animation-duration: 3s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+
+    background-position: 0 0;
+    background-color: #222;
+  }
+}
+
+.loader-wrap-editor {
+  position: fixed;
+  top: 1px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+
+.custom-chip {
+  background-color: $color-white;
+  border-radius: 3rem;
+  border: 1px solid $color-white;
+  display: flex;
+  width: fit-content;
+
+  padding: 6px 10px;
+  font-size: $font-12;
+  font-family: $font-Hauora-500;
+  color: $grey-808;
+
+  @media only screen and (max-width: $mobile-744) {
+    font-size: $font-10;
+  }
+
+}

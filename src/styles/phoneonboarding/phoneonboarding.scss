@@ -1,0 +1,225 @@
+.phone-onboarding {
+    // position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // z-index: 999;
+    // transform: translateY(200%);
+    // transition: all 0.3s ease-in-out;
+    background-color: $grey-808;
+    overflow: scroll;
+    // z-index: 999;
+    // height: 100vh;
+
+
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+
+    @media screen and (max-width: $mobile-699) {
+        background-image: url(../../../public/images/Common-bg-MB-BkgdTextureOpt.svg);
+        // background-image: url(../../public/images/Common-bg-MB-BkgdTextureOpt.svg);
+        background-color: transparent;
+
+        .free-card {
+            padding-bottom: 80px;
+
+            .free-payment {
+                .payment-header-wrapper {
+                    height: 170px;
+                }
+            }
+
+            .choose-txt {
+                display: none;
+            }
+        }
+    }
+
+    .close-btn {
+        padding: 20px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+
+        @media screen and (min-width: $mobile-699) {
+            left: 16px;
+        }
+    }
+
+    &.open {
+        transform: translateY(0%);
+    }
+
+    .initial-screen {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: $grey-808;
+        padding: 16px;
+        color: $element-accent;
+        text-align: center;
+        font-family: "Hauora-600";
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+
+        .mid-section {
+            margin: auto 15px;
+
+            .free-flying {
+                font-size: $font-32;
+                font-family: $font-Hauora-600;
+                line-height: 43.71px;
+                color: $element-accent;
+            }
+
+            .personal-jet {
+                font-size: $font-24;
+                font-family: $font-Hauora-600;
+                line-height: 32.78px;
+                color: $element-accent;
+                margin: 34px auto;
+            }
+
+            .unlimited-flights {
+                font-size: $font-16;
+                color: $element-accent;
+                font-family: $font-Hauora-600;
+            }
+        }
+    }
+
+    .otp-screen {
+        padding: 16px;
+        height: auto;
+
+        @media screen and (max-width: $mobile-699) {
+
+            // height: calc(100vh - 20px);
+            .otp {
+                margin-top: 10px !important;
+            }
+        }
+
+        .otp-instructions {
+            font-family: "Hauora-600";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-bottom: 16px !important;
+        }
+    }
+
+    .info-section-wrap {
+        @media screen and (max-width: $mobile-699) {
+            .basic-wrapper {
+                padding-bottom: 200px;
+            }
+        }
+    }
+}
+
+.error-indicator {
+    .MuiOtpInput-TextField {
+        border-color: red;
+    }
+}
+
+.email-suggestions {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    padding: 16px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+    background: $grey-909;
+    color: $element-accent;
+    z-index: 9999;
+
+    div {
+        width: 100%;
+        height: 26px;
+        font-family: "Hauora-500";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+        border-radius: 5px;
+
+        &:hover {
+            background: $grey-808;
+        }
+
+        &.active {
+            background: $grey-808;
+        }
+    }
+}
+
+.landscape {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+    background: $grey-909;
+    width: 100%;
+
+    .landscape-text {
+        h1 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 27.32px;
+            color: $font-gray;
+        }
+
+        p {
+            color: $text-field;
+            line-height: 21.86px;
+        }
+    }
+
+    .bottom-trademark {
+        width: 100%;
+        bottom: 8px;
+        color: $color-gray-3;
+        text-align: center;
+        font-family: $font-Hauora-400;
+        font-size: $font-12;
+        font-style: normal;
+        line-height: normal;
+    }
+}
+
+.resend-btn {
+    button {
+        width: 147px;
+        height: 37px;
+        color: $text-secondry;
+        font-size: $font-14;
+        font-family: $font-Hauora-500;
+        font-weight: normal;
+        border-radius: 39px;
+        background: $grey-606;
+    }
+}

@@ -1,0 +1,203 @@
+.tour-section-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 112px 162px;
+  background-color: $grey-808;
+
+  @media only screen and (max-width: $desktop-1799) {
+    padding: 72px 108px;
+  }
+
+  @media only screen and (max-width: $tablet-1049) {
+    padding: 48px;
+  }
+
+  @media screen and (max-width: $mobile-699) {
+    gap: 0px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    padding: 30px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 390px) {
+    padding: 16px;
+  }
+
+  .tour-banner-container {
+    height: 706px;
+    object-fit: contain;
+
+    @media only screen and (max-width: 1899px) {
+      height: 355px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      height: 300px;
+    }
+
+    @media only screen and (max-width: $mobile-540) {
+      // display: none;
+      width: fit-content;
+      height: 200px;
+    }
+
+    .tour-banner {
+
+      .tour-button {
+        color: $grey-909;
+      }
+
+
+      &.desktop-img {
+        display: block;
+
+        @media only screen and (max-width: $mobile-699) {
+          // display: none;
+          width: fit-content;
+          height: 250px;
+        }
+
+        @media only screen and (max-width: 550px) {
+          // display: none;
+          width: fit-content;
+          height: 200px;
+        }
+
+        @media only screen and (max-width: 450px) {
+          // display: none;
+          width: fit-content;
+          height: 160px;
+        }
+      }
+
+      &.mobile-img {
+        display: none;
+
+        @media only screen and (max-width: $mobile-699) {
+          position: relative;
+          top: -16px;
+          display: block;
+        }
+      }
+
+      // @media only screen and (max-width: $mobile-699) {
+      //   // height: 50%;
+      //   display: block;
+      // }
+    }
+  }
+
+  .tour-txt-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+
+    @media only screen and (max-width: 699px) {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .text-section {
+      display: flex;
+      padding: 36px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+      flex: 1 0 0;
+      border-radius: 1px;
+      background-color: #242424;
+
+      @media only screen and (max-width: $desktop-1799) {
+        padding: 24px;
+      }
+
+      @media only screen and (max-width: $tablet-1049) {
+        padding: 16px;
+      }
+
+      @media only screen and (max-width: 699px) {
+        padding-top: 24px;
+      }
+
+      .list-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+
+        .list-div {
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+          justify-content: start;
+          gap: 10px;
+          width: 100%;
+
+          img {
+            @media only screen and (max-width: $desktop-1100) {
+              opacity: 0.9;
+            }
+          }
+
+          p {
+            flex: 1 1 0%;
+            line-height: 24px;
+            font-size: $font-20;
+            max-width: 985px;
+            color: $font-white;
+            font-family: $font-Hauora-500;
+
+            span {
+              color: $font-gray;
+            }
+
+            @media only screen and (max-width: $desktop-1799) {
+              font-size: $font-18;
+            }
+
+            @media only screen and (max-width: $mobile-699) {
+              font-size: $font-14;
+            }
+
+          }
+        }
+
+      }
+
+      h1 {
+        font-size: $font-42;
+        color: $color-white;
+        font-family: $font-Hauora-600;
+
+        @media only screen and (max-width: $desktop-1799) {
+          font-size: $font-32;
+        }
+
+        @media only screen and (max-width: $desktop-1100) {
+          color: $color-white-1;
+        }
+
+        @media only screen and (max-width: $tablet-991) {
+          font-size: $font-24;
+        }
+      }
+
+      img {
+        height: 31px;
+        width: 31px;
+      }
+    }
+  }
+}

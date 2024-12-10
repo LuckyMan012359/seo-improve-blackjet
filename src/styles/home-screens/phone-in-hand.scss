@@ -1,0 +1,344 @@
+.experience-black-wrap {
+  position: relative;
+  z-index: 3;
+  height: 1340px;
+  overflow: hidden;
+  background-color: $grey-707;
+  @media only screen and (max-width: $mobile-699) {
+    background: #242424;
+  }
+
+  .large-ex-screen {
+    @media only screen and (max-width: $tablet-1049) {
+      position: relative;
+      top: 100px;
+    }
+    @media only screen and (max-width: $tablet-767) {
+      position: relative;
+      right: -100px;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+      position: relative;
+      right: 10px;
+    }
+
+    @media only screen and (max-width: $mobile-540) {
+      transform: scale(1.2);
+      left: -70px;
+    }
+    @media only screen and (max-width: 431px) {
+      transform: scale(1.4);
+      left: -34px;
+    }
+ 
+    @media only screen and (max-width: 415px) {
+      transform: scale(1.5);
+      left: -35px;
+    }
+    @media only screen and (max-width: $mobile-390) {
+      transform: scale(1.7);
+      right: 0;
+      bottom: -0px;
+      left: -87px;
+    }
+    @media only screen and (max-width: 200px) {
+      transform: scale(2);
+      left: -25px;
+    }
+  }
+
+  @media only screen and (max-width: $desktop-1799) {
+    height: 1100px;
+  }
+
+  @media only screen and (max-width: $desktop-1600) {
+    height: 950px;
+  }
+
+  @media only screen and (max-width: $desktop-1440) {
+    height: 880px;
+  }
+
+  .experience-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 304px;
+    height: 100%;
+
+    .transform-wrap {
+      // transform: none !important;
+
+      @media only screen and (max-width: $mobile-699) {
+        &:last-child {
+          height: 610px;
+
+          .experience-section-right {
+            display: block;
+            gap: 15px;
+            left: auto;
+            right: 0px;
+            bottom: 20px;
+            top: auto;
+          }
+        }
+      }
+
+      @media only screen and (max-width: $mobile-540) {
+        .experience-section-right {
+          right: -70px !important;
+        }
+      }
+
+      @media only screen and (max-width: $mobile-390) {
+        .experience-section-right {
+          right: -150px !important;
+          display: flex !important;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $desktop-1920) {
+      padding: 0 200px;
+    }
+
+    @media only screen and (max-width: $desktop-1800) {
+      padding: 0 151.8px;
+    }
+
+    @media only screen and (max-width: $desktop-1799) {
+      padding: 0 99.5px;
+    }
+    @media only screen and (max-width: $desktop-1200) {
+      padding: 0 40px 0 99.5px;
+    }
+    @media only screen and (max-width: $desktop-1100) {
+      padding: 0 20px;
+      top: 0px;
+    }
+    @media only screen and (max-width: $tablet-1049) {
+      display: block;
+      top: 150px;
+    }
+    .experience-section-left {
+      @media only screen and (max-width: $tablet-991) {
+        position: relative;
+        top: -40px;
+      }
+      h2 {
+        font-size: $font-64;
+        font-family: $font-Hauora-600;
+        color: $color-white;
+
+        @media only screen and (max-width: $desktop-1799) {
+          font-size: $font-42;
+        }
+
+        @media only screen and (max-width: $tablet-1049) {
+          text-align: center;
+          font-size: $font-32;
+
+          br {
+            display: none;
+          }
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          max-width: 399px;
+          margin: 0 auto;
+
+          br {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .experience-section-right {
+      @media only screen and (max-width: $tablet-1049) {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(0%);
+      }
+
+      @media only screen and (max-width: $tablet-991) {
+        transform: translateY(30%);
+      }
+      @media only screen and (max-width: 699px) {
+        transform: translateX(30%);
+        margin: 0;
+        top: 65%;
+        position: absolute;
+      }
+      @media only screen and (max-width: 439px) {
+        transform: translateX(16%);
+      }
+
+      .experience-right-card {
+        display: flex;
+        width: 416px;
+        padding: 24px;
+        align-items: center;
+        gap: 28px;
+        border-radius: $radius-8;
+        background-color: $color-black;
+        margin-bottom: 20px;
+
+        @media only screen and (max-width: $desktop-1800) {
+          width: 368px;
+        }
+
+        @media only screen and (max-width: $desktop-1799) {
+          width: 336px;
+          padding: 16px;
+        }
+
+        @media only screen and (max-width: $desktop-1100) {
+          width: 304px;
+          padding: 16px;
+        }
+
+        @media only screen and (max-width: $tablet-1049) {
+          width: 215px;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+          display: inline-flex;
+          width: 190px;
+          padding: 10px 8px;
+          gap: 12px;
+          height: auto;
+          background-color: $opacity-callout-black-50;
+          &:last-child {
+            height: 156px;
+            position: relative;
+            top: 8px;
+            margin-left: 15px;
+          }
+        }
+
+        @media only screen and (max-width: 439px) {
+          display: inline-flex;
+          width: 182px;
+          padding: 10px 8px;
+          gap: 10px;
+          height: auto;
+        }
+        @media only screen and (max-width: 423px) {
+          width: 175px;
+          padding: 8px 3px;
+          gap: 8px;
+          height: auto;
+        }
+        @media only screen and (max-width: 409px) {
+          width: 168px;
+          padding: 8px 3px;
+          gap: 8px;
+        }
+        @media only screen and (max-width: 395px) {
+          width: 154px;
+        }
+
+        @media only screen and (max-width: $mobile-390) {
+          background-color: #00000063;
+
+          &:last-child {
+            top: 0px;
+          }
+          @media only screen and (max-width: 367px) {
+            width: 143px;
+          }
+          @media only screen and (max-width: 345px) {
+            width: 130px;
+          }
+        }
+
+        .experience-img {
+          width: 72px;
+          height: 72px;
+          max-width: auto !important;
+
+          @media only screen and (max-width: $desktop-1799) {
+            width: 48px;
+            height: 48px;
+          }
+
+          @media only screen and (max-width: $tablet-1049) {
+            width: 39px;
+            height: 39px;
+          }
+          @media only screen and (max-width: 367px) {
+            width: 28px;
+            height: 28px;
+          }
+        }
+
+        .experience-text {
+          p {
+            font-size: $font-20;
+            color: $color-white-1;
+            margin-bottom: 10px;
+            font-family: $font-Hauora-700;
+
+            @media only screen and (max-width: $desktop-1799) {
+              font-size: $font-18;
+            }
+
+            @media only screen and (max-width: $tablet-1049) {
+              font-size: $font-16;
+            }
+            @media only screen and (max-width: $mobile-414) {
+              font-size: $font-14;
+            }
+          }
+
+          .booking-description {
+            font-size: $font-18;
+            color: $color-white;
+            display: block;
+            line-height: normal;
+
+            h3 {
+              color: $font-white;
+              font-family: $font-Hauora-500;
+            }
+
+            span {
+              color: $font-gray;
+            }
+
+            @media only screen and (max-width: $desktop-1799) {
+              font-size: $font-16;
+            }
+            @media only screen and (max-width: $tablet-1049) {
+              font-size: $font-12;
+            }
+            @media only screen and (max-width: 350px) {
+              font-size: $font-10;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.desktop-phone {
+  @media only screen and (max-width: $mobile-699) {
+    display: none;
+  }
+}
+
+.mobile-hand {
+  display: none;
+  @media only screen and (max-width: $mobile-699) {
+    display: flex;
+    position: relative;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,88 @@
+/* EmailVerificationError.scss */
+
+.mobile-wrapper {
+    @media only screen and (max-width: $mobile-699) {
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        background-color: #0F0F0F;
+        height: 100%;
+        overflow: scroll;
+        width: 100%;
+    }
+   
+   .mobile-header {
+    padding: 1.3rem 1.3rem;
+    .close-icon {
+        cursor: pointer;
+    }
+   }
+}
+
+.email-verification-error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 1.5rem;
+    width: 100%;
+
+    @media screen and (max-width: $mobile-699) {
+        height: 80vh;
+    }
+
+    .email-subtitle {
+        font-family: $font-Hauora-600;
+        font-size: $font-24;
+        font-weight: 600;
+        line-height: 32.78px;
+        text-align: center;
+        color: $text-primary;
+        @media screen and (max-width: $mobile-699) {
+            padding: 0 5%;
+        }
+    }
+
+
+    .error-message {
+        //styleName: Body/T1 Rg Std;
+        font-family: $font-Hauora-400;
+        font-size: $font-16;
+        font-weight: 400;
+        line-height: 21.86px;
+        text-align: center;
+        color: $font-gray;
+        @media screen and (max-width: $mobile-699) {
+            padding: 0 5%;
+        }
+    }
+
+    .email-verification-fail-btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .email-verification-fail-btn {
+        max-width: 30rem;
+
+        @media screen and (max-width: $mobile-699) {
+            position: absolute;
+            bottom: 2rem;
+            max-width: 90%;
+        }
+    }
+
+
+}
+
+
+.border-bottom-line {
+    width: 3.5rem;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $grey-606;
+}

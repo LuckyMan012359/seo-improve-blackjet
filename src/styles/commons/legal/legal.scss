@@ -1,0 +1,356 @@
+.legal {
+    padding: 60px 200px;
+    background-color: $grey-808;
+
+    .bottom-trademark {
+        display: none;
+
+        @media screen and (max-width: $mobile-699) {
+            display: block;
+        }
+    }
+
+    .\!text-\[\#ffffff\] {
+        @media screen and (max-width: $mobile-699) {
+            background-color: $element-accent !important;
+            color: $grey-808 !important;
+        }
+    }
+
+    .close-btn {
+        @media screen and (max-width: $mobile-699) {
+            position: fixed !important;
+        }
+    }
+
+    @media only screen and (max-width: $desktop-1280) {
+        padding: 48px 100px;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+        padding: 60px 34px;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+        padding: 5px 0px 15px 0px;
+        background-color: $grey-808 !important;
+        overflow: auto;
+        z-index: 9999;
+
+        .common-scroll-mob.sticky-tab {
+            height: calc(100vh - 0px);
+            padding-bottom: 0;
+        }
+
+        .legal-heading {
+            padding-left: 16px;
+        }
+
+        .main-tabs {
+            padding-left: 16px;
+            background: $grey-808;
+
+            nav {
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 55px;
+                // background: $OPACITY-MB-Header-Footer;
+                // backdrop-filter: blur(25px);
+                z-index: 99;
+                padding: 5px 0px 5px 15px;
+
+            }
+
+            .legal-tab-header {
+                padding-left: 0 !important;
+            }
+        }
+
+        .faq-wrap-body {
+            padding: 0px 16px 0px 0px;
+        }
+    }
+
+    .legal-heading {
+        color: var(--ELEMENT-Accent, #fff);
+        font-variant-numeric: lining-nums proportional-nums ordinal;
+        /* Headings/D4 Md Std */
+        font-family: $font-Hauora-500;
+        font-size: $font-64;
+        margin-bottom: 48px;
+        line-height: normal;
+
+        @media only screen and (max-width: $tablet-1049) {
+            margin-top: 50px;
+            margin-bottom: 28px;
+            font-size: $font-54;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+            font-size: $font-20;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            // height: 100px;
+        }
+    }
+
+    .bottom-trademark {
+        @media screen and (max-width: $mobile-699) {
+            position: relative;
+            color: $text-field;
+            display: block;
+            margin-top: 0px;
+            bottom: 10px;
+            text-align: center;
+            font-family: "Hauora-400";
+            font-size: $font-12;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+            width: 100%;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.legal-title {
+    color: var(--ELEMENT-Accent, #FFF);
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    /* Headings/H1 Md Std */
+    font-family: $font-Hauora-500;
+    font-size: $font-42;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 48px;
+
+    @media only screen and (max-width: $tablet-1049) {
+        margin-top: 0px;
+        margin-bottom: 20px;
+        font-size: $font-36;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+        font-size: $font-16;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        font-family: $font-Hauora-700;
+        color: $text-secondry;
+    }
+}
+
+.subtitle {
+    color: var(--TEXT-Secondary, #BFBFBF);
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    /* Headings/H5 sB Std */
+    font-family: $font-Hauora-600;
+    font-size: $font-20;
+    line-height: normal;
+    margin: 16px 0px;
+
+    @media only screen and (max-width: $mobile-699) {
+        font-size: $font-16;
+        font-family: $font-Hauora-600;
+        margin-top: 0px;
+    }
+}
+
+.para-le {
+    color: var(--TEXT-Secondary, #BFBFBF);
+    font-variant-numeric: lining-nums proportional-nums ordinal;
+    /* Body/T1 Rg Std */
+    font-family: $font-Hauora-400;
+    font-size: $font-16;
+    font-style: normal;
+    line-height: normal;
+}
+
+.legal-tab-header {
+    width: 215px;
+    text-align: left !important;
+
+    @media only screen and (max-width: $mobile-699) {
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: row;
+        white-space: pre;
+        padding-left: 0;
+
+        .tab-t {
+            display: inline-block;
+        }
+    }
+}
+
+.main-tabs {
+    display: flex;
+    gap: 95px;
+    .MuiTabs-scroller{
+        overflow-x: scroll !important;
+    }
+
+    @media only screen and (max-width: $tablet-1049) {
+        gap: 40px;
+    }
+
+    @media only screen and (max-width: $mobile-699) {
+        gap: 5px;
+        display: block;
+    }
+
+    .tab-t {
+        color: $text-field;
+        /* Body/T2 Bd Std */
+        font-family: $font-Hauora-700;
+        font-size: $font-14;
+        line-height: normal;
+
+        @media only screen and (max-width: $tablet-1049) {
+            margin-bottom: 10px;
+        }
+
+        @media only screen and (max-width: $mobile-699) {
+            border-radius: 42px;
+            border: 1px solid $element-accent;
+            padding: 8px 12px;
+            color: $element-accent;
+            font-family: $font-Hauora-400;
+            text-align: center;
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-699) {
+    .legal-content-wrap {
+
+        // overflow-y: auto;
+        // height: calc(100vh - 0px);
+        .static-pages-content {
+            padding-bottom: 60px;
+            height: auto;
+        }
+    }
+}
+
+.legal-main-wrapper {
+    display: flex;
+    gap: 11px;
+
+    @media only screen and (max-width: $mobile-699) {
+        flex-direction: column;
+    }
+}
+
+.tab-container {
+    // button {
+    //     outline: none;
+    //     margin: 0;
+    //     padding: 0;
+    //     height: 0px !important;
+    //     min-height: 1.75rem !important;
+    //     margin-left: 1rem;
+    // }
+}
+
+.initial-html-render-content {
+    color: $text-secondry;
+
+    ol,
+    ul,
+    menu {
+        padding: revert;
+        list-style: auto;
+    }
+
+    dl,
+    dd,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    figure,
+    p,
+    pre {
+        margin: 0;
+        font-size: revert;
+        font-weight: revert;
+    }
+
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        unicode-bidi: isolate;
+        list-style: disc;
+    }
+
+    ol>li {
+        list-style: decimal;
+    }
+
+    h1 h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    blockquote {     
+        font-family: $font-Hauora-800;
+        font-weight: bold;
+        font-size: revert;
+    }
+
+    // h1 {
+    //     font-size: 2.5rem; // Adjust as needed
+    // }
+
+    // h2 {
+    //     font-size: 2rem;
+    // }
+
+    // h3 {
+    //     font-size: 1.75rem;
+    // }
+
+    // h4 {
+    //     font-size: 1.5rem;
+    // }
+
+    // h5 {
+    //     font-size: 1.25rem;
+    // }
+
+    // h6 {
+    //     font-size: 1rem;
+    // }
+
+}
+
+.static-pages-content {
+
+    @extend .initial-html-render-content;
+
+    // overflow-y: auto;
+    // height: calc(60vh - 36px);
+    padding-bottom: 30px;
+    background-color: $grey-808;
+
+    @media only screen and (max-width: $mobile-699) {
+        padding-top: 0px;
+        height: 100%;
+    }
+}
+
+.MuiButtonBase-root {
+    &:focus {
+        outline: none !important;
+    }
+}
