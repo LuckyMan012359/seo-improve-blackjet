@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 /**
  * WhyMemberCards component
@@ -39,27 +39,22 @@ import React from "react";
  * @return {JSX.Element} The rendered component.
  */
 const WhyMemberCards = () => {
-
-
-
-/**
- * handleMouseLeave event handler
- *
- * This function is called when the user's mouse leaves a card in the "Why be a
- * member?" section of the home page. It prevents the default behavior of the
- * event, stops the event from propagating, and removes the "--mouse-x" and
- * "--mouse-y" properties from the target element's style.
- *
- * @param {Event} e The event object
- */
+  /**
+   * handleMouseLeave event handler
+   *
+   * This function is called when the user's mouse leaves a card in the "Why be a
+   * member?" section of the home page. It prevents the default behavior of the
+   * event, stops the event from propagating, and removes the "--mouse-x" and
+   * "--mouse-y" properties from the target element's style.
+   *
+   * @param {Event} e The event object
+   */
   const handleMouseLeave = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    e.target.style.removeProperty("--mouse-x");
-    e.target.style.removeProperty("--mouse-y");
+    e.target.style.removeProperty('--mouse-x');
+    e.target.style.removeProperty('--mouse-y');
   };
-
-
 
   /**
    * handleMouseMove event handler
@@ -78,205 +73,170 @@ const WhyMemberCards = () => {
     const rect = e.target.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    e.target.style.setProperty("--mouse-x", `${x}px`);
-    e.target.style.setProperty("--mouse-y", `${y}px`);
+    e.target.style.setProperty('--mouse-x', `${x}px`);
+    e.target.style.setProperty('--mouse-y', `${y}px`);
   };
 
   return (
     <div>
-      <div className="why-member-main">
+      <div className='why-member-main'>
         <h1>Why be a member?</h1>
 
-        <div id="homeCards" className="home-card-grid">
-          <div
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-            className="homeCard"
-          >
-            <div className="home-inner">
-              <img src="/images/img_favorite_white_a700.svg" alt="favorite" />
-              <h1 className="homeCardHeader">Unlimited flights</h1>
+        <div id='homeCards' className='home-card-grid'>
+          <div onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} className='homeCard'>
+            <div className='home-inner'>
+              <img src='/images/img_favorite_white_a700.svg' alt='favorite' />
+              <h1 className='homeCardHeader'>Unlimited flights</h1>
             </div>
-            <p className="homeCardDesc">
-              Enjoy unlimited flights with a fixed monthly fee. Absolutely no
-              hidden charges, no surprises.
+            <p className='homeCardDesc'>
+              Enjoy unlimited flights with a fixed monthly fee. Absolutely no hidden charges, no
+              surprises.
             </p>
           </div>
-          <div
-            className="homeCard"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="home-inner">
-              <img src="/images/img_user.svg" alt="user" />
-              <h1 className="homeCardHeader">
-                Arrive 15 minutes before departure
-              </h1>
+          <div className='homeCard' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className='home-inner'>
+              <img src='/images/img_user.svg' alt='user' />
+              <h3 className='homeCardHeader'>Arrive 15 minutes before departure</h3>
             </div>
             <p
               // className=""
-              className="homeCardDesc"
+              className='homeCardDesc'
             >
-              Arrive a mere 15 minutes before departure at our exclusive private
-              terminal — say goodbye to busy terminals and lengthy lines.
+              Arrive a mere 15 minutes before departure at our exclusive private terminal — say
+              goodbye to busy terminals and lengthy lines.
             </p>
           </div>
-          <div
-            className="homeCard"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="home-inner">
-              <img src="/images/img_settings.svg" alt="settings" />
-              <h1 className="homeCardHeader">Private terminal lounges</h1>
+          <div className='homeCard' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className='home-inner'>
+              <img src='/images/img_settings.svg' alt='settings' />
+              <h3 className='homeCardHeader'>Private terminal lounges</h3>
             </div>
-            <p className="homeCardDesc">
-              Travel in style from our private terminal lounges. Indulge in a
-              selection of carefully chosen healthy snacks and beverages for a
-              refined experience.
+            <p className='homeCardDesc'>
+              Travel in style from our private terminal lounges. Indulge in a selection of carefully
+              chosen healthy snacks and beverages for a refined experience.
             </p>
           </div>
           <div
-            className="homeCard commit"
+            className='homeCard commit'
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="home-inner">
-              <img
-                src="/images/img_television_white_a700.svg"
-                alt="television"
-              />
-              <h1 className="homeCardHeader">
-                No commitment, cancel anytime
-              </h1>
+            <div className='home-inner'>
+              <img src='/images/img_television_white_a700.svg' alt='television' />
+              <h3 className='homeCardHeader'>No commitment, cancel anytime</h3>
             </div>
-            <p className="homeCardDesc">
-              Benefit from our membership's monthly payments and auto-renewal.
-              Cancel anytime to stop auto-renewal if unsatisfied—no lock-in
-              contracts, no risk.
+            <p className='homeCardDesc'>
+              Benefit from our membership's monthly payments and auto-renewal. Cancel anytime to
+              stop auto-renewal if unsatisfied—no lock-in contracts, no risk.
             </p>
           </div>
           <div
-            className="homeCard stress"
+            className='homeCard stress'
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="home-inner">
-              <img src="/images/img_close.svg" alt="close" />
-              <h1 className="homeCardHeader">
+            <div className='home-inner'>
+              <img src='/images/img_close.svg' alt='close' />
+              <h3 className='homeCardHeader'>
                 Stress-free <span>and</span> hassle-free
-              </h1>
+              </h3>
             </div>
-            <p className="homeCardDesc">
-              Enjoy serene departures and arrivals from our private terminal,
-              where our hostess greets you by name without complex check-ins or
-              boarding. Seamless, comfortable, and convenient travel tailored to
-              you.
+            <p className='homeCardDesc'>
+              Enjoy serene departures and arrivals from our private terminal, where our hostess
+              greets you by name without complex check-ins or boarding. Seamless, comfortable, and
+              convenient travel tailored to you.
             </p>
           </div>
           <div
-            className="homeCard health"
+            className='homeCard health'
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="home-inner">
-              <img
-                src="/images/img_favorite_white_a700_48x44.svg"
-                alt="favorite"
-              />
-              <h1 className="homeCardHeader">Health <span>and</span> safety</h1>
+            <div className='home-inner'>
+              <img src='/images/img_favorite_white_a700_48x44.svg' alt='favorite' />
+              <h3 className='homeCardHeader'>
+                Health <span>and</span> safety
+              </h3>
             </div>
-            <p className="homeCardDesc">
-              You fly with a maximum of 7 other passengers. With less contact
-              points and reduced stress, our travel experience grants you more
-              time for relaxation. Arrive healthier, rejuvenated, and ready to
-              focus on what's truly important.
+            <p className='homeCardDesc'>
+              You fly with a maximum of 7 other passengers. With less contact points and reduced
+              stress, our travel experience grants you more time for relaxation. Arrive healthier,
+              rejuvenated, and ready to focus on what's truly important.
+            </p>
+          </div>
+          <div className='homeCard' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className='home-inner'>
+              <img src='/images/img_whybeamember.svg' alt='whybeamember' />
+              <h3 className='homeCardHeader'>Flexibility</h3>
+            </div>
+            <p className='homeCardDesc'>
+              Instantly book your flight at any moment, with the freedom to cancel without penalty
+              up to 24 hours before takeoff. The era of travel tailored to your preferences is here.
+            </p>
+          </div>
+          <div className='homeCard' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className='home-inner'>
+              <img src='/images/img_search.svg' alt='search' />
+              <h3 className='homeCardHeader'>
+                Community <span>and</span> networking
+              </h3>
+            </div>
+            <p className='homeCardDesc'>
+              Join a community of discerning Black Jet members, fostering meaningful connections
+              both in the skies and on the ground.
             </p>
           </div>
           <div
-            className="homeCard"
+            className='homeCard guest'
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="home-inner">
-              <img src="/images/img_whybeamember.svg" alt="whybeamember" />
-              <h1 className="homeCardHeader">Flexibility</h1>
+            <div className='home-inner'>
+              <img src='/images/img_close_white_a700.svg' alt='close' />
+              <h3 className='homeCardHeader'>Guest Passes</h3>
             </div>
-            <p className="homeCardDesc">
-              Instantly book your flight at any moment, with the freedom to
-              cancel without penalty up to 24 hours before takeoff. The era of
-              travel tailored to your preferences is here.
+            <p className='homeCardDesc'>
+              With a Black Jet membership, every three months a complementary Guest Pass is reserved
+              for you, letting you introduce a chosen one to fly with you on a flight. With an
+              active Black Jet membership, your yet-to-be-used Guest Passes never expire.
             </p>
           </div>
           <div
-            className="homeCard"
+            className='homeCard private-jet'
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
-            <div className="home-inner">
-              <img src="/images/img_search.svg" alt="search" />
-              <h1 className="homeCardHeader">Community <span>and</span> networking</h1>
-            </div>
-            <p className="homeCardDesc">
-              Join a community of discerning Black Jet members, fostering
-              meaningful connections both in the skies and on the ground.
-            </p>
-          </div>
-          <div
-            className="homeCard guest"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="home-inner">
-              <img src="/images/img_close_white_a700.svg" alt="close" />
-              <h1 className="homeCardHeader">Guest Passes</h1>
-            </div>
-            <p className="homeCardDesc">
-              With a Black Jet membership, every three months a complementary
-              Guest Pass is reserved for you, letting you introduce a chosen one
-              to fly with you on a flight. With an active Black Jet membership,
-              your yet-to-be-used Guest Passes never expire.
-            </p>
-          </div>
-          <div
-            className="homeCard private-jet"
-            onMouseMove={handleMouseMove}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="home-inner">
-              <img src="/images/private-m.svg" alt="thumbsup" />
-              <h1 className="homeCardHeader">
+            <div className='home-inner'>
+              <img src='/images/private-m.svg' alt='thumbsup' />
+              <h3 className='homeCardHeader'>
                 Private jet <span>travel experience</span> within your reach
-              </h1>
+              </h3>
             </div>
-            <p className="homeCardDesc">
-              Gone are the days when private jet travel was reserved for the
-              ultra-wealthy and corporate tycoons. Our innovative approach makes
-              flying private accessible for those who value their time and peace
-              of mind.
+            <p className='homeCardDesc'>
+              Gone are the days when private jet travel was reserved for the ultra-wealthy and
+              corporate tycoons. Our innovative approach makes flying private accessible for those
+              who value their time and peace of mind.
             </p>
           </div>
           <div
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="home-last-div homeCard"
+            className='home-last-div homeCard'
           >
-            <div className="home-inner">
+            <div className='home-inner'>
               <img
-                className="h-[39px] 4k:h-[70px] 4k:w-[72px] lg:w-[34px] lg:h-[34px] w-10"
-                src="/images/img_thumbsup_white_a700.svg"
-                alt="thumbsup"
+                className='h-[39px] 4k:h-[70px] 4k:w-[72px] lg:w-[34px] lg:h-[34px] w-10'
+                src='/images/img_thumbsup_white_a700.svg'
+                alt='thumbsup'
               />
-              <h1 className="homeCardHeader">
-                No drawn-out boarding procedures, no security lines, no
-                loudspeakers
-              </h1>
+              <h3 className='homeCardHeader'>
+                No drawn-out boarding procedures, no security lines, no loudspeakers
+              </h3>
             </div>
-            <p className="homeCardDesc">
-              Arrive and board your aircraft in minutes with Black Jet,
-              bypassing security checks, check-in lines, or long walks to the
-              gate. Our members-only flights ensure everyone's identity is
-              pre-verified, streamlining your travel experience.
+            <p className='homeCardDesc'>
+              Arrive and board your aircraft in minutes with Black Jet, bypassing security checks,
+              check-in lines, or long walks to the gate. Our members-only flights ensure everyone's
+              identity is pre-verified, streamlining your travel experience.
             </p>
           </div>
         </div>

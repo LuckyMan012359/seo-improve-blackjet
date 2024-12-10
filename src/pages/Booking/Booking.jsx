@@ -127,9 +127,9 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard stress'>
             <div className='home-inner'>
               <img src='/images/member-mob-2.svg' alt='close' />
-              <h1 className='homeCardHeader'>
+              <h3 className='homeCardHeader'>
                 Community <span>and</span> <br /> networking
-              </h1>
+              </h3>
             </div>
             <p className='homeCardDesc'>
               Join a community of discerning Black Jet members, fostering meaningful connections
@@ -140,7 +140,7 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard guest'>
             <div className='home-inner'>
               <img src='/images/member-mob-3.svg' alt='close' />
-              <h1 className='homeCardHeader'>Guest Passes</h1>
+              <h3 className='homeCardHeader'>Guest Passes</h3>
             </div>
             <p className='homeCardDesc'>
               With a Black Jet membership, every three months a complementary Guest Pass is reserved
@@ -152,9 +152,9 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard'>
             <div className='home-inner'>
               <img src='/images/member-mob-4.svg' alt='search' />
-              <h1 className='homeCardHeader'>
+              <h3 className='homeCardHeader'>
                 Health <span>and</span> safety
-              </h1>
+              </h3>
             </div>
             <p className='homeCardDesc'>
               You fly with a maximum of 7 other passengers. With less contact points and reduced
@@ -166,7 +166,7 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard health'>
             <div className='home-inner'>
               <img src='/images/member-mob-5.svg' alt='favorite' />
-              <h1 className='homeCardHeader'>Flexibility</h1>
+              <h3 className='homeCardHeader'>Flexibility</h3>
             </div>
             <p className='homeCardDesc'>
               Instantly book your flight at any moment, with the freedom to cancel without penalty
@@ -177,9 +177,9 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard commit'>
             <div className='home-inner'>
               <img src='/images/member-mob-6.svg' alt='television' />
-              <h1 className='homeCardHeader'>
+              <h3 className='homeCardHeader'>
                 No drawn-out boarding procedures, no security lines, no loudspeakers
-              </h1>
+              </h3>
             </div>
             <p className='homeCardDesc'>
               Arrive and board your aircraft in minutes with Black Jet, bypassing security checks,
@@ -205,9 +205,9 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard'>
             <div className='home-inner'>
               <img src='/images/member-mob-8.svg' alt='favorite' />
-              <h1 className='homeCardHeader'>
+              <h3 className='homeCardHeader'>
                 Stress-free <span>and</span> <br /> hassle-free
-              </h1>
+              </h3>
             </div>
             <p className='homeCardDesc'>
               Enjoy serene departures and arrivals from our private terminal, where our hostess
@@ -219,7 +219,7 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard'>
             <div className='home-inner'>
               <img src='/images/member-mob-9.svg' alt='whybeamember' />
-              <h1 className='homeCardHeader'>No commitment, cancel anytime</h1>
+              <h3 className='homeCardHeader'>No commitment, cancel anytime</h3>
             </div>
             <p className='homeCardDesc'>
               Benefit from our membership's monthly payments and auto-renewal. Cancel anytime to
@@ -230,7 +230,7 @@ const Booking = ({ open, setOpen }) => {
           <div className='homeCard'>
             <div className='home-inner'>
               <img src='/images/member-mob-10.svg' alt='whybeamember' />
-              <h1 className='homeCardHeader'>Arrive 15 minutes before departure</h1>
+              <h3 className='homeCardHeader'>Arrive 15 minutes before departure</h3>
             </div>
             <p className='homeCardDesc'>
               Arrive a mere 15 minutes before departure at our exclusive private terminal — say

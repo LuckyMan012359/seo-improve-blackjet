@@ -50,11 +50,9 @@
     }
 
     .tour-banner {
-
       .tour-button {
         color: $grey-909;
       }
-
 
       &.desktop-img {
         display: block;
@@ -170,13 +168,11 @@
             @media only screen and (max-width: $mobile-699) {
               font-size: $font-14;
             }
-
           }
         }
-
       }
 
-      h1 {
+      h2 {
         font-size: $font-42;
         color: $color-white;
         font-family: $font-Hauora-600;

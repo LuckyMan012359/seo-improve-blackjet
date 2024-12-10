@@ -4,7 +4,6 @@ import Virtualview from 'components/Virtualview';
 import React, { useState } from 'react';
 // import { useDetectClickOutside } from 'react-detect-click-outside';
 
-
 /**
  * @function TourSection
  * @description Component for Tour Section
@@ -56,7 +55,7 @@ const TourSection = () => {
       <div id='buttonContainer' className='tour-section-main'>
         <div className='tour-txt-div' orientation='horizontal'>
           <div className='text-section sm:border-b-2 sm:border-[#333]'>
-            <h1>What you fly in</h1>
+            <h2>What you fly in</h2>
             <div className='list-wrap'>
               <div className='list-div '>
                 <img src='/images/img_upload.svg' alt='upload' />
@@ -90,7 +89,7 @@ const TourSection = () => {
             </div>
           </div>
           <div className='text-section'>
-            <h1>Proven safety record</h1>
+            <h2>Proven safety record</h2>
             <div className='list-wrap'>
               <div className='list-div '>
                 <img src='/images/img_upload.svg' alt='upload' />

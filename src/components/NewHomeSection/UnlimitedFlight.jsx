@@ -4,7 +4,7 @@ import CommonButton from 'components/formcomponents/CommonButton';
 import { CHANGE_PREORDER_STATUS } from 'constants/actions';
 import OnboardingContext from 'context/OnboardingContext';
 
-import React, { useContext} from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router';
 import { ROUTE_LIST } from 'routes/routeList';
 import { numberWithCommas } from 'utils';
@@ -25,7 +25,7 @@ const UnlimitedFlight = () => {
   const isMobile = useMediaQuery('(max-width : 699px)');
   const { onboardingForms, dispatchOnboardingForms } = useContext(OnboardingContext);
   const details = onboardingForms?.membershipData;
-  
+
   /**
    * Handles the pre-order click event.
    * Dispatches the CHANGE_PREORDER_STATUS action, then navigates to the appropriate
@@ -52,9 +52,9 @@ const UnlimitedFlight = () => {
     <div className='unlimited-flights-wrap'>
       <div className='unlimited-flights-card'>
         <div className='unlimited-flights'>
-          <h2 className='unlimited-heading'>
+          <p className='unlimited-heading'>
             Unlimited flights <span>for a</span> fixed monthly price
-          </h2>
+          </p>
           <div className='online-price-wrap'>
             <div className='section-border' />
             <div className='online-price-text'>
