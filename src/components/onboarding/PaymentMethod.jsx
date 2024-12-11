@@ -883,7 +883,7 @@ const ShowPriceHeader = () => {
   return (
     <div className='payment-price-header'>
       <div className='unlimited-plan-text'>
-        <h1>Unlimited Plan Membership for</h1>
+        <h2>Unlimited Plan Membership for</h2>
       </div>
       <PaymentText details={details} />
     </div>
