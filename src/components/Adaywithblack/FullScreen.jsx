@@ -197,7 +197,7 @@ const FullScreen = ({
   return (
     <>
       <div
-        className='full-screen-video w-full h-full fixed top-0 left-0 bg-white !z-[9999999999]'
+        className='full-screen-video w-full h-full fixed top-0 left-0 bg-white !z-[1000]'
         onMouseMove={showControls}
       >
         <video
