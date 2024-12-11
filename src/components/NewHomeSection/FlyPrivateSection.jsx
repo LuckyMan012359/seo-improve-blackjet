@@ -28,9 +28,9 @@ const FlyPrivateSection = () => {
           <Img className='side-img' src={flightChair} alt='picture' />
           {!isMobile && (
             <div className='desk-section-div'>
-              <div className=' parallax-div'>
+              <div className='parallax-div'>
                 <Parallax speed={20}>
-                  <div className='new-way-div '>
+                  <div className='new-way-div'>
                     <div className='new-way-inner'>
                       <Img src='/images/img_icons8infinity.svg' alt='icons8infinity' />
                       <div className='new-way-txt'>
