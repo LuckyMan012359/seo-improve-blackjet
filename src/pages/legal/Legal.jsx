@@ -48,7 +48,7 @@ const Legal = () => {
         setLegalList(res?.data?.data);
         if (res?.data?.data && res?.data?.data[0]) {
           const findType = res?.data?.data.find(
-            (ele) => ele?.legalTitle.toLowerCase() === type.toLowerCase(),
+            (ele) => ele?._id.toLowerCase() === type.toLowerCase(),
           );
           setSelectedId(findType?._id || res?.data?.data[0]._id || '');
         }
@@ -115,7 +115,7 @@ const Legal = () => {
                   {isMobile ? (
                     <div className='break-words'>{legal?.legalTitle}</div>
                   ) : (
-                    <Link to={`/legal?type=${legal?.legalTitle}`} className='break-words'>
+                    <Link to={`/legal?type=${legal?._id}`} className='break-words'>
                       {legal?.legalTitle}
                     </Link>
                   )}
