@@ -269,7 +269,7 @@ const CardSection = (props) => {
                 )}
               </div>
               <div className='unlimt-h'>
-                <h1 className='unlimit-p'>{details?.name} Plan membership</h1>
+                <h2 className='unlimit-p'>{details?.name} Plan membership</h2>
               </div>
             </div>
           </div>
